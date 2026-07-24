@@ -1,0 +1,20 @@
+﻿
+#####################################
+#									#
+# 			Male					#
+#									#
+#####################################
+
+frog_male_eyes_1 = {
+	entity = { entity = "frog_male_eyes_entity"		shared_pose_entity = head }
+}
+
+#####################################
+#									#
+# 			Female					#
+#									#
+#####################################
+
+#female_eyes_normal = {
+#	entity = { entity = "female_eyes_entity" 	shared_pose_entity = head }
+#}

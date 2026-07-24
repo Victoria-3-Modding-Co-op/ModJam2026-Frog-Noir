@@ -1,0 +1,24 @@
+﻿accessory_genes = {
+
+	#####################################
+	#									#
+	# 			 MISC					#
+	#									#
+	#####################################
+
+#####################################
+#									#
+# 		    EYE ACCESSORY 		    #
+#									#
+#####################################
+
+	INJECT:eye_accessory = {
+		frog_eyes = {
+			index = 1
+			male = {	1 = "frog_male_eyes_1"		}
+			female = {	1 = "female_eyes_normal"	}
+			boy = male
+			girl = female
+		}
+	}
+}

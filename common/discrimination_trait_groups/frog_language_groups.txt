@@ -1,0 +1,5 @@
+﻿# This list is alphabetically sorted. Please keep it so.
+
+frog_language_group_amphibian = {
+	type = language
+}

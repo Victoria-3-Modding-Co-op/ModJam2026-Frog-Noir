@@ -1,0 +1,33 @@
+﻿######################
+# CULTURE MODIFIERS  #
+######################
+
+frog_standard_of_living_modifier_positive = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	state_frog_standard_of_living_add = 1
+}
+
+frog_standard_of_living_modifier_negative = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	state_frog_standard_of_living_add = 1
+}
+
+frog_cultural_acceptance_modifier_positive = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_frog_cultural_acceptance_add = 1
+}
+
+frog_cultural_acceptance_modifier_negative = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	country_frog_cultural_acceptance_add = 1
+}
+
+frog_fervor_target_modifier_positive = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_fervor_target_frog_add = 1
+}
+
+frog_fervor_target_modifier_negative = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	country_fervor_target_frog_add = 1
+}

@@ -193,7 +193,7 @@ mr_create_random_investigator_for_character_creation_effect = {
 				trait_generation = {}
 				save_scope_as = frog_new_investigator_scope
 				role = character_role_frog_private_investigator
-				#culture = cu:frog #TODO: Add frog culture
+				culture = cu:frog
 			}
 			scope:frog_new_investigator_scope = {
 				frog_trait_generation_investigator_effect = yes
@@ -225,7 +225,7 @@ mr_create_random_investigator_for_character_creation_effect = {
 				trait_generation = {}
 				save_scope_as = frog_new_investigator_scope
 				role = character_role_frog_private_investigator
-				#culture = cu:frog #TODO: Add frog culture
+				culture = cu:frog
 			}
 			scope:frog_new_investigator_scope = {
 				frog_trait_generation_investigator_effect = yes

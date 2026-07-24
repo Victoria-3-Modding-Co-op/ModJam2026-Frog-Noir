@@ -1,0 +1,39 @@
+﻿l_english:
+
+ frog_heritage_group_amphibian: "Amphibian Heritage"
+ frog_heritage_frog: "Frog"
+ frog_language_group_amphibian: "Amphibian Languages"
+ frog_language_froggish: "Froggish"
+
+ frog: "Frog"
+ PLURAL_DEMONYM_frog: "Frogs"
+ SINGULAR_DEMONYM_frog: "$frog$"
+ PLURAL_DEMONYM_FEMALE_frog: "$PLURAL_DEMONYM_alemannic$"
+ SINGULAR_DEMONYM_FEMALE_frog: "$frog$"
+
+#Frog Male First Names
+ Frog_F: "Frog F."
+ Froggy: "Froggy"
+ Froginand: "Froginand"
+ Gianfroggo: "Gianfroggo"
+#Frog Female First Names
+ Elizafrog: "Elizafrog"
+ Frogga: "Frogga"
+ Froginia: "Froginia"
+ Victofrogia: "Victofrogia"
+#Frog Noble First Names
+ de_la_Grenouille: "de la Grenouille"
+ de_RA_: "de Rã"
+ la_Rana: "la Rana"
+ von_Frosch: "von Frosch"
+#Frog Common Last Names
+ Brosh: "Brosh"
+ Froggedy: "Froggedy"
+ Froggo: "Froggo"
+ Frogland: "Frogland"
+ Frosch: "Frosch"
+ Grenouille: "Grenouille"
+ McFrogface: "McFrogface"
+ RA_: "Rã"
+ Rana: "Rana"
+ Z_aba: "Żaba"

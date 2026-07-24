@@ -1,0 +1,6 @@
+﻿# This list is alphabetically sorted. Please keep it so.
+
+frog_heritage_frog = {
+	type = heritage
+	trait_group = frog_heritage_group_amphibian
+}

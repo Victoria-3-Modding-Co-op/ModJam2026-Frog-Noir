@@ -1,0 +1,41 @@
+﻿frog = {
+	color= { 100 255 0 }
+	religion = atheist
+	heritage = frog_heritage_frog
+	language = frog_language_froggish
+
+	male_common_first_names={
+		Frog_F
+		Froggy
+		Froginand
+		Gianfroggo
+	}
+	female_common_first_names = {
+		Elizafrog
+		Frogga
+		Froginia
+		Victofrogia
+	}
+	noble_last_names={
+		de_la_Grenouille
+		de_RA_
+		la_Rana
+		von_Frosch
+	}
+	common_last_names={
+		Brosh
+		Froggedy
+		Froggo
+		Frogland
+		Frosch
+		Grenouille
+		McFrogface
+		RA_
+		Rana
+		Z_aba
+	}
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}

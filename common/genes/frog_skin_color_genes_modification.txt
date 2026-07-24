@@ -25,6 +25,31 @@ special_genes = {
 							{ 1.0   { 0.3 0.7 0.0 } }
 						}
 					}
+
+					decal = {
+						body_part = torso
+						textures = {
+							properties = "gfx/models/portraits/decals/skin/frog_body_properties.dds"
+						}
+						blend_modes = {
+							diffuse = hard_light
+							normal = overlay
+							properties = overlay
+						}
+						priority = 10
+					}
+					decal = {
+						body_part = head
+						textures = {
+							properties = "gfx/models/portraits/decals/skin/frog_body_properties.dds"
+						}
+						blend_modes = {
+							diffuse = hard_light
+							normal = overlay
+							properties = overlay
+						}
+						priority = 10
+					}
 				}
 				female = male
 				boy = male
@@ -39,6 +64,31 @@ special_genes = {
 							{ 0.0   { 0.08 1.0 0.0 } }
 							{ 1.0   { 0.13 1.0 0.0 } }
 						}
+					}
+
+					decal = {
+						body_part = torso
+						textures = {
+							properties = "gfx/models/portraits/decals/skin/frog_body_properties.dds"
+						}
+						blend_modes = {
+							diffuse = hard_light
+							normal = overlay
+							properties = overlay
+						}
+						priority = 10
+					}
+					decal = {
+						body_part = head
+						textures = {
+							properties = "gfx/models/portraits/decals/skin/frog_body_properties.dds"
+						}
+						blend_modes = {
+							diffuse = hard_light
+							normal = overlay
+							properties = overlay
+						}
+						priority = 10
 					}
 				}
 				female = male
@@ -55,6 +105,31 @@ special_genes = {
 							{ 1.0   { 1.0 1.0 0.0 } }
 						}
 					}
+
+					decal = {
+						body_part = torso
+						textures = {
+							properties = "gfx/models/portraits/decals/skin/frog_body_properties.dds"
+						}
+						blend_modes = {
+							diffuse = hard_light
+							normal = overlay
+							properties = overlay
+						}
+						priority = 10
+					}
+					decal = {
+						body_part = head
+						textures = {
+							properties = "gfx/models/portraits/decals/skin/frog_body_properties.dds"
+						}
+						blend_modes = {
+							diffuse = hard_light
+							normal = overlay
+							properties = overlay
+						}
+						priority = 10
+					}
 				}
 				female = male
 				boy = male
@@ -70,6 +145,71 @@ special_genes = {
 							{ 1.0   { 0.9 1.0 0.0 } }
 						}
 					}
+
+					decal = {
+						body_part = torso
+						textures = {
+							properties = "gfx/models/portraits/decals/skin/frog_body_properties.dds"
+						}
+						blend_modes = {
+							diffuse = hard_light
+							normal = overlay
+							properties = overlay
+						}
+						priority = 10
+					}
+					decal = {
+						body_part = head
+						textures = {
+							properties = "gfx/models/portraits/decals/skin/frog_body_properties.dds"
+						}
+						blend_modes = {
+							diffuse = hard_light
+							normal = overlay
+							properties = overlay
+						}
+						priority = 10
+					}
+				}
+				female = male
+				boy = male
+				girl = male
+			}
+
+			skin_color_hue_blue = {
+				index = 6
+				male = {
+					skin_hsv_shift_curve = {
+						curve = {
+							{ 0.0   { 0.5 1.0 0.0 } }
+							{ 1.0   { 0.65 1.0 0.0 } }
+						}
+					}
+
+					decal = {
+						body_part = torso
+						textures = {
+							properties = "gfx/models/portraits/decals/skin/frog_body_properties.dds"
+						}
+						blend_modes = {
+							diffuse = hard_light
+							normal = overlay
+							properties = overlay
+						}
+						priority = 10
+					}
+					decal = {
+						body_part = head
+						textures = {
+							properties = "gfx/models/portraits/decals/skin/frog_body_properties.dds"
+						}
+						blend_modes = {
+							diffuse = hard_light
+							normal = overlay
+							properties = overlay
+						}
+						priority = 10
+					}
 				}
 				female = male
 				boy = male
@@ -77,11 +217,11 @@ special_genes = {
 			}
 
 			skin_color_hue_brownish = {
-				index = 6
+				index = 7
 				male = {
 					skin_hsv_shift_curve = {
 						curve = {
-							{ 0.0   { 0.0 0.4 0.0 } }
+							{ 0.0   { 0. 0.4 0.0 } }
 							{ 1.0   { 0.1 0.4 0.0 } }
 						}
 					}

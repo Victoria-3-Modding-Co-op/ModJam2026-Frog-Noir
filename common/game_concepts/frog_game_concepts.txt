@@ -1,4 +1,5 @@
-﻿###ARTISTS###
+﻿###FROG###
+
 concept_frog_private_investigator = {
 	texture = "gfx/interface/icons/character_role_icons/frog_private_investigator_role_icon.dds"
 

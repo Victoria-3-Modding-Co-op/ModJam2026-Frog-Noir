@@ -1,0 +1,50 @@
+﻿################
+# FROG TRAITS  #
+################
+
+###### PRIVATE INVESTIGATOR ###########################################################
+
+frog_private_investigator_1_trait = {
+	type = skill
+	texture = "gfx/interface/icons/character_trait_icons/frog_private_investigator_1_trait_icon.dds"
+
+	character_modifier = {
+		character_popularity_add = 5
+	}
+
+	possible = {
+		always = no
+	}
+
+	value = 3
+}
+
+frog_private_investigator_2_trait = {
+	type = skill
+	texture = "gfx/interface/icons/character_trait_icons/frog_private_investigator_2_trait_icon.dds"
+
+	character_modifier = {
+		character_popularity_add = 10
+	}
+
+	possible = {
+		always = no
+	}
+
+	value = 3
+}
+
+frog_private_investigator_3_trait = {
+	type = skill
+	texture = "gfx/interface/icons/character_trait_icons/frog_private_investigator_3_trait_icon.dds"
+
+	character_modifier = {
+		character_popularity_add = 15
+	}
+
+	possible = {
+		always = no
+	}
+
+	value = 3
+}

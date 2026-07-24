@@ -1,0 +1,55 @@
+pdxmesh = {
+	name = "frog_female_eyes_1_mesh"
+	file = "female_eyes.mesh"
+
+	meshsettings = {
+		name = "female_eyesShape"
+		index = 0
+		texture_diffuse = "frog_female_eyes_1_diffuse.dds"
+		texture_normal = "female_eyes_normal.dds"
+		texture_specular = "female_eyes_properties.dds"
+		shader = "portrait_eye"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+entity = {
+	name = "frog_female_eyes_1_entity"
+	pdxmesh = "frog_female_eyes_1_mesh"
+
+	game_data = {
+		portrait_entity_user_data = {
+			color_mask_remap_interval = {
+				interval = {0.0 1.0}
+			}
+		}
+	}
+}
+
+pdxmesh = {
+	name = "frog_female_eyes_2_mesh"
+	file = "female_eyes.mesh"
+
+	meshsettings = {
+		name = "female_eyesShape"
+		index = 0
+		texture_diffuse = "frog_female_eyes_2_diffuse.dds"
+		texture_normal = "female_eyes_normal.dds"
+		texture_specular = "female_eyes_properties.dds"
+		shader = "portrait_eye"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+entity = {
+	name = "frog_female_eyes_2_entity"
+	pdxmesh = "frog_female_eyes_2_mesh"
+
+	game_data = {
+		portrait_entity_user_data = {
+			color_mask_remap_interval = {
+				interval = {0.0 1.0}
+			}
+		}
+	}
+}

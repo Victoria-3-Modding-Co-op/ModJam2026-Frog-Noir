@@ -49,7 +49,7 @@
 	}
 	graphics = european
 	ethnicities = {
-		1 = caucasian
+		1 = frog_frogs_ethnicity
 	}
 }
 

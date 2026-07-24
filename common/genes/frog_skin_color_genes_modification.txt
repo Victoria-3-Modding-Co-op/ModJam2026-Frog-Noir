@@ -76,12 +76,27 @@ special_genes = {
 				girl = male
 			}
 
-			skin_color_hue_brownish = {
+			skin_color_hue_blue = {
 				index = 6
 				male = {
 					skin_hsv_shift_curve = {
 						curve = {
-							{ 0.0   { 0.0 0.4 0.0 } }
+							{ 0.0   { 0.5 1.0 0.0 } }
+							{ 1.0   { 0.65 1.0 0.0 } }
+						}
+					}
+				}
+				female = male
+				boy = male
+				girl = male
+			}
+
+			skin_color_hue_brownish = {
+				index = 7
+				male = {
+					skin_hsv_shift_curve = {
+						curve = {
+							{ 0.0   { 0. 0.4 0.0 } }
 							{ 1.0   { 0.1 0.4 0.0 } }
 						}
 					}

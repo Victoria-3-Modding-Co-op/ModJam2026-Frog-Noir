@@ -1,0 +1,154 @@
+﻿frogs_skin_color = {
+    usage = game
+    selection_behavior = weighted_random
+
+    #Frogs - Green
+    frog_culture_skin_color = {
+        dna_modifiers = {
+            #Green Skin
+            morph = {
+                mode = add
+                gene = frog_skin_color_hue
+                template = skin_color_hue_green
+                range = { 0 1 } # For the randomness to work correctly
+            }
+        }
+
+        weight = {
+            base = 0
+            modifier = {
+                add = 99
+
+                #Frogs should have a different skin color
+                OR = {
+                    scope:character ?= {
+                        has_culture = cu:frog
+                    }
+                    scope:pop ?= {
+                        has_pop_culture = frog
+                    }
+                }
+            }
+        }
+    }
+
+    #Frogs - Yellow
+    frog_culture_skin_color = {
+        dna_modifiers = {
+            #Green Skin
+            morph = {
+                mode = add
+                gene = frog_skin_color_hue
+                template = skin_color_hue_yellow
+                range = { 0 1 } # For the randomness to work correctly
+            }
+        }
+
+        weight = {
+            base = 0
+            modifier = {
+                add = 99
+
+                #Frogs should have a different skin color
+                OR = {
+                    scope:character ?= {
+                        has_culture = cu:frog
+                    }
+                    scope:pop ?= {
+                        has_pop_culture = frog
+                    }
+                }
+            }
+        }
+    }
+
+    #Frogs - Red
+    frog_culture_skin_color = {
+        dna_modifiers = {
+            #Green Skin
+            morph = {
+                mode = add
+                gene = frog_skin_color_hue
+                template = skin_color_hue_red
+                range = { 0 1 } # For the randomness to work correctly
+            }
+        }
+
+        weight = {
+            base = 0
+            modifier = {
+                add = 99
+
+                #Frogs should have a different skin color
+                OR = {
+                    scope:character ?= {
+                        has_culture = cu:frog
+                    }
+                    scope:pop ?= {
+                        has_pop_culture = frog
+                    }
+                }
+            }
+        }
+    }
+
+    #Frogs - Purple
+    frog_culture_skin_color = {
+        dna_modifiers = {
+            #Green Skin
+            morph = {
+                mode = add
+                gene = frog_skin_color_hue
+                template = skin_color_hue_purple
+                range = { 0 1 } # For the randomness to work correctly
+            }
+        }
+
+        weight = {
+            base = 0
+            modifier = {
+                add = 99
+
+                #Frogs should have a different skin color
+                OR = {
+                    scope:character ?= {
+                        has_culture = cu:frog
+                    }
+                    scope:pop ?= {
+                        has_pop_culture = frog
+                    }
+                }
+            }
+        }
+    }
+
+    #Frogs - Blue
+    frog_culture_skin_color = {
+        dna_modifiers = {
+            #Green Skin
+            morph = {
+                mode = add
+                gene = frog_skin_color_hue
+                template = skin_color_hue_blue
+                range = { 0 1 } # For the randomness to work correctly
+            }
+        }
+
+        weight = {
+            base = 0
+            modifier = {
+                add = 99
+
+                #Frogs should have a different skin color
+                OR = {
+                    scope:character ?= {
+                        has_culture = cu:frog
+                    }
+                    scope:pop ?= {
+                        has_pop_culture = frog
+                    }
+                }
+            }
+        }
+    }
+}

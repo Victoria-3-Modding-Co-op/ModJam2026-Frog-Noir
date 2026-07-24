@@ -184,3 +184,147 @@ frog_character_investigator_experience_gain_effect = { #adds Investigator XP to 
 		}
 	}
 }
+
+mr_create_random_investigator_for_character_creation_effect = {
+	random_list = {
+		1 = {
+			create_character = {
+				female = yes
+				trait_generation = {}
+				save_scope_as = frog_new_investigator_scope
+				role = character_role_frog_private_investigator
+				#culture = cu:frog #TODO: Add frog culture
+			}
+			scope:frog_new_investigator_scope = {
+				frog_trait_generation_investigator_effect = yes
+				frog_make_character_investigator_effect = yes
+			}
+
+			set_variable = {
+				name = frog_new_investigator_var
+				value = scope:frog_new_investigator_scope
+			}
+
+			modifier = {
+				if = {
+					limit = { has_law = law_type:law_women_own_property }
+					add = 4
+				}
+				if = {
+					limit = { has_law = law_type:law_women_in_the_workplace }
+					add = 9
+				}
+				if = {
+					limit = { has_law = law_type:law_womens_suffrage }
+					add = 19
+				}
+			}
+		}
+		99 = {
+			create_character = {
+				trait_generation = {}
+				save_scope_as = frog_new_investigator_scope
+				role = character_role_frog_private_investigator
+				#culture = cu:frog #TODO: Add frog culture
+			}
+			scope:frog_new_investigator_scope = {
+				frog_trait_generation_investigator_effect = yes
+				frog_make_character_investigator_effect = yes
+			}
+
+			set_variable = {
+				name = frog_new_investigator_var
+				value = scope:frog_new_investigator_scope
+			}
+
+			modifier = {
+				if = {
+					limit = { has_law = law_type:law_women_own_property }
+					add = -4
+				}
+				if = {
+					limit = { has_law = law_type:law_women_in_the_workplace }
+					add = -9
+				}
+				if = {
+					limit = { has_law = law_type:law_womens_suffrage }
+					add = -19
+				}
+			}
+		}
+	}
+}
+
+frog_trait_generation_investigator_effect = {
+	add_trait = frog_private_investigator_1_trait
+	add_random_trait = personality
+	random_list = {
+		1 = {
+			trigger = {
+				NOT = { has_trait = meticulous }
+			}
+			add_trait = meticulous
+		}
+		1 = {
+			trigger = {
+				NOT = { has_trait = innovative }
+			}
+			add_trait = innovative
+		}
+		1 = {
+			trigger = {
+				NOT = { has_trait = persistent }
+			}
+			add_trait = persistent
+		}
+		1 = {
+			trigger = {
+				NOT = { has_trait = erudite }
+			}
+			add_trait = erudite
+		}
+		1 = {
+			trigger = {
+				NOT = { has_trait = literary }
+			}
+			add_trait = literary
+		}
+		1 = {
+			trigger = {
+				NOT = { has_trait = engineer }
+			}
+			add_trait = engineer
+		}
+		1 = {
+			trigger = {
+				NOT = { has_trait = basic_diplomat }
+			}
+			add_trait = basic_diplomat
+		}
+		1 = {
+			trigger = {
+				NOT = { has_trait = basic_entrepreneur }
+			}
+			add_trait = basic_entrepreneur
+		}
+		1 = {
+			trigger = {
+				NOT = { has_trait = basic_political_operator }
+			}
+			add_trait = basic_political_operator
+		}
+	}
+	random_list = {
+		5 = { add_random_trait = condition }
+		95 = {}
+	}
+}
+
+frog_make_character_investigator_effect = {
+	frog_character_investigator_experience_set_up_effect = yes
+	set_career_length = {
+		role = character_role_frog_private_investigator
+		years = 20
+		random_range = { 0.93 1.07 }
+	}
+}

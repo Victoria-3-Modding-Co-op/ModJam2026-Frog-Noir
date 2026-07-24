@@ -1,0 +1,30 @@
+﻿###########################
+# ACADEMICS NOTIFICATIONS #
+###########################
+
+#by Lord R
+
+#########################
+
+frog_yearly_experience_gain_notification = {
+	type = country
+	texture = "gfx/interface/icons/notification_icons/character.dds"
+	notification_type = feed
+	days = 28
+}
+
+frog_character_received_level_2_trait_notification = {
+	type = character
+	texture = "gfx/interface/icons/notification_icons/character.dds"
+	color = good
+	notification_type = feed
+	days = 28
+}
+
+frog_character_received_level_3_trait_notification = {
+	type = character
+	texture = "gfx/interface/icons/notification_icons/character.dds"
+	color = good
+	notification_type = feed
+	days = 28
+}

@@ -1,0 +1,13 @@
+﻿l_english:
+
+ notification_frog_yearly_experience_gain_notification_name: "Investigator yearly Experience gain"
+ notification_frog_yearly_experience_gain_notification_desc: "Every Investigator that can gain Experience got between #p 0#! and #p 5#! Experience."
+ notification_frog_yearly_experience_gain_notification_tooltip: "#header $notification_frog_yearly_experience_gain_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_frog_yearly_experience_gain_notification_desc$"
+
+ notification_frog_character_received_level_2_trait_notification_name: "[SCOPE.GetRootScope.GetCharacter.GetFullName] becomes $frog_private_investigator_2_trait$"
+ notification_frog_character_received_level_2_trait_notification_desc: "[SCOPE.GetRootScope.GetCharacter.GetFullName] has gained enough Experience to earn the #b $frog_private_investigator_2_trait$#! [concept_character_trait]."
+ notification_frog_character_received_level_2_trait_notification_tooltip: "#header $notification_frog_character_received_level_2_trait_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_frog_character_received_level_2_trait_notification_desc$"
+
+ notification_frog_character_received_level_3_trait_notification_name: "[SCOPE.GetRootScope.GetCharacter.GetFullName] becomes $frog_private_investigator_3_trait$"
+ notification_frog_character_received_level_3_trait_notification_desc: "[SCOPE.GetRootScope.GetCharacter.GetFullName] has gained enough Experience to earn the #b $frog_private_investigator_3_trait$#! [concept_character_trait]."
+ notification_frog_character_received_level_3_trait_notification_tooltip: "#header $notification_frog_character_received_level_3_trait_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_frog_character_received_level_3_trait_notification_desc$"

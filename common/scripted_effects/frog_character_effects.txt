@@ -1,0 +1,186 @@
+﻿##############################
+# ACADEMICS SCRPITED EFFECTS #
+##############################
+
+############################################################################
+
+###### PRIVATE INVESTIGATOR ######
+
+#This effect kills the current Investigator
+frog_country_kill_investigator_effect = {
+	var:frog_investigtor_var ?= {
+		kill_character = yes
+	}
+
+	frog_country_remove_official_investigator_effect = yes
+}
+
+#Removes the official Investigator without killing or retiring
+frog_country_remove_official_investigator_effect = {
+	var:frog_investigtor_var ?= {
+		set_character_busy_and_immortal = no
+		frog_character_remove_official_modifiers_from_investigator_effect = yes
+	}
+	remove_variable = frog_investigtor_var
+}
+
+#This effect is used to remove all modifiers that are bound to being the official Investigator
+frog_character_remove_official_modifiers_from_investigator_effect = {
+	if = {
+		limit = {
+			has_modifier = frog_character_is_official_investigator_modifier
+		}
+		remove_modifier = frog_character_is_official_investigator_modifier
+	}
+}
+
+# Set new Investigator as official Investigator
+frog_country_set_new_investigator_as_official_investigator_effect = {
+	custom_description = {
+		text = "frog_country_set_new_investigator_as_official_investigator_effect_loc"
+		subject = this
+		object = scope:frog_new_investigator_scope
+
+		frog_country_remove_official_investigator_effect = yes
+
+		set_variable = {
+			name = frog_investigtor_var
+			value = scope:frog_new_investigator_scope
+		}
+
+		#Sets the Investigator busy if there is an active project
+#		if = {
+#			limit = { frog_investigator_project_active_trigger = yes }
+#			var:frog_investigtor_var ?= {
+#				set_character_busy_and_immortal = yes
+#			}
+#		}
+		var:frog_investigtor_var ?= {
+			add_modifier = {
+				name = frog_character_is_official_investigator_modifier
+			}
+		}
+
+		#No Default Project JE
+
+		#Removes variable
+		remove_variable = frog_new_investigator_var
+	}
+}
+
+# Remove new Investigator
+frog_remove_new_investigator_effect = {
+	custom_tooltip = frog_will_become_part_of_character_pool_tt
+
+	remove_variable = frog_new_investigator_var
+}
+
+# Used to set up the Experience of a character
+frog_character_investigator_experience_set_up_effect = {
+	#Adds astronomer experience (see effect for further information)
+	#TODO: Add a script value to set up the experience properly
+	frog_change_variable_with_additional_script_math_parameter_effect = {
+		NAME = frog_investigator_experience_var
+		AMOUNT = "{ value = { 0 10 } }"
+		ADDITIONAL_SCRIPT_MATH = "min = 0 max = 300"
+	}
+
+	if = { #Adds the Level 2 Investigator Trait if Experience is above 100
+		limit = {
+			var:frog_investigator_experience_var >= 100
+			NOT = {
+				var:frog_investigator_experience_var >= 300
+			}
+			NOR = {
+				has_trait = frog_private_investigator_2_trait
+				has_trait = frog_private_investigator_3_trait
+			}
+		}
+		remove_trait = frog_private_investigator_1_trait
+		add_trait = frog_private_investigator_2_trait
+	}
+	if = { #Adds the Level 3 Investigator Trait if Experience is above 300
+		limit = {
+			var:frog_investigator_experience_var >= 300
+			NOT = {
+				has_trait = frog_private_investigator_3_trait
+			}
+		}
+		remove_trait = frog_private_investigator_1_trait
+		remove_trait = frog_private_investigator_2_trait
+		add_trait = frog_private_investigator_3_trait
+	}
+}
+
+#Investigator Experience gain
+frog_country_investigator_experience_gain_effect = { #adds XP to the Investigator
+	# Amount = amount of XP to add
+	var:frog_investigtor_var ?= {
+		frog_character_investigator_experience_gain_effect = { AMOUNT = $AMOUNT$ }
+	}
+}
+
+#Character Investigator Experience Gain Effect
+# scope = character
+frog_character_investigator_experience_gain_effect = { #adds Investigator XP to the Character
+	# AMOUNT = amount of XP to add
+	custom_description = {
+		text = "frog_character_investigator_experience_gain_effect_loc"
+		subject = this
+		value = $AMOUNT$
+
+		#Fallback if there is no Experience yet
+		if = {
+			limit = {
+				NOT = {
+					has_variable = frog_investigator_experience_var
+				}
+			}
+			frog_character_investigator_experience_set_up_effect = yes
+		}
+		#Actual change of Experience
+		frog_change_variable_with_additional_script_math_parameter_effect = {
+			NAME = frog_investigator_experience_var
+			AMOUNT = $AMOUNT$
+			ADDITIONAL_SCRIPT_MATH = "min = 0 max = 300"
+		}
+	}
+
+	#Add Traits if the character does not have one yet
+	if = {
+		limit = {
+			var:frog_investigator_experience_var >= 100
+			var:frog_investigator_experience_var < 300
+			NOR = {
+				has_trait = frog_private_investigator_2_trait
+				has_trait = verrier_astronomer_famous
+			}
+		}
+		else = {
+			post_notification = frog_character_received_level_2_trait_notification
+		}
+		hidden_effect = {
+			remove_trait = frog_private_investigator_1_trait
+			add_trait = frog_private_investigator_2_trait
+		}
+	}
+	if = {
+		limit = {
+			var:frog_investigator_experience_var >= 300
+			NOT = {
+				has_trait = verrier_astronomer_famous
+			}
+		}
+		else = {
+			post_notification = frog_character_received_level_3_trait_notification
+		}
+		hidden_effect = {
+			if = {
+				limit = { has_trait = frog_private_investigator_1_trait }
+				remove_trait = frog_private_investigator_1_trait
+			}
+			remove_trait = frog_private_investigator_2_trait
+			add_trait = frog_private_investigator_3_trait
+		}
+	}
+}

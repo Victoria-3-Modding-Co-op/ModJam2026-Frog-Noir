@@ -1,0 +1,10 @@
+﻿#############################
+# FROG CHARACTER MODIFIERS  #
+#############################
+
+###### OFFICIAL INVESTIGATOR ###########################################################
+
+frog_character_is_official_investigator_modifier = {
+	icon = "gfx/interface/icons/character_role_icons/frog_private_investigator_role_icon.dds"
+	character_loyalty_add = 20
+}

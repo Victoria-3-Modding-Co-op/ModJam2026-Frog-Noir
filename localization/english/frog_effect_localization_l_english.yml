@@ -1,0 +1,10 @@
+﻿l_english:
+
+ FROG_GAINS: "gains"
+ FROG_LOSES: "loses"
+
+ FROG_COUNTRY_SET_NEW_INVESTIGATOR_AS_OFFICIAL_INVESTIGATOR_FIRST: "[TARGET_CHARACTER.GetFullName] will become [COUNTRY.GetName]'s new [concept_frog_private_investigator]. [COUNTRY.GetCustom('academics_replacement_astronomer_custom_loc')]"
+ FROG_COUNTRY_SET_NEW_INVESTIGATOR_AS_OFFICIAL_INVESTIGATOR_GLOBAL: "[TARGET_CHARACTER.GetFullName] will become the country's new [concept_frog_private_investigator]. [COUNTRY.GetCustom('academics_replacement_astronomer_custom_loc')]"
+
+ FROG_CHARACTER_INVESTIGATOR_EXPERIENCE_GAIN_GLOBAL: "[concept_character] [SelectLocalization(GreaterThan_CFixedPoint('(CFixedPoint)$VALUE$','(CFixedPoint)0'),'FROG_GAINS','FROG_LOSES')] $VALUE|+0$ Experience (current Experience: [CHARACTER.MakeScope.GetVariable('frog_investigator_experience_var').GetValue|0|V])"
+ FROG_CHARACTER_INVESTIGATOR_EXPERIENCE_GAIN_THIRD: "[CHARACTER.GetFullName] [SelectLocalization(GreaterThan_CFixedPoint('(CFixedPoint)$VALUE$','(CFixedPoint)0'),'FROG_GAINS','FROG_LOSES')] $VALUE|+0$ Experience (current Experience: [CHARACTER.MakeScope.GetVariable('frog_investigator_experience_var').GetValue|0|V])"

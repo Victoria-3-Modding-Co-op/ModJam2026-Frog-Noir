@@ -1,0 +1,5 @@
+﻿l_english:
+
+ frog_will_become_part_of_character_pool_tt: "[SCOPE.sCharacter('frog_new_investigator_scope').GetFullName] will join the [Concept('concept_character', '$NATIONAL_CAST$')] of [SCOPE.GetRootScope.GetCountry.GetName]."
+
+ frog_character_is_official_investigator_modifier: "Official Investigator"

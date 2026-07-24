@@ -1,0 +1,101 @@
+﻿##################################
+# FROG GENERAL FRAMEWORK EFFECTS #
+##################################
+
+#Contains very basic effects which are used in various places
+
+############################################################################
+
+#Changes a variable with no additional script math
+# Includes a setting the variable if it does not exist yet.
+frog_change_variable_effect = {
+	#AMOUNT = Amount to change the variable by
+	#NAME = Name of the variable
+	set_variable = {
+		name = $NAME$
+		value = {
+			if = {
+				limit = { has_variable = $NAME$ }
+				value = var:$NAME$
+			}
+			add = $AMOUNT$
+		}
+	}
+}
+
+#Changes a variable that with no min or max
+# Includes a setting the variable if it does not exist yet.
+frog_change_variable_with_additional_script_math_parameter_effect = {
+	#AMOUNT = Amount to change the variable by
+	#NAME = Name of the variable
+	#ADDITIONAL_SCRIPT_MATH = additional script math like min or max
+
+	# Usage example:
+	#frog_change_variable_with_additional_script_math_parameter_effect = { NAME = foo AMOUNT = -3 "min = 0 max = 100" }
+
+	set_variable = {
+        name = $NAME$
+        value = {
+            if = {
+                limit = { has_variable = $NAME$ }
+                value = var:$NAME$
+            }
+            add = $AMOUNT$
+            $ADDITIONAL_SCRIPT_MATH$
+        }
+    }
+}
+
+#Changes a variable that can't have a value below 0
+# Includes a setting the variable if it does not exist yet.
+frog_change_variable_min_0_effect = {
+	#AMOUNT = Amount to change the variable by
+	#NAME = Name of the variable
+	set_variable = {
+		name = $NAME$
+		value = {
+			if = {
+				limit = { has_variable = $NAME$ }
+				value = var:$NAME$
+			}
+			add = $AMOUNT$
+			min = 0
+		}
+	}
+}
+
+#Changes a global variable that can't have a value below 0
+# Includes a setting the variable if it does not exist yet.
+frog_change_global_variable_min_0_effect = {
+	#AMOUNT = Amount to change the variable by
+	#NAME = Name of the variable
+	set_global_variable = {
+		name = $NAME$
+		value = {
+			if = {
+				limit = { has_global_variable = $NAME$ }
+				value = global_var:$NAME$
+			}
+			add = $AMOUNT$
+			min = 0
+		}
+	}
+}
+
+#############################
+#Sets a character up for the JE widget
+frog_journal_entry_set_variable_character_for_widget_effect = {
+	$JOURNAL_ENTRY_SCOPE$ = {
+		if = {
+			limit = {
+				root = {
+					has_variable = $CHARACTER_VARIABLE$
+				}
+			}
+			set_variable = {
+				name = com_interorg_chair_var
+				value = root.var:$CHARACTER_VARIABLE$
+			}
+		}
+	}
+}

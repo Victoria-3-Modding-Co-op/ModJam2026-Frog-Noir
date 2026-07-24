@@ -31,8 +31,53 @@ special_genes = {
 				girl = male
 			}
 
-			skin_color_hue_brownish = {
+			skin_color_hue_yellow = {
 				index = 3
+				male = {
+					skin_hsv_shift_curve = {
+						curve = {
+							{ 0.0   { 0.08 1.0 0.0 } }
+							{ 1.0   { 0.13 1.0 0.0 } }
+						}
+					}
+				}
+				female = male
+				boy = male
+				girl = male
+			}
+
+			skin_color_hue_red = {
+				index = 4
+				male = {
+					skin_hsv_shift_curve = {
+						curve = {
+							{ 0.0   { 0.95 1.0 0.0 } }
+							{ 1.0   { 1.0 1.0 0.0 } }
+						}
+					}
+				}
+				female = male
+				boy = male
+				girl = male
+			}
+
+			skin_color_hue_purple = {
+				index = 5
+				male = {
+					skin_hsv_shift_curve = {
+						curve = {
+							{ 0.0   { 0.8 1.0 0.0 } }
+							{ 1.0   { 0.9 1.0 0.0 } }
+						}
+					}
+				}
+				female = male
+				boy = male
+				girl = male
+			}
+
+			skin_color_hue_brownish = {
+				index = 6
 				male = {
 					skin_hsv_shift_curve = {
 						curve = {

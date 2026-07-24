@@ -6,14 +6,21 @@
 
 	male_common_first_names={
 		Frog_F
+		Frogdewijk
 		Froggy
 		Froginand
+		Frognelis
+		Frograad
+		Frogward
 		Gianfroggo
 	}
 	female_common_first_names = {
 		Elizafrog
+		Frogcisca
 		Frogga
+		Frogje
 		Froginia
+		Petfrognella
 		Victofrogia
 	}
 	noble_last_names={
@@ -21,14 +28,20 @@
 		de_RA_
 		la_Rana
 		von_Frosch
+		ter_Kikker
 	}
 	common_last_names={
 		Brosh
+		Frogaton
 		Froggedy
+		Froggerson
 		Froggo
+		Frogham
 		Frogland
+		Froglin
 		Frosch
 		Grenouille
+		Kikkert
 		McFrogface
 		RA_
 		Rana

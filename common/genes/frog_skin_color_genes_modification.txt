@@ -1,0 +1,50 @@
+﻿#These special genes will not be part of a character's DNA.
+#The game can have hardcoded references to them and might use each of them differently
+
+#These genes are applied to Frogs and Toads in the portrait modifier files.
+#Theoretically this allows characters to switch to and from Toads and Frogs.
+
+special_genes = {
+	morph_genes = {
+		frog_skin_color_hue = {
+
+			vanilla_skin_hue = {
+				index = 0
+				male = {}
+				female = male
+				boy = male
+				girl = male
+			}
+
+			skin_color_hue_green = {
+				index = 2
+				male = {
+					skin_hsv_shift_curve = {
+						curve = {
+							{ 0.0   { 0.25 0.4 0.0 } }
+							{ 1.0   { 0.3 0.7 0.0 } }
+						}
+					}
+				}
+				female = male
+				boy = male
+				girl = male
+			}
+
+			skin_color_hue_brownish = {
+				index = 3
+				male = {
+					skin_hsv_shift_curve = {
+						curve = {
+							{ 0.0   { 0.0 0.4 0.0 } }
+							{ 1.0   { 0.1 0.4 0.0 } }
+						}
+					}
+				}
+				female = male
+				boy = male
+				girl = male
+			}
+		}
+	}
+}

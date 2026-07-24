@@ -43,23 +43,13 @@
 	}
 	
 	on_weekly_pulse = {
-		events = {
-		}
-		random_events = {
-		}
-		effect = {
-		}
 	}
 	
 	on_monthly_pulse = {
-		events = {
-		}
-		random_events = {
-		}
-		effect = {
-		}
 	}
 	
+	on_yearly_pulse = {
+	}
 	status_desc = {
 	}
 }
@@ -108,25 +98,21 @@ je_frog_noir_local_firm = {
 		random_events = {
 		}
 		effect = {
+			if = {
+				limit = {
+					frog_has_active_investigation_trigger = yes
+				}
+				trigger_event = {
+					on_action = frog_investigation_weekly_pulse
+				}
+			}
 		}
 	}
 	
 	on_monthly_pulse = {
-		events = {
-		}
-		random_events = {
-		}
-		effect = {
-		}
 	}
 	
 	on_yearly_pulse = {
-		events = {
-		}
-		random_events = {
-		}
-		effect = {
-		}
 	}
 	
 	status_desc = {

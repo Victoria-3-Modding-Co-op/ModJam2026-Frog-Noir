@@ -1,0 +1,42 @@
+﻿####---------- Frog Investigation Effects ----------####
+
+# These effects are used to manage progress/peril in field investigations
+
+frog_start_investigation_effect = {
+	set_variable = {
+		name = frog_investigation_progress_var
+		value = 0
+	}
+	set_variable = {
+		name = frog_investigation_peril_var
+		value = 0
+	}
+}
+
+frog_add_investigation_clues_effect = {
+	custom_tooltip = {
+		text = frog_add_investigation_clues_effect
+		save_scope_value_as = { 
+			name = frog_add_investigation_clues_value
+			value = $value$
+		}
+		frog_change_variable_effect = {
+			NAME = frog_investigation_progress_var
+			AMOUNT = $value$
+		}
+	}
+}
+
+frog_add_investigation_herring_effect = {
+	custom_tooltip = {
+		text = frog_add_investigation_herring_effect
+		save_scope_value_as = {
+			name = frog_add_investigation_herring_value
+			value = $value$
+		}
+		frog_change_variable_effect = {
+			NAME = frog_investigation_peril_var
+			AMOUNT = $value$
+		}
+	}
+}

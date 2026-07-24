@@ -1,0 +1,4 @@
+﻿frog_investigation_weekly_pulse = {
+	random_events = {  }
+	effect = {  }
+}

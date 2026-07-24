@@ -1,0 +1,3 @@
+﻿je_group_frog_noir = {
+	context = country
+}

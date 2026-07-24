@@ -2,7 +2,7 @@
 	color= { 100 255 0 }
 	religion = atheist
 	heritage = frog_heritage_frog
-	language = frog_language_froggish
+	language = frog_language_ribbeting
 
 	male_common_first_names={
 		Frog_F
@@ -33,6 +33,48 @@
 		RA_
 		Rana
 		Z_aba
+	}
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+
+toad = {
+	color= { 50 120 0 }
+	religion = atheist
+	heritage = frog_heritage_toad
+	language = frog_language_croaking
+
+	male_common_first_names={
+		AdelkrO_t
+		AistrkrO_t
+		AlkrO_tin
+		BaldkrO_t
+		BertkrO_t
+		Hans_KrO_te
+		KrO_drich
+		KrO_terich
+	}
+	female_common_first_names = {
+		AdelkrO_ta
+		KrO_ta
+	}
+	noble_last_names={
+		von_KrO_tenstein
+		von_Lustmolch
+	}
+	common_last_names={
+		AltkrO_t
+		ErdkrO_te
+		KnoblauchkrO_te
+		KreuzkrO_te
+		KrO_tte
+		Lustmolch
+		Merz_KrO_te
+		ScheuerkrO_t
+		Sumpf
+		WechselkrO_te
 	}
 	graphics = european
 	ethnicities = {

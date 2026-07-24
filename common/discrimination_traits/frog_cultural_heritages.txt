@@ -4,3 +4,9 @@ frog_heritage_frog = {
 	type = heritage
 	trait_group = frog_heritage_group_amphibian
 }
+
+frog_heritage_toad = {
+	type = heritage
+	trait_group = frog_heritage_group_amphibian
+}
+

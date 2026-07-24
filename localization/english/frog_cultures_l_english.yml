@@ -2,14 +2,21 @@
 
  frog_heritage_group_amphibian: "Amphibian Heritage"
  frog_heritage_frog: "Frog"
+ frog_heritage_toad: "Toad"
  frog_language_group_amphibian: "Amphibian Languages"
- frog_language_froggish: "Froggish"
+ frog_language_ribbeting: "Ribbeting"
+ frog_language_croaking: "Croaking"
 
  frog: "Frog"
  PLURAL_DEMONYM_frog: "Frogs"
  SINGULAR_DEMONYM_frog: "$frog$"
  PLURAL_DEMONYM_FEMALE_frog: "$PLURAL_DEMONYM_alemannic$"
  SINGULAR_DEMONYM_FEMALE_frog: "$frog$"
+ toad: "Toad"
+ PLURAL_DEMONYM_toad: "Toad"
+ SINGULAR_DEMONYM_toad: "$toad$"
+ PLURAL_DEMONYM_FEMALE_toad: "$PLURAL_DEMONYM_toad$"
+ SINGULAR_DEMONYM_FEMALE_toad: "$toad$"
 
 #Frog Male First Names
  Frog_F: "Frog F."
@@ -32,8 +39,33 @@
  Froggo: "Froggo"
  Frogland: "Frogland"
  Frosch: "Frosch"
- Grenouille: "Grenouille"
  McFrogface: "McFrogface"
  RA_: "Rã"
- Rana: "Rana"
  Z_aba: "Żaba"
+
+#Toad Male First Names
+ AdelkrO_t: "Adelkröt"
+ AistrkrO_t: "Aistkröt"
+ AlkrO_tin: "Alkrötin"
+ BaldkrO_t: "Baldkröt"
+ BertkrO_t: "Bertkröt"
+ Hans_KrO_te: "Hans-Kröte"
+ KrO_drich: "Krödrich"
+ KrO_terich: "Kröterich"
+#Toad Female First Names
+ AdelkrO_ta: "Adelkröta"
+ KrO_ta: "Kröta"
+#Toad Noble First Names
+ von_KrO_tenstein: "con Krötenstein"
+ von_Lustmolch: "von Lustmolch"
+#Toad Common Last Names
+ AltkrO_t: "Altkröt"
+ ErdkrO_te: "Erdkröte"
+ KnoblauchkrO_te: "Knoblauchkröte"
+ KreuzkrO_te: "Kreuzkröte"
+ KrO_tte: "Krötte"
+ Lustmolch: "Lustmolch"
+ Merz_KrO_te: "Merz-Kröte"
+ ScheuerkrO_t: "Scheuerkröt"
+ Sumpf: "Sumpf"
+ WechselkrO_te: "Wechselkröte"

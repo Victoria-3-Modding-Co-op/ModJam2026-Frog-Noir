@@ -25,3 +25,27 @@ country_fervor_target_frog_add={
 		ai_value=0
 	}
 }
+
+state_toad_standard_of_living_add={
+	decimals=1
+	color=good
+	game_data={
+		ai_value=0
+	}
+}
+
+country_toad_cultural_acceptance_add={
+	decimals=1
+	color=good
+	game_data={
+		ai_value=0
+	}
+}
+
+country_fervor_target_toad_add={
+	decimals=1
+	color=good
+	game_data={
+		ai_value=0
+	}
+}

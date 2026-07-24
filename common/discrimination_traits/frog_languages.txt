@@ -1,4 +1,9 @@
-﻿frog_language_froggish = {
+﻿frog_language_ribbeting = {
+	type = language
+	trait_group = frog_language_group_amphibian
+}
+
+frog_language_croaking = {
 	type = language
 	trait_group = frog_language_group_amphibian
 }

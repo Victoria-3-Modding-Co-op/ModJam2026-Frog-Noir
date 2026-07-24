@@ -1,0 +1,134 @@
+﻿je_frog_noir_main = {
+	group = je_group_global_international_situations
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+	weight = 100
+	
+	should_be_pinned_by_default_involved = yes
+	can_revolution_inherit = yes
+	transferable = no
+	can_deactivate = no
+	
+	#scripted_progress_bar =
+	
+	#scripted_button =
+	
+	should_be_involved = {
+	}
+	
+	should_show_when_not_involved = {
+	}
+	
+	immediate = {
+	}
+	
+	modifiers_while_active = {
+	}
+	
+	complete = {
+	}
+	
+	on_complete = {
+	}
+	
+	fail = {
+	}
+	
+	on_fail = {
+	}
+	
+	invalid = {
+	}
+	
+	on_invalid = {
+	}
+	
+	on_weekly_pulse = {
+		events = {
+		}
+		random_events = {
+		}
+		effect = {
+		}
+	}
+	
+	on_monthly_pulse = {
+		events = {
+		}
+		random_events = {
+		}
+		effect = {
+		}
+	}
+	
+	status_desc = {
+	}
+}
+
+je_frog_noir_local_firm = {
+	group = je_group_frog_noir
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+	weight = 100
+	
+	should_be_pinned_by_default_uninvolved_or_context = yes
+	can_revolution_inherit = yes
+	transferable = no
+	can_deactivate = no
+	
+	#scripted_progress_bar =
+	
+	#scripted_button =
+	
+	immediate = {
+	}
+	
+	modifiers_while_active = {
+	}
+	
+	complete = {
+	}
+	
+	on_complete = {
+	}
+	
+	fail = {
+	}
+	
+	on_fail = {
+	}
+	
+	invalid = {
+	}
+	
+	on_invalid = {
+	}
+	
+	on_weekly_pulse = {
+		events = {
+		}
+		random_events = {
+		}
+		effect = {
+		}
+	}
+	
+	on_monthly_pulse = {
+		events = {
+		}
+		random_events = {
+		}
+		effect = {
+		}
+	}
+	
+	on_yearly_pulse = {
+		events = {
+		}
+		random_events = {
+		}
+		effect = {
+		}
+	}
+	
+	status_desc = {
+	}
+}

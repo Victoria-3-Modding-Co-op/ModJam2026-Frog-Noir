@@ -5,8 +5,16 @@
 #									#
 #####################################
 
-frog_male_eyes_1 = {
-	entity = { entity = "frog_male_eyes_1_entity"		shared_pose_entity = head }
+frog_male_eyes_1_yellow = {
+	entity = { entity = "frog_male_eyes_1_yellow_entity"		shared_pose_entity = head }
+}
+
+frog_male_eyes_1_red = {
+	entity = { entity = "frog_male_eyes_1_red_entity"		shared_pose_entity = head }
+}
+
+frog_male_eyes_1_green = {
+	entity = { entity = "frog_male_eyes_1_green_entity"		shared_pose_entity = head }
 }
 
 frog_male_eyes_2 = {
@@ -19,8 +27,16 @@ frog_male_eyes_2 = {
 #									#
 #####################################
 
-frog_female_eyes_1 = {
-	entity = { entity = "frog_female_eyes_1_entity"		shared_pose_entity = head }
+frog_female_eyes_1_yellow = {
+	entity = { entity = "frog_female_eyes_1_yellow_entity"		shared_pose_entity = head }
+}
+
+frog_female_eyes_1_red = {
+	entity = { entity = "frog_female_eyes_1_red_entity"		shared_pose_entity = head }
+}
+
+frog_female_eyes_1_green = {
+	entity = { entity = "frog_female_eyes_1_green_entity"		shared_pose_entity = head }
 }
 
 frog_female_eyes_2 = {

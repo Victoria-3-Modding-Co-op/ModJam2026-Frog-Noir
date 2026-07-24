@@ -16,12 +16,16 @@
 		frog_eyes = {
 			index = 1
 			male = {
-				1 = "frog_male_eyes_1"
-				1 = "frog_male_eyes_2"
+				2 = "frog_male_eyes_1_yellow"
+				2 = "frog_male_eyes_1_red"
+				1 = "frog_male_eyes_1_green"
+				4 = "frog_male_eyes_2"
 			}
 			female = {
-				1 = "frog_female_eyes_1"
-				1 = "frog_female_eyes_2"
+				2 = "frog_female_eyes_1_yellow"
+				2 = "frog_female_eyes_1_red"
+				1 = "frog_female_eyes_1_green"
+				4 = "frog_female_eyes_2"
 			}
 			boy = male
 			girl = female

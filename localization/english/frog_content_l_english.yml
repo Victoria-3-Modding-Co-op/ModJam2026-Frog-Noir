@@ -3,6 +3,8 @@
  
  je_frog_noir_main: "#todo je_frog_noir_main#!"
  je_frog_noir_main_reason: "#todo je_frog_noir_main_reason#!"
+ frog_switch_focus_to_finding_clues_button: "Focus on Finding [concept_frog_clues]"
+ frog_switch_focus_to_investigating_leads_button: "Investigate [concept_frog_leads"
  
  je_frog_noir_investigating_leads: "#todo je_frog_noir_investigating_leads#!"
  je_frog_noir_investigating_leads_reason: "#todo je_frog_noir_investigating_leads_reason#!"

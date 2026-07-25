@@ -1,0 +1,11 @@
+﻿namespace = frog_debug_events
+
+frog_debug_events.1 = {
+	type = country_event
+	hidden = yes
+	orphan = yes
+	
+	immediate = {
+		fix_variable_error = { variable = frog_add_clues_value }
+	}
+}

@@ -1,0 +1,7 @@
+﻿frog_investigation_completion_progress_bar = {
+	name = frog_placeholder_text
+	desc = frog_placeholder_text
+	
+	max_value = 10
+	min_value = 0
+}

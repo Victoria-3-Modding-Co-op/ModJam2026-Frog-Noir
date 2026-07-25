@@ -1,19 +1,49 @@
-﻿frog_finding_clues_focus_button = {
-	name = frog_placeholder_text
+﻿frog_switch_focus_to_finding_clues_button = {
+	name = frog_switch_focus_to_finding_clues_button
 	desc = frog_placeholder_text
 	
-	visible = {  }
-	selected = {  }
-	possible = {  }
-	effect = {  }
+	visible = {
+		is_involved_in_journal_entry = je_frog_noir_main
+	}
+	selected = {
+		frog_country_is_focused_on_finding_clues_trigger = yes
+	}
+	possible = {
+		frog_country_is_focused_on_finding_clues_trigger = no
+	}
+	effect = {
+		set_variable = {
+			name = frog_abandoned_investigation_var
+			months = 3
+		}
+	}
 }
 
-frog_following_leads_focus_button = {
-	name = frog_placeholder_text
+frog_switch_focus_to_investigating_leads_button = {
+	name = frog_switch_focus_to_investigating_leads_button
 	desc = frog_placeholder_text
 	
-	visible = {  }
-	selected = {  }
-	possible = {  }
-	effect = {  }
+	visible = {
+		is_involved_in_journal_entry = je_frog_noir_main
+	}
+	selected = {
+		frog_country_is_focused_on_following_leads_trigger = yes
+	}
+	possible = {
+		NOR = {
+			has_journal_entry = je_frog_noir_investigating_leads
+			hidden_trigger = {
+				has_variable = frog_abandoned_investigation_var
+			}
+		}
+		custom_tooltip = {
+			text = frog_has_one_or_more_leads
+			var:frog_accumulated_leads_var >= 1
+		}
+	}
+	effect = {
+		add_journal_entry = {
+			type = je_frog_noir_investigating_leads
+		}
+	}
 }

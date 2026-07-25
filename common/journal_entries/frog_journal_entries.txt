@@ -8,6 +8,12 @@
 	transferable = no
 	can_deactivate = no
 	
+	widget = {
+		gui = "gui/journal_entry_widgets/frog_journal_widgets.gui"
+		name = "widget_frog_pi_firm"
+		container = "custom_widget_container_je_icon"
+	}
+	
 	#scripted_progress_bar =
 	
 	scripted_button = frog_finding_clues_focus_button

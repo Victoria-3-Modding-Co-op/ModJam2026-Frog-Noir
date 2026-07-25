@@ -1,0 +1,15 @@
+####---------- INJECTABLE JOURNAL ENTRY WIDGETS ----------####
+
+# Interorg Base Widget
+flowcontainer = {
+	name = "widget_frog_pi_firm"
+	ignoreinvisible = yes
+	
+	flowcontainer = {
+		direction = vertical
+		spacing = 10
+		
+		com_international_organization_header = { }
+		com_international_organization_panel = { }
+	}
+}

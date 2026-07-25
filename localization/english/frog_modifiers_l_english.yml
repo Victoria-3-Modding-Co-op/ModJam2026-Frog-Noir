@@ -6,4 +6,6 @@
 
 # Modifier Types
  character_clue_generation_progress_add: "Clue Generation Progress"
- character_clue_generation_progress_add_desc: "An increase or decrease to the amount of weekly progress this character provides towards finding clues when assigned to Search for Clues"
+ character_clue_generation_progress_add_desc: "An increase or decrease to the amount of weekly progress this character provides towards generation clues when assigned to [concept_frog_sleuthing_for_clues]"
+ character_clue_creation_add: "Number of Clues Generated"
+ character_clue_creation_add_desc: "An increase or decrease to the amount of clues generated when [concept_frog_sleuthing_for_clues]"

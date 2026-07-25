@@ -1,4 +1,5 @@
 ﻿l_english:
+ frog_placeholder_text: "#todo Placeholder Text#!"
 
  frog_will_become_part_of_character_pool_tt: "[SCOPE.sCharacter('frog_new_investigator_scope').GetFullName] will join the [Concept('concept_character', '$NATIONAL_CAST$')] of [SCOPE.GetRootScope.GetCountry.GetName]."
 

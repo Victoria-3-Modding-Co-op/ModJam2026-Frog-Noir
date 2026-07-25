@@ -7,10 +7,18 @@ on_monthly_pulse_country = {
 }
 
 frog_local_firm_monthly_pulse = {
-	trigger = {
-		frog_country_has_official_investigator_trigger = yes
+	effect = {
+		clear_variable_list = frog_investigators_list
+		every_scope_character = {
+			limit = {
+				has_role = character_role_frog_private_investigator
+			}
+			add_to_variable_list = {
+				name = frog_investigators_list
+				target = this
+			}
+		}
 	}
-	effect = {  }
 }
 
 frog_monthly_events_pulse = {
@@ -33,5 +41,18 @@ frog_finding_clues_weekly_pulse = {
 	}
 	events = {  }
 	random_events = {  }
-	effect = {  }
+	effect = {
+		frog_change_variable_effect = {
+			NAME = frog_clue_generation_progress_var
+			AMOUNT = frog_clue_generation_progress_value
+		}
+		if = {
+			limit = {
+				var:frog_clue_generation_progress_var >= 100
+			}
+			frog_add_clues_effect = {
+				value = frog_clue_generation_value
+			}
+		}
+	}
 }

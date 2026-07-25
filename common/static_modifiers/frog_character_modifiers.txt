@@ -8,3 +8,17 @@ frog_character_is_official_investigator_modifier = {
 	icon = "gfx/interface/icons/character_role_icons/frog_private_investigator_role_icon.dds"
 	character_loyalty_add = 20
 }
+
+####---------- Investigator Personal Initiative Modifiers ----------####
+modifier_frog_sleuthing_for_clues = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_sleuth_positive.dds
+	character_clue_generation_progress_add = 1
+}
+
+modifier_frog_following_leads = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_sleuth_neutral.dds
+}
+
+modifier_frog_keeping_watch = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_sleuth_negative.dds
+}

@@ -8,7 +8,7 @@
 
 #This effect kills the current Investigator
 frog_country_kill_investigator_effect = {
-	var:frog_investigtor_var ?= {
+	var:frog_investigator_var ?= {
 		kill_character = yes
 	}
 
@@ -17,11 +17,11 @@ frog_country_kill_investigator_effect = {
 
 #Removes the official Investigator without killing or retiring
 frog_country_remove_official_investigator_effect = {
-	var:frog_investigtor_var ?= {
+	var:frog_investigator_var ?= {
 		set_character_busy_and_immortal = no
 		frog_character_remove_official_modifiers_from_investigator_effect = yes
 	}
-	remove_variable = frog_investigtor_var
+	remove_variable = frog_investigator_var
 }
 
 #This effect is used to remove all modifiers that are bound to being the official Investigator
@@ -44,18 +44,18 @@ frog_country_set_new_investigator_as_official_investigator_effect = {
 		frog_country_remove_official_investigator_effect = yes
 
 		set_variable = {
-			name = frog_investigtor_var
+			name = frog_investigator_var
 			value = scope:frog_new_investigator_scope
 		}
 
 		#Sets the Investigator busy if there is an active project
 #		if = {
 #			limit = { frog_investigator_project_active_trigger = yes }
-#			var:frog_investigtor_var ?= {
+#			var:frog_investigator_var ?= {
 #				set_character_busy_and_immortal = yes
 #			}
 #		}
-		var:frog_investigtor_var ?= {
+		var:frog_investigator_var ?= {
 			add_modifier = {
 				name = frog_character_is_official_investigator_modifier
 			}
@@ -115,7 +115,7 @@ frog_character_investigator_experience_set_up_effect = {
 #Investigator Experience gain
 frog_country_investigator_experience_gain_effect = { #adds XP to the Investigator
 	# Amount = amount of XP to add
-	var:frog_investigtor_var ?= {
+	var:frog_investigator_var ?= {
 		frog_character_investigator_experience_gain_effect = { AMOUNT = $AMOUNT$ }
 	}
 }

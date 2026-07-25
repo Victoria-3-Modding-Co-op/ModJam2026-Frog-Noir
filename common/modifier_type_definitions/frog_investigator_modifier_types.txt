@@ -1,0 +1,9 @@
+﻿####---------- Investigator Modifier Types ----------####
+character_clue_generation_progress_add = {
+	decimals = 1
+	color = good
+	game_data = {
+		ai_value = 0
+	}
+	script_only = yes
+}

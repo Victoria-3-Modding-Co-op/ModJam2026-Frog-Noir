@@ -1,0 +1,64 @@
+﻿####---------- Frog Investigation Effects ----------####
+
+# These effects are used to manage progress/peril in field investigations
+
+frog_initialize_local_firm_variables_effect = {
+	set_variable = {
+		name = frog_clue_generation_progress_var
+		value = 0
+	}
+	set_variable = {
+		name = frog_accumulated_clues_var
+		value = 0
+	}
+	set_variable = {
+		name = frog_accumulated_red_herrings_var
+		value = 0
+	}
+	set_variable = {
+		name = frog_accumulated_leads_var
+		value = 0
+	}
+}
+
+frog_add_clues_effect = {
+	custom_tooltip = {
+		text = frog_add_clues_effect
+		set_local_variable = {
+			name = frog_add_clues_value
+			value = $value$
+		}
+		frog_change_variable_effect = {
+			NAME = frog_accumulated_clues_var
+			AMOUNT = $value$
+		}
+	}
+}
+
+frog_add_red_herrings_effect = {
+	custom_tooltip = {
+		text = frog_add_red_herrings_effect
+		set_local_variable = {
+			name = frog_add_red_herrings_value
+			value = $value$
+		}
+		frog_change_variable_effect = {
+			NAME = frog_accumulated_red_herrings_var
+			AMOUNT = $value$
+		}
+	}
+}
+
+frog_add_leads_effect = {
+	custom_tooltip = {
+		text = frog_add_leads_effect
+		set_local_variable = {
+			name = frog_add_leads_value
+			value = $value$
+		}
+		frog_change_variable_effect = {
+			NAME = frog_accumulated_leads_var
+			AMOUNT = $value$
+		}
+	}
+}

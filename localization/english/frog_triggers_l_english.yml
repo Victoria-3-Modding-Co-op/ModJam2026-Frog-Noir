@@ -1,0 +1,5 @@
+﻿l_english:
+ frog_country_has_official_investigator_trigger: "[ROOT.GetCountry.GetNameNoFlag] has an [concept_frog_official_investigator]"
+ frog_country_is_focused_on_finding_clues_trigger: "[ROOT.GetCountry.GetNameNoFlag] is focused on [concept_frog_sleuthing_for_clues]"
+ frog_country_is_focused_on_following_leads_trigger: "[ROOT.GetCountry.GetNameNoFlag] is focused on [concept_frog_following_leads]"
+ frog_character_has_personal_initative_trigger: "Has a [concept_frog_personal_initiative]"

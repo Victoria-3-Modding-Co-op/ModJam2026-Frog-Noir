@@ -1,0 +1,9 @@
+﻿l_english:
+ # Static Modifiers
+ modifier_frog_sleuthing_for_clues: "Sleuthing for Clues"
+ modifier_frog_following_leads: "Following Leads"
+ modifier_frog_keeping_watch: "Keeping Watch" #TODO make this sound better
+
+# Modifier Types
+ character_clue_generation_progress_add: "Clue Generation Progress"
+ character_clue_generation_progress_add_desc: "An increase or decrease to the amount of weekly progress this character provides towards finding clues when assigned to Search for Clues"

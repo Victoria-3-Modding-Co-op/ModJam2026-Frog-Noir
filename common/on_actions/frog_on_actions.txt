@@ -1,4 +1,37 @@
-﻿frog_investigation_weekly_pulse = {
+﻿####---------- Country Monthly Pulses ----------####
+on_monthly_pulse_country = {
+	on_actions = {
+		frog_local_firm_monthly_pulse
+		frog_monthly_events_pulse
+	}
+}
+
+frog_local_firm_monthly_pulse = {
+	trigger = {
+		frog_country_has_official_investigator_trigger = yes
+	}
+	effect = {  }
+}
+
+frog_monthly_events_pulse = {
+	random_events = {  }
+}
+
+
+####---------- Weekly Pulses for Journals ----------####
+frog_local_firm_weekly_pulse = {
+	on_actions = {
+		frog_finding_clues_weekly_pulse
+	}
+}
+
+frog_finding_clues_weekly_pulse = {
+	trigger = {
+		any_scope_character = {
+			has_modifier = modifier_frog_sleuthing_for_clues
+		}
+	}
+	events = {  }
 	random_events = {  }
 	effect = {  }
 }

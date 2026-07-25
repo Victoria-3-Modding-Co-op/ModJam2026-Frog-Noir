@@ -1,6 +1,6 @@
 ﻿je_frog_noir_main = {
 	group = je_group_global_international_situations
-	icon = "gfx/interface/icons/event_icons/event_default.dds"
+	icon = "gfx/interface/icons/event_icons/event_hardboiled.dds"
 	weight = 100
 	
 	should_be_pinned_by_default_involved = yes
@@ -10,18 +10,27 @@
 	
 	#scripted_progress_bar =
 	
-	#scripted_button =
+	scripted_button = frog_finding_clues_focus_button
+	scripted_button = frog_following_leads_focus_button
 	
 	should_be_involved = {
-	}
-	
-	should_show_when_not_involved = {
+		always = yes
 	}
 	
 	immediate = {
+		save_scope_as = je_frog_noir_main
+		set_global_variable = {
+			name = je_frog_noir_main
+			value = scope:je_frog_noir_main
+		}
 	}
 	
-	modifiers_while_active = {
+	immediate_all_involved = {
+		frog_initialize_local_firm_variables_effect = yes
+	}
+	
+	on_become_involved_after_activation = {
+		frog_initialize_local_firm_variables_effect = yes
 	}
 	
 	complete = {
@@ -43,20 +52,42 @@
 	}
 	
 	on_weekly_pulse = {
+		effect = {
+			scope:journal_entry = {
+				every_scope_je_involved = {
+					trigger_event = {
+						on_action = frog_local_firm_weekly_pulse
+					}
+				}
+			}
+		}
 	}
 	
 	on_monthly_pulse = {
+		effect = {
+			every_country = {
+				limit = {
+					NOT = {
+						is_involved_in_journal_entry = je_frog_noir_main
+					}
+				}
+				global_var:je_frog_noir_main = {
+					add_involved_country = prev
+				}
+			}
+		}
 	}
 	
 	on_yearly_pulse = {
 	}
+	
 	status_desc = {
 	}
 }
 
-je_frog_noir_local_firm = {
-	group = je_group_frog_noir
-	icon = "gfx/interface/icons/event_icons/event_default.dds"
+je_frog_noir_investigating_leads = {
+	group = je_group_internal_affairs
+	icon = "gfx/interface/icons/event_icons/event_hardboiled.dds"
 	weight = 100
 	
 	should_be_pinned_by_default_uninvolved_or_context = yes
@@ -64,32 +95,44 @@ je_frog_noir_local_firm = {
 	transferable = no
 	can_deactivate = no
 	
-	#scripted_progress_bar =
+	scripted_progress_bar = frog_investigation_completion_progress_bar
 	
 	#scripted_button =
 	
 	immediate = {
-	}
-	
-	modifiers_while_active = {
+		set_variable = {
+			name = frog_investigation_progress_var
+			value = 0
+		}
+		set_variable = {
+			name = frog_investigation_peril_var
+			value = 0
+		}
 	}
 	
 	complete = {
 	}
 	
 	on_complete = {
+		remove_variable = frog_investigation_progress_var
+		remove_variable = frog_investigation_peril_var
 	}
 	
 	fail = {
 	}
 	
 	on_fail = {
+		remove_variable = frog_investigation_progress_var
+		remove_variable = frog_investigation_peril_var
 	}
 	
 	invalid = {
+		frog_country_has_official_investigator_trigger = no
 	}
 	
 	on_invalid = {
+		remove_variable = frog_investigation_progress_var
+		remove_variable = frog_investigation_peril_var
 	}
 	
 	on_weekly_pulse = {
@@ -98,21 +141,7 @@ je_frog_noir_local_firm = {
 		random_events = {
 		}
 		effect = {
-			if = {
-				limit = {
-					frog_has_active_investigation_trigger = yes
-				}
-				trigger_event = {
-					on_action = frog_investigation_weekly_pulse
-				}
-			}
 		}
-	}
-	
-	on_monthly_pulse = {
-	}
-	
-	on_yearly_pulse = {
 	}
 	
 	status_desc = {

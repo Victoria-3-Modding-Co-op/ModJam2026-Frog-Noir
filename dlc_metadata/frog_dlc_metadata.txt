@@ -1,4 +1,4 @@
-dlc_frog_noir = {
+﻿dlc_frog_noir = {
 	name = "Frog Noir"
 	steam_id = "529340"
 	type = minor

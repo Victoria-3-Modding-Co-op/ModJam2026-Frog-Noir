@@ -1,0 +1,20 @@
+﻿# These assets are then used in the genes (game/common/genes/..) at the bottom of the file. 
+
+#################################
+#								#
+# 		Morgenröte Headgear		#
+#								#
+#################################
+
+
+md_fedora = {
+	set_tags ="cap1" 
+	entity = { required_tags = ""					shared_pose_entity = head		entity = "md_fedora_entity" }
+}
+
+md_fedora_female = {
+	set_tags ="cap1" 
+	entity = { required_tags = ""					shared_pose_entity = head		entity = "md_fedora_female_entity" }
+}
+
+

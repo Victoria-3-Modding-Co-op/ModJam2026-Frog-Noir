@@ -1,0 +1,56 @@
+pdxmesh = {
+	name = "md_fedora_mesh"
+	file = "md_fedora.mesh"
+
+	meshsettings = {
+		name = "md_fedora"
+		index = 0
+		texture_diffuse = "md_fedora_d.dds"
+		texture_normal = "md_fedora_n.dds"
+		texture_specular = "md_fedora_p.dds"
+        shader = "portrait_attachment_pattern"
+        shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+entity = {
+    name = "md_fedora_entity"
+    pdxmesh = "md_fedora_mesh"
+    game_data = {
+        portrait_entity_user_data = {
+            portrait_accessory = {
+                pattern_mask = "gfx/models/portraits/attachments/male_headgear/frog_fedora/md_fedora_masks.dds"
+                variation = "frog_fedora"
+            }
+        }
+    }
+}
+
+
+pdxmesh = {
+	name = "md_fedora_female_mesh"
+	file = "md_fedora_female.mesh"
+
+	meshsettings = {
+		name = "md_fedora"
+		index = 0
+		texture_diffuse = "md_fedora_d.dds"
+		texture_normal = "md_fedora_n.dds"
+		texture_specular = "md_fedora_p.dds"
+        shader = "portrait_attachment_pattern"
+        shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+entity = {
+    name = "md_fedora_female_entity"
+    pdxmesh = "md_fedora_female_mesh"
+    game_data = {
+        portrait_entity_user_data = {
+            portrait_accessory = {
+                pattern_mask = "gfx/models/portraits/attachments/male_headgear/frog_fedora/md_fedora_masks.dds"
+                variation = "frog_fedora_female"
+            }
+        }
+    }
+}

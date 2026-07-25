@@ -20,12 +20,16 @@
 				2 = "frog_male_eyes_1_red"
 				1 = "frog_male_eyes_1_green"
 				4 = "frog_male_eyes_2"
+				2 = "frog_male_eyes_3_yellow"
+				2 = "frog_male_eyes_3_red"
 			}
 			female = {
 				2 = "frog_female_eyes_1_yellow"
 				2 = "frog_female_eyes_1_red"
 				1 = "frog_female_eyes_1_green"
 				4 = "frog_female_eyes_2"
+				2 = "frog_female_eyes_3_yellow"
+				2 = "frog_female_eyes_3_red"
 			}
 			boy = male
 			girl = female

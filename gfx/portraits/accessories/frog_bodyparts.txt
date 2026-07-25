@@ -21,6 +21,14 @@ frog_male_eyes_2 = {
 	entity = { entity = "frog_male_eyes_2_entity"		shared_pose_entity = head }
 }
 
+frog_male_eyes_3_yellow = {
+	entity = { entity = "frog_male_eyes_3_yellow_entity"		shared_pose_entity = head }
+}
+
+frog_male_eyes_3_red = {
+	entity = { entity = "frog_male_eyes_3_red_entity"		shared_pose_entity = head }
+}
+
 frog_male_eyes_toad_1_yellow = {
 	entity = { entity = "frog_male_eyes_toad_1_yellow_entity"		shared_pose_entity = head }
 }
@@ -69,6 +77,14 @@ frog_female_eyes_1_green = {
 
 frog_female_eyes_2 = {
 	entity = { entity = "frog_female_eyes_2_entity"		shared_pose_entity = head }
+}
+
+frog_female_eyes_3_yellow = {
+	entity = { entity = "frog_female_eyes_3_yellow_entity"		shared_pose_entity = head }
+}
+
+frog_female_eyes_3_red = {
+	entity = { entity = "frog_female_eyes_3_red_entity"		shared_pose_entity = head }
 }
 
 frog_female_eyes_toad_1_yellow = {

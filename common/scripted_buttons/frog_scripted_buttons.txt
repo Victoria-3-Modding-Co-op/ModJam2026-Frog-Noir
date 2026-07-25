@@ -1,0 +1,19 @@
+﻿frog_finding_clues_focus_button = {
+	name = frog_placeholder_text
+	desc = frog_placeholder_text
+	
+	visible = {  }
+	selected = {  }
+	possible = {  }
+	effect = {  }
+}
+
+frog_following_leads_focus_button = {
+	name = frog_placeholder_text
+	desc = frog_placeholder_text
+	
+	visible = {  }
+	selected = {  }
+	possible = {  }
+	effect = {  }
+}

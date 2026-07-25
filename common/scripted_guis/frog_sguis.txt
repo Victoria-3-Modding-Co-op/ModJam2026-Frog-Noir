@@ -1,0 +1,72 @@
+﻿frog_sleuthing_for_clues_sgui = {
+	scope = character
+	is_shown = {
+		has_modifier = modifier_frog_sleuthing_for_clues
+	}
+}
+
+frog_start_sleuthing_for_clues_sgui = {
+	scope = character
+	is_valid = {
+		NOT = {
+			has_modifier = frog_character_is_official_investigator_modifier
+		}
+		frog_country_is_focused_on_finding_clues_trigger = no
+	}
+	effect = {
+		if = {
+			limit = {
+				has_modifier = modifier_frog_sleuthing_for_clues
+			}
+			remove_modifier = modifier_frog_sleuthing_for_clues
+		}
+		else = {
+			add_modifier = modifier_frog_sleuthing_for_clues
+		}
+	}
+}
+
+frog_following_leads_sgui = {
+	scope = character
+	is_shown = {
+		has_modifier = modifier_frog_following_leads
+	}
+}
+
+frog_keeping_watch_sgui = {
+	scope = character
+	is_shown = {
+		has_modifier = modifier_frog_keeping_watch
+	}
+}
+
+frog_start_keeping_watch_sgui = {
+	scope = character
+	is_valid = {
+		NOT = {
+			has_modifier = frog_character_is_official_investigator_modifier
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				has_modifier = modifier_frog_keeping_watch
+			}
+			remove_modifier = modifier_frog_keeping_watch
+		}
+		else = {
+			add_modifier = modifier_frog_keeping_watch
+		}
+	}
+}
+
+frog_supporting_lead_investigator_sgui = {
+	scope = character
+	is_shown = {
+		NOR = {
+			has_modifier = modifier_frog_sleuthing_for_clues
+			has_modifier = modifier_frog_following_leads
+			has_modifier = modifier_frog_keeping_watch
+		}
+	}
+}

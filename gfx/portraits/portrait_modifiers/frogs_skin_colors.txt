@@ -151,4 +151,34 @@
             }
         }
     }
+
+    #Toads - Brown and Greenish
+    frog_culture_skin_color = {
+        dna_modifiers = {
+            #Green Skin
+            morph = {
+                mode = add
+                gene = frog_skin_color_hue
+                template = skin_color_hue_brownish
+                range = { 0 1 } # For the randomness to work correctly
+            }
+        }
+
+        weight = {
+            base = 0
+            modifier = {
+                add = 99
+
+                #Frogs should have a different skin color
+                OR = {
+                    scope:character ?= {
+                        has_culture = cu:toad
+                    }
+                    scope:pop ?= {
+                        has_pop_culture = toad
+                    }
+                }
+            }
+        }
+    }
 }

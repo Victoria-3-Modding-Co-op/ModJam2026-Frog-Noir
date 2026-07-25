@@ -84,7 +84,11 @@ frog_toads_ethnicity = {
     }
 
     eye_accessory = {
-        40 = { name = frog_eyes  range = { 0.0 1.0 }    }
+        40 = { name = toad_eyes  range = { 0.0 1.0 }    }
+    }
+
+    eye_lashes_accessory = {
+        40 = { name = no_eyelashes  range = { 0.0 1.0 }    }
     }
 
     gene_forehead_angle = {
@@ -408,10 +412,9 @@ frog_toads_ethnicity = {
     }
 
     gene_old_mouth = {
-
-        10 = { name = old_mouth_01   range = { 1.0 1.0 }      }
-        1 = { name = old_mouth_02   range = { 1.0 1.0 }      }
-        1 = { name = old_mouth_03   range = { 1.0 1.0 }      }
+        1 = { name = old_mouth_01   range = { 1.0 1.0 }      }
+        10 = { name = old_mouth_02   range = { 1.0 1.0 }      }
+        10 = { name = old_mouth_03   range = { 1.0 1.0 }      }
     }
 
     gene_complexion = {

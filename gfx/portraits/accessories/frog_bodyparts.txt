@@ -21,6 +21,34 @@ frog_male_eyes_2 = {
 	entity = { entity = "frog_male_eyes_2_entity"		shared_pose_entity = head }
 }
 
+frog_male_eyes_toad_1_yellow = {
+	entity = { entity = "frog_male_eyes_toad_1_yellow_entity"		shared_pose_entity = head }
+}
+
+frog_male_eyes_toad_1_yellow_sprinkles_red = {
+	entity = { entity = "frog_male_eyes_toad_1_yellow_sprinkles_red_entity"		shared_pose_entity = head }
+}
+
+frog_male_eyes_toad_1_light_green = {
+	entity = { entity = "frog_male_eyes_toad_1_light_green_entity"		shared_pose_entity = head }
+}
+
+frog_male_eyes_toad_1_brown = {
+	entity = { entity = "frog_male_eyes_toad_1_brown_entity"		shared_pose_entity = head }
+}
+
+frog_male_eyes_toad_2_yellow = {
+	entity = { entity = "frog_male_eyes_toad_2_yellow_entity"		shared_pose_entity = head }
+}
+
+frog_male_eyes_toad_2_light_green = {
+	entity = { entity = "frog_male_eyes_toad_2_light_green_entity"		shared_pose_entity = head }
+}
+
+frog_male_eyes_toad_2_brown = {
+	entity = { entity = "frog_male_eyes_toad_2_brown_entity"		shared_pose_entity = head }
+}
+
 #####################################
 #									#
 # 			Female					#
@@ -42,3 +70,32 @@ frog_female_eyes_1_green = {
 frog_female_eyes_2 = {
 	entity = { entity = "frog_female_eyes_2_entity"		shared_pose_entity = head }
 }
+
+frog_female_eyes_toad_1_yellow = {
+	entity = { entity = "frog_female_eyes_toad_1_yellow_entity"		shared_pose_entity = head }
+}
+
+frog_female_eyes_toad_1_yellow_sprinkles_red = {
+	entity = { entity = "frog_female_eyes_toad_1_yellow_sprinkles_red_entity"		shared_pose_entity = head }
+}
+
+frog_female_eyes_toad_1_light_green = {
+	entity = { entity = "frog_female_eyes_toad_1_light_green_entity"		shared_pose_entity = head }
+}
+
+frog_female_eyes_toad_1_brown = {
+	entity = { entity = "frog_female_eyes_toad_1_brown_entity"		shared_pose_entity = head }
+}
+
+frog_female_eyes_toad_2_yellow = {
+	entity = { entity = "frog_female_eyes_toad_2_yellow_entity"		shared_pose_entity = head }
+}
+
+frog_female_eyes_toad_2_light_green = {
+	entity = { entity = "frog_female_eyes_toad_2_light_green_entity"		shared_pose_entity = head }
+}
+
+frog_female_eyes_toad_2_brown = {
+	entity = { entity = "frog_female_eyes_toad_2_brown_entity"		shared_pose_entity = head }
+}
+

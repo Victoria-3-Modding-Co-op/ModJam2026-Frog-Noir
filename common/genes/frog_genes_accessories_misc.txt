@@ -30,5 +30,38 @@
 			boy = male
 			girl = female
 		}
+		toad_eyes = {
+			index = 2
+			male = {
+				2 = "frog_male_eyes_toad_1_yellow"
+				2 = "frog_male_eyes_toad_1_yellow_sprinkles_red"
+				2 = "frog_male_eyes_toad_1_light_green"
+				2 = "frog_male_eyes_toad_1_brown"
+				2 = "frog_male_eyes_toad_2_yellow"
+				2 = "frog_male_eyes_toad_2_light_green"
+				2 = "frog_male_eyes_toad_2_brown"
+			}
+			female = {
+				2 = "frog_female_eyes_toad_1_yellow"
+				2 = "frog_female_eyes_toad_1_yellow_sprinkles_red"
+				2 = "frog_female_eyes_toad_1_light_green"
+				2 = "frog_female_eyes_toad_1_brown"
+				2 = "frog_female_eyes_toad_2_yellow"
+				2 = "frog_female_eyes_toad_2_light_green"
+				2 = "frog_female_eyes_toad_2_brown"
+			}
+			boy = male
+			girl = female
+		}
+	}
+
+	INJECT:eye_lashes_accessory = {
+		no_eyelashes = {
+			index = 1
+			male = {}
+			female = {}
+			boy = {}
+			girl = {}
+		}
 	}
 }

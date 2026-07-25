@@ -87,6 +87,10 @@ frog_frogs_ethnicity = {
         40 = { name = frog_eyes  range = { 0.0 1.0 }    }
     }
 
+    eye_lashes_accessory = {
+        40 = { name = no_eyelashes  range = { 0.0 1.0 }    }
+    }
+
     gene_forehead_angle = {
         0 = { name = forehead_angle range = { 0.0 0.1 } }
     }

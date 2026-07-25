@@ -9,7 +9,186 @@ flowcontainer = {
 		direction = vertical
 		spacing = 10
 		
-		com_international_organization_header = { }
-		com_international_organization_panel = { }
+		com_international_situation_illustration = {}
+		flowcontainer = {
+			parentanchor = hcenter
+			direction = vertical
+			minimumsize = { 520 -1 }
+			spacing = 5
+			margin_bottom = 10
+			
+			using = entry_bg_fancy
+			
+			default_header_clean_faded = {
+				size = { 520 44 }
+				parentanchor = hcenter
+				blockoverride "text" {
+					raw_text = "Frog, PI"
+				}
+			}
+			
+			kog_pi_firm_panel = {}
+		}
+	}
+}
+
+types frog_journal_widget_types {
+	type kog_pi_firm_panel = flowcontainer {
+		parentanchor = top|hcenter
+		direction = vertical
+		
+		visible = "[Not(IsDataModelEmpty(GetPlayer.MakeScope.GetList('frog_investigators_list')))]"
+		datamodel = "[GetPlayer.MakeScope.GetList('frog_investigators_list')]"
+		
+		item = {
+			kog_private_investigator_item = { }
+		}
+	}
+	
+	type kog_private_investigator_item = flowcontainer {
+		minimumsize = { 500 120 }
+		direction = horizontal
+		spacing = 10
+		margin_bottom = 5
+		
+		datacontext = "[Scope.GetCharacter]"
+		
+		using = entry_bg_fancy
+		
+		widget = {
+			size = { 120 120 }
+			parentanchor = center
+			
+			character_portrait_medium = {
+				parentanchor = center
+				position = { 0 0 }
+				blockoverride "show_hat" { }
+				blockoverride "tooltip" { }
+				blockoverride "portrait_icons" { }
+				blockoverride "portrait_button" { }
+				blockoverride "ig_button" { }
+			}
+		}
+		
+		flowcontainer = {
+			parentanchor = center
+			direction = vertical
+			minimumsize = { 220 100 }
+			spacing = 2
+			margin = { 10 0 }
+			
+			background = {
+				using = dark_area
+				alpha = 0.25
+			}
+			
+			default_header_clean_faded = {
+				size = { 220 30 }
+				parentanchor = hcenter
+				blockoverride "text" { }
+				textbox = {
+					raw_text = "[Character.GetFullName]"
+					parentanchor = center
+					position = { 0 0 }
+					autoresize = yes
+					max_width = 250
+					elide = right
+					using = fontsize_medium
+				}
+			}
+			widget = {
+				parentanchor = left|vcenter
+				size = { 220 25 }
+				
+				textbox = {
+					raw_text = "#bold Rank: #blue foo#!#!"
+					parentanchor = left|vcenter
+					position = { 0 0 }
+					autoresize = yes
+					max_width = 250
+					elide = right
+					using = fontsize_medium
+				}
+				textbox = {
+					raw_text = "#bold Action: #blue foo#!#!"
+					parentanchor = right|vcenter
+					position = { 0 0 }
+					autoresize = yes
+					max_width = 250
+					elide = right
+					using = fontsize_medium
+				}
+			}
+			flowcontainer = {
+				minimumsize = { -1 50 }
+				parentanchor = hcenter
+				direction = horizontal
+				spacing = 5
+				
+				background = {
+					using = entry_bg
+					margin = { 5 5 }
+					margin_bottom  = -5
+				}
+				
+				kog_personal_initiative_button = {
+					onclick = "[Execute( ScriptedButton.ExecuteEffect )]"
+					tooltip = "frog_placeholder_text"
+				}
+				kog_personal_initiative_button = {
+					onclick = "[Execute( ScriptedButton.ExecuteEffect )]"
+					tooltip = "frog_placeholder_text"
+				}
+				kog_personal_initiative_button = {
+					onclick = "[Execute( ScriptedButton.ExecuteEffect )]"
+					tooltip = "frog_placeholder_text"
+				}
+			}
+		}
+		
+		dynamicgridbox = {
+			parentanchor = center
+			layoutpolicy_vertical = preferred
+			datamodel = "[Character.AccessTraits]"
+			datamodel_wrap = 3
+			flipdirection = yes
+			
+			background = {
+				using = dark_area
+				alpha = 0.25
+			}
+			
+			item = {
+				flowcontainer = {
+					margin = { 5 5 }
+					alpha = "[TransparentIfTrue(CharacterTrait.IsDisabled)]"
+					
+					tooltipwidget = {
+						FancyTooltip_CharacterTrait = { }
+					}
+					icon = {
+						size = { 32 45 }
+						texture = "[CharacterTrait.GetTexture]"
+					}
+				}
+			}
+		}
+	}
+	
+	type kog_personal_initiative_button = button_icon_round {
+		size = { 40 40 }
+		
+		#	enabled = "[IsValid( ScriptedButton.ExecuteEffect )]" # TODO make this the lead PI check
+		
+		icon = {
+			block "button_glow_visiblity" {
+				visible = "no"
+			}
+			using = rotate_glow_animation_02
+			size = { 75 75 }
+			alwaystransparent = yes
+			parentanchor = center
+			using = default_fade_in_out
+		}
 	}
 }

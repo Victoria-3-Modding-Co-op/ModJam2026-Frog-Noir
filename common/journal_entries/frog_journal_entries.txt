@@ -14,6 +14,12 @@
 		container = "custom_widget_container_je_icon"
 	}
 	
+	widget = {
+		gui = "gui/com_journal_injects/situation_widgets.gui"
+		name = "widget_com_international_situation_involved_countries"
+		container = "custom_widget_container_5"
+	}
+	
 	#scripted_progress_bar =
 	
 	scripted_button = frog_finding_clues_focus_button
@@ -24,7 +30,14 @@
 	}
 	
 	immediate = {
-		save_scope_as = je_frog_noir_main
+		scope:journal_entry = {
+			com_set_situation_illustration_background_effect = {
+				texture = com_situation_background_europenorthamerica_london_center
+			}
+			com_situation_start_date_today_effect = yes
+			set_variable = com_hide_involved_countries
+			save_scope_as = je_frog_noir_main
+		}
 		set_global_variable = {
 			name = je_frog_noir_main
 			value = scope:je_frog_noir_main

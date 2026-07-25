@@ -185,7 +185,7 @@ frog_character_investigator_experience_gain_effect = { #adds Investigator XP to 
 	}
 }
 
-mr_create_random_investigator_for_character_creation_effect = {
+frog_create_random_investigator_for_character_creation_effect = {
 	random_list = {
 		1 = {
 			create_character = {

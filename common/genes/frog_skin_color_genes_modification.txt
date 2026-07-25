@@ -41,7 +41,7 @@ special_genes = {
 					decal = {
 						body_part = head
 						textures = {
-							properties = "gfx/models/portraits/decals/skin/frog_body_properties.dds"
+							properties = "gfx/models/portraits/decals/skin/frog_head_properties.dds"
 						}
 						blend_modes = {
 							diffuse = hard_light
@@ -81,7 +81,7 @@ special_genes = {
 					decal = {
 						body_part = head
 						textures = {
-							properties = "gfx/models/portraits/decals/skin/frog_body_properties.dds"
+							properties = "gfx/models/portraits/decals/skin/frog_head_properties.dds"
 						}
 						blend_modes = {
 							diffuse = hard_light
@@ -121,7 +121,7 @@ special_genes = {
 					decal = {
 						body_part = head
 						textures = {
-							properties = "gfx/models/portraits/decals/skin/frog_body_properties.dds"
+							properties = "gfx/models/portraits/decals/skin/frog_head_properties.dds"
 						}
 						blend_modes = {
 							diffuse = hard_light
@@ -161,7 +161,7 @@ special_genes = {
 					decal = {
 						body_part = head
 						textures = {
-							properties = "gfx/models/portraits/decals/skin/frog_body_properties.dds"
+							properties = "gfx/models/portraits/decals/skin/frog_head_properties.dds"
 						}
 						blend_modes = {
 							diffuse = hard_light
@@ -201,7 +201,7 @@ special_genes = {
 					decal = {
 						body_part = head
 						textures = {
-							properties = "gfx/models/portraits/decals/skin/frog_body_properties.dds"
+							properties = "gfx/models/portraits/decals/skin/frog_head_properties.dds"
 						}
 						blend_modes = {
 							diffuse = hard_light

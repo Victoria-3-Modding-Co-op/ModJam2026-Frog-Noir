@@ -132,15 +132,27 @@ types frog_journal_widget_types {
 				}
 				
 				kog_personal_initiative_button = {
-					onclick = "[Execute( ScriptedButton.ExecuteEffect )]"
+					blockoverride "button_texture" {
+						texture = "gfx/interface/icons/generic_icons/rotate_zoom.dds"
+					}
+					enabled = "[GetScriptedGui('frog_start_sleuthing_for_clues_sgui').IsValid( GuiScope.SetRoot(Character.MakeScope).End )]"
+					onclick = "[GetScriptedGui('frog_start_sleuthing_for_clues_sgui').Execute( GuiScope.SetRoot(Character.MakeScope).End )]"
 					tooltip = "frog_placeholder_text"
 				}
 				kog_personal_initiative_button = {
-					onclick = "[Execute( ScriptedButton.ExecuteEffect )]"
+					blockoverride "button_texture" {
+						texture = "gfx/interface/icons/generic_icons/character_busy.dds"
+					}
+					enabled = "[GetScriptedGui('frog_start_keeping_watch_sgui').IsValid( GuiScope.SetRoot(Character.MakeScope).End )]"
+					onclick = "[GetScriptedGui('frog_start_keeping_watch_sgui').Execute( GuiScope.SetRoot(Character.MakeScope).End )]"
 					tooltip = "frog_placeholder_text"
 				}
 				kog_personal_initiative_button = {
-					onclick = "[Execute( ScriptedButton.ExecuteEffect )]"
+					blockoverride "button_texture" {
+						texture = "gfx/interface/icons/generic_icons/most_senior_front_commander.dds"
+					}
+					enabled = "[GetScriptedGui('frog_supporting_lead_investigator_sgui').IsValid( GuiScope.SetRoot(Character.MakeScope).End )]"
+					onclick = "[GetScriptedGui('frog_supporting_lead_investigator_sgui').Execute( GuiScope.SetRoot(Character.MakeScope).End )]"
 					tooltip = "frog_placeholder_text"
 				}
 			}
@@ -179,6 +191,14 @@ types frog_journal_widget_types {
 		size = { 40 40 }
 		
 		#	enabled = "[IsValid( ScriptedButton.ExecuteEffect )]" # TODO make this the lead PI check
+		
+		icon = {
+			parentanchor = center
+			size = { 30 30 }
+			block "button_texture" {
+				texture = "gfx/interface/icons/generic_icons/maybe_icon.dds"
+			}
+		}
 		
 		icon = {
 			block "button_glow_visiblity" {

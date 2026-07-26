@@ -111,3 +111,9 @@
  frog_investigation_events.14.a: "Stay hidden. No need to croak now."
  frog_investigation_events.14.b: "No chance you are going to die here. Run."
  frog_investigation_events.14.c: "This will be the end of John Toad!"
+
+ frog_investigation_events.15.t: "Visiting the Safe House"
+ frog_investigation_events.15.d: "Midgnight. A long day. Finally back to the safe house. What should you do now?"
+ frog_investigation_events.15.f: "\"I'm getting too old for this...\""
+ frog_investigation_events.15.a: "A short nap would be great!"
+ frog_investigation_events.15.b: "Time to relax. A bath in the pond and a few days of break."

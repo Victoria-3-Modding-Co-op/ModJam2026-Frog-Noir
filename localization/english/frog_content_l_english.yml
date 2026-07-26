@@ -25,6 +25,7 @@
  frog_nothing_happens: "#italic Nothing Happens..."
  frog_no_immediate_effects: "#italic No Immediate Effects..."
  frog_option_will_be_disabled: "#italic #red #bold This option will be unavailable in the future...#!#!#!"
+ frog_john_toad_identified: "We must stop #bold John Toad#!"
  
  frog_action_clues: "Start [concept_frog_sleuthing_for_clues]"
  frog_action_watch: "Starting [concept_frog_keeping_watch]"

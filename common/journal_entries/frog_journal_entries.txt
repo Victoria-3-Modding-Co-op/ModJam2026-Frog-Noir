@@ -123,6 +123,7 @@ je_frog_noir_investigating_leads = {
 	on_complete = {
 		remove_variable = frog_investigation_progress_var
 		remove_variable = frog_investigation_peril_var
+		remove_variable = frog_investigation_timer_var
 	}
 	
 	fail = {
@@ -135,6 +136,7 @@ je_frog_noir_investigating_leads = {
 	on_fail = {
 		remove_variable = frog_investigation_progress_var
 		remove_variable = frog_investigation_peril_var
+		remove_variable = frog_investigation_timer_var
 	}
 	
 	invalid = {
@@ -147,6 +149,7 @@ je_frog_noir_investigating_leads = {
 	on_invalid = {
 		remove_variable = frog_investigation_progress_var
 		remove_variable = frog_investigation_peril_var
+		remove_variable = frog_investigation_timer_var
 	}
 	
 	on_weekly_pulse = {
@@ -170,6 +173,16 @@ je_frog_noir_investigating_leads = {
 				set_variable = {
 					name = frog_investigation_timer_var
 					value = 0
+				}
+			}
+			scope:journal_entry = {
+				set_bar_progress = { 
+					name = frog_investigating_leads_progress_bar
+					value = owner.var:frog_investigation_progress_var
+				}
+				set_bar_progress = {
+					name = frog_investigating_leads_peril_bar
+					value = owner.var:frog_investigation_peril_var
 				}
 			}
 		}

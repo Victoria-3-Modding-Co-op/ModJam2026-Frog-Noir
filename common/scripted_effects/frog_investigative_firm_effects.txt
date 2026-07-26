@@ -57,6 +57,7 @@ frog_add_progress_effect = {
 			AMOUNT = $value$
 		}
 	}
+	frog_update_progress_bars_effect = yes
 }
 
 frog_add_peril_effect = {
@@ -69,6 +70,20 @@ frog_add_peril_effect = {
 		frog_change_variable_effect = {
 			NAME = frog_investigation_peril_var
 			AMOUNT = $value$
+		}
+	}
+	frog_update_progress_bars_effect = yes
+}
+
+frog_update_progress_bars_effect = {
+	je:je_frog_noir_investigating_leads = {
+		set_bar_progress = {
+			name = frog_investigating_leads_progress_bar
+			value = owner.var:frog_investigation_progress_var
+		}
+		set_bar_progress = {
+			name = frog_investigating_leads_peril_bar
+			value = owner.var:frog_investigation_peril_var
 		}
 	}
 }

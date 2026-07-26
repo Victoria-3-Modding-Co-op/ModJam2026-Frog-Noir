@@ -19,3 +19,4 @@
  
  frog_nothing_happens: "#italic Nothing Happens..."
  frog_no_immediate_effects: "#italic No Immediate Effects..."
+ frog_option_will_be_disabled: "#italic #red #bold This option will be unavailable in the future...#!#!#!"

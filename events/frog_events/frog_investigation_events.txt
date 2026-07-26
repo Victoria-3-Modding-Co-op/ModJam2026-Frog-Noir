@@ -441,14 +441,47 @@ frog_investigation_events.11 = {
 	option = { # Thank him for the tip
 		name = frog_investigation_events.11.a
 		default_option = yes
+		frog_add_progress_effect = {
+			value = 1
+		}
+		frog_add_saved_investigator_experience_effect = {
+			value = 5
+		}
 	}
 	
 	option = { # Threaten him for more info
 		name = frog_investigation_events.11.b
+		trigger = {
+			NOT = {
+				has_variable = frog_threatened_informant
+			}
+		}
+		frog_add_progress_effect = {
+			value = 4
+		}
+		frog_add_saved_investigator_experience_effect = {
+			value = 20
+		}
+		custom_tooltip = {
+			text = frog_option_will_be_disabled
+			set_variable = frog_threatened_informant
+		}
 	}
 	
 	option = { # F it just bribe the guy
 		name = frog_investigation_events.11.b
+		frog_add_progress_effect = {
+			value = 3
+		}
+		frog_add_saved_investigator_experience_effect = {
+			value = 10
+		}
+		add_modifier = {
+			name = modifier_frog_bribed_informant
+			months = short_modifier_time
+			is_decaying = yes
+			multiplier = money_amount_multiplier_very_small
+		}
 	}
 }
 
@@ -488,10 +521,25 @@ frog_investigation_events.12 = {
 	option = { # Discretely Note the Finding
 		name = frog_investigation_events.12.a
 		default_option = yes
+		frog_add_progress_effect = {
+			value = 1
+		}
+		frog_add_saved_investigator_experience_effect = {
+			value = 5
+		}
 	}
 	
 	option = { # Investigate in Detail
 		name = frog_investigation_events.12.b
+		frog_add_progress_effect = {
+			value = 2
+		}
+		frog_add_peril_effect = {
+			value = 1
+		}
+		frog_add_saved_investigator_experience_effect = {
+			value = 10
+		}
 	}
 }
 
@@ -531,10 +579,25 @@ frog_investigation_events.13 = {
 	option = { # Just wait out the hangover
 		name = frog_investigation_events.13.a
 		default_option = yes
+		frog_add_progress_effect = {
+			value = -2
+		}
 	}
 	
 	option = { # Hydration is for losers anyway
 		name = frog_investigation_events.13.b
+		frog_add_progress_effect = {
+			value = -1
+		}
+		frog_add_peril_effect = {
+			value = 1
+		}
+		scope:frog_investigator_scope = {
+			add_modifier = {
+				name = modifier_frog_violently_hungover
+				days = 30
+			}
+		}
 	}
 }
 
@@ -555,6 +618,8 @@ frog_investigation_events.14 = {
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	
 	trigger = {
+		var:frog_investigation_progress_var >= 4
+		var:frog_investigation_peril_var >= 2
 	}
 	
 	cancellation_trigger = {
@@ -574,14 +639,35 @@ frog_investigation_events.14 = {
 	option = { # Stay coy about why you're here
 		name = frog_investigation_events.14.a
 		default_option = yes
+		frog_add_progress_effect = {
+			value = 2
+		}
+		frog_add_peril_effect = {
+			value = 1
+		}
+		frog_add_saved_investigator_experience_effect = {
+			value = 10
+		}
 	}
 	
 	option = { # Run Away before they suss you out
 		name = frog_investigation_events.14.b
+		frog_add_progress_effect = {
+			value = -2
+		}
 	}
 	
 	option = { # Be brazen and confront John Toad directly
 		name = frog_investigation_events.14.c
+		frog_add_progress_effect = {
+			value = 4
+		}
+		frog_add_peril_effect = {
+			value = 2
+		}
+		frog_add_saved_investigator_experience_effect = {
+			value = 20
+		}
 	}
 }
 
@@ -602,6 +688,7 @@ frog_investigation_events.15 = {
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	
 	trigger = {
+		var:frog_investigation_peril_var >= 3
 	}
 	
 	cancellation_trigger = {
@@ -611,7 +698,7 @@ frog_investigation_events.15 = {
 	}
 	
 	cooldown = {
-		years = 2
+		years = 5
 	}
 	
 	immediate = {
@@ -621,9 +708,21 @@ frog_investigation_events.15 = {
 	option = { # Take a short break for the day
 		name = frog_investigation_events.15.a
 		default_option = yes
+		frog_add_peril_effect = {
+			value = -2
+		}
 	}
 	
 	option = { # Take a few days off to rest
 		name = frog_investigation_events.15.b
+		trigger = {
+			var:frog_investigation_progress_var >= 2
+		}
+		frog_add_progress_effect = {
+			value = -2
+		}
+		frog_add_peril_effect = {
+			value = -4
+		}
 	}
 }

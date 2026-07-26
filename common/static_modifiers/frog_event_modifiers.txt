@@ -114,3 +114,16 @@ modifier_frog_busted_toad_racket = {
 modifier_frog_arrested_toad_racket = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_cop_positive.dds
 }
+
+modifier_frog_toad_iced = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_authority_positive.dds
+	country_prestige_mult = 0.10
+}
+
+modifier_frog_toad_iced_char = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_authority_positive.dds
+	character_health_add = 0.5
+	character_prominence_add = 25
+	character_loyalty_add = 50
+	character_popularity_add = 25
+}

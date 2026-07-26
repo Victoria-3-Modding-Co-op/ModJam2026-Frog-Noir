@@ -73,11 +73,16 @@ frog_narrative_events.2 = {
 	immediate = {
 		frog_save_john_toad_effect = yes
 		frog_save_lead_investigator_effect = yes
+		set_global_variable = {
+			name = frog_story_var
+			value = 2
+		}
 	}
 	
 	option = {
 		name = frog_narrative_events.2.a
 		default_option = yes
+		custom_tooltip = frog_john_toad_identified
 	}
 }
 
@@ -102,11 +107,26 @@ frog_narrative_events.3 = {
 	}
 	
 	immediate = {
+		set_global_variable = {
+			name = frog_story_var
+			value = 3
+		}
 	}
 	
 	option = {
 		name = frog_narrative_events.3.a
 		default_option = yes
+		scope:frog_john_toad = {
+			hidden_effect = {
+				set_character_busy_and_immortal = no
+			}
+			kill_character = yes
+			set_global_variable = frog_iced_john_toad_var
+		}
+		trigger_event = {
+			id = frog_narrative_events.4
+			days = 30
+		}
 	}
 }
 
@@ -136,5 +156,18 @@ frog_narrative_events.4 = {
 	option = {
 		name = frog_narrative_events.4.a
 		default_option = yes
+		add_modifier = {
+			name = modifier_frog_toad_iced
+		}
+		every_scope_character = {
+			limit = {
+				has_role = character_role_frog_private_investigator
+			}
+			remove_character_role = character_role_frog_private_investigator
+			add_character_role = politician
+			add_modifier = {
+				name = modifier_frog_toad_iced_char
+			}
+		}
 	}
 }

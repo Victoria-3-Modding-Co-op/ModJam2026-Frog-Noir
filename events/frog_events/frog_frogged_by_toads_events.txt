@@ -54,7 +54,7 @@ frog_frogged_by_toads_events.1 = {
 		scope:frog_state_scope = {
 			add_modifier = {
 				name = modifier_frog_midnight_croaking
-				months = short_modifier_time
+				days = short_modifier_time
 				is_decaying = yes
 			}
 		}
@@ -77,7 +77,7 @@ frog_frogged_by_toads_events.1 = {
 # Politician Approached by Toadmen
 frog_frogged_by_toads_events.2 = {
 	type = country_event
-	placement = root
+	placement = scope:frog_state_scope
 	icon = "gfx/interface/icons/event_icons/event_hardboiled.dds"
 	duration = 3
 	
@@ -108,10 +108,16 @@ frog_frogged_by_toads_events.2 = {
 	}
 	
 	cooldown = {
-		years = 3
+		years = 5
 	}
 	
 	immediate = {
+		random_scope_state = {
+			limit = {
+				is_incorporated = yes
+			}
+			save_scope_as = frog_state_scope
+		}
 		random_scope_character = {
 			limit = {
 				has_role = character_role_politician
@@ -135,6 +141,23 @@ frog_frogged_by_toads_events.2 = {
 	option = { # Mmm, I love corruption
 		name = frog_frogged_by_toads_events.2.a
 		default_option = yes
+		scope:frog_character_scope = {
+			add_modifier = {
+				name = modifier_frog_lobbied_by_toads_character
+				days = long_modifier_time
+				is_decaying = yes
+			}
+			interest_group = {
+				add_modifier = {
+					name = modifier_frog_lobbied_by_toads_ig
+					days = long_modifier_time
+					is_decaying = yes
+				}
+			}
+		}
+		frog_add_clues_effect = {
+			value = 1
+		}
 	}
 	
 	option = { # Break up the deal
@@ -142,13 +165,42 @@ frog_frogged_by_toads_events.2 = {
 		trigger = {
 			exists = scope:frog_watchman_scope
 		}
-		
+		scope:frog_character_scope = {
+			add_modifier = {
+				name = modifier_frog_refused_toad_lobbyists
+				days = long_modifier_time
+			}
+		}
+		frog_add_clues_effect = {
+			value = 3
+		}
 	}
 	
 	option = { # Break the news to the press
 		name = frog_frogged_by_toads_events.2.c
 		trigger = {
 			exists = scope:frog_watchman_scope
+		}
+		scope:frog_character_scope = {
+			add_modifier = {
+				name = modifier_frog_exposed_taking_bribes_character
+				days = long_modifier_time
+			}
+			interest_group = {
+				add_modifier = {
+					name = modifier_frog_exposed_taking_bribes_ig
+					days = long_modifier_time
+				}
+			}
+		}
+		frog_add_clues_effect = {
+			value = 5
+		}
+		scope:frog_state_scope = {
+			add_radicals_in_state = {
+				strata = lower
+				value = small_radicals
+			}
 		}
 	}
 }
@@ -230,12 +282,12 @@ frog_frogged_by_toads_events.3 = {
 		scope:frog_character_scope = {
 			add_modifier = {
 				name = modifier_frog_nearly_dated_a_toad
-				months = long_modifier_time
+				days = long_modifier_time
 			}
 			interest_group = {
 				add_modifier = {
 					name = modifier_frog_exposed_toad_kink
-					months = long_modifier_time
+					days = long_modifier_time
 				}
 			}
 		}

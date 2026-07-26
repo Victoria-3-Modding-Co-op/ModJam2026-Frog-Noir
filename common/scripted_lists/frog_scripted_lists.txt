@@ -1,0 +1,6 @@
+﻿character_is_private_investigator = {
+    base = scope_character
+    conditions = {
+        has_role = character_role_frog_private_investigator
+    }
+}

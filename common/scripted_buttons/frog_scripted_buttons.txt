@@ -1,7 +1,7 @@
 ﻿frog_switch_focus_to_finding_clues_button = {
 	name = frog_switch_focus_to_finding_clues_button
 	desc = frog_placeholder_text
-	
+
 	visible = {
 		is_involved_in_journal_entry = je_frog_noir_main
 	}
@@ -22,7 +22,7 @@
 frog_switch_focus_to_investigating_leads_button = {
 	name = frog_switch_focus_to_investigating_leads_button
 	desc = frog_placeholder_text
-	
+
 	visible = {
 		is_involved_in_journal_entry = je_frog_noir_main
 	}
@@ -44,6 +44,30 @@ frog_switch_focus_to_investigating_leads_button = {
 	effect = {
 		add_journal_entry = {
 			type = je_frog_noir_investigating_leads
+		}
+	}
+}
+
+frog_recruit_new_investigator_button = {
+	name = frog_recruit_new_investigator_button
+	desc = frog_recruit_new_investigator_button_desc
+
+	visible = {
+		is_involved_in_journal_entry = je_frog_noir_main
+	}
+
+	possible = {
+		any_character_is_private_investigator = {
+			count < 3
+		}
+	}
+	effect = {
+		add_treasury = -1000000
+		custom_tooltip = {
+			text =frog_create_new_investigator_for_pool_tt
+
+			frog_create_random_investigator_for_character_creation_effect = yes
+			frog_remove_new_investigator_effect = yes
 		}
 	}
 }

@@ -141,6 +141,7 @@ frog_finding_clues_weekly_pulse = {
 		5 = frog_investigation_events.2
 		5 = frog_investigation_events.3
 		5 = frog_investigation_events.4
+		5 = frog_investigation_events.5
 	}
 	effect = {
 		frog_change_variable_effect = {

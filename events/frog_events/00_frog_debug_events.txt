@@ -9,5 +9,8 @@ frog_debug_events.1 = {
 		fix_variable_error = { variable = frog_add_clues_value }
 		fix_variable_error = { variable = frog_add_progress_value }
 		fix_variable_error = { variable = frog_add_peril_value }
+		fix_variable_error = { variable = modifier_frog_keeping_watch }
+		fix_variable_error = { variable = modifier_frog_sleuthing_for_clues }
+		fix_variable_error = { variable = frog_action_var }
 	}
 }

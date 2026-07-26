@@ -128,7 +128,7 @@ frog_monthly_events_pulse = {
 				is_player = yes
 				OR = {
 					NOT = { has_variable = frog_investigator_var }
-					NOT = { var:frog_investigator_var ?= exists }
+					NOT = { exists = var:frog_investigator_var }
 				}
 			}
 			frog_create_random_investigator_for_character_creation_effect = yes

@@ -79,3 +79,9 @@
  frog_investigation_events.11.a: "Thank him for his work."
  frog_investigation_events.11.b: "Threaten him for more info"
  frog_investigation_events.11.c: "Maybe a bribe can losen his lips?"
+
+ frog_investigation_events.12.t: "Slime Marks at the Bank"
+ frog_investigation_events.12.d: "Morning. The Bank building. A hole in the wall. Slime everywhere. You wonder what the best approach to this situation is."
+ frog_investigation_events.12.f: "\"I was just eating my croissant when I heard a huge explosion. Just a moment later a huge drop of slime landed in my coffee cup. It was absolutely crazy!\""
+ frog_investigation_events.12.a: "Take notes and leave."
+ frog_investigation_events.12.b: "Follow the slimy trail."

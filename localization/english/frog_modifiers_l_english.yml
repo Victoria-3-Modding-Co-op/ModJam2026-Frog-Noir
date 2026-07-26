@@ -21,6 +21,12 @@
  modifier_frog_finger_pointed_at: "Accused of Being Toad-Friendly"
  modifier_frog_bribed_informant: "Bribed Informant"
  modifier_frog_violently_hungover: "Had Too Much Frog-Punch"
+ 
+ modifier_frog_entrenched_toad_racket: "Entrenched Toad Racket"
+ modifier_frog_busted_toad_racket: "Busted Toad Racket"
+ modifier_frog_arrested_toad_racket: "Arrested Toad Racket"
+ modifier_frog_toad_iced: "John Toad Iced"
+ modifier_frog_toad_iced_char: "John Toad Iced"
 
 # Modifier Types
  character_clue_generation_progress_add: "Clue Generation Progress"

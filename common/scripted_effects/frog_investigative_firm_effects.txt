@@ -51,18 +51,6 @@ frog_complete_investigation_effect = {
 		}
 		trigger_event = frog_narrative_events.3
 	}
-	else_if = {
-		limit = {
-			global_var:frog_story_var ?= 3
-		}
-		trigger_event = frog_narrative_events.4
-	}
-	else_if = {
-		limit = {
-			global_var:frog_story_var ?= 4
-		}
-		trigger_event = frog_narrative_events.5
-	}
 	else = {
 		error_log = "Effect frog_complete_investigation_effect was called, but frog_story_var did not have a valid value."
 	}

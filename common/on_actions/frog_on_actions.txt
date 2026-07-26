@@ -78,6 +78,23 @@ frog_local_firm_weekly_pulse = {
 	on_actions = {
 		frog_finding_clues_weekly_pulse
 	}
+	effect = {
+		if = {
+			limit = {
+				has_variable = frog_accumulated_clues_var
+				var:frog_accumulated_clues_var >= 10
+			}
+			frog_change_variable_effect = {
+				NAME = frog_accumulated_clues_var
+				AMOUNT = -10
+			}
+			frog_change_variable_effect = {
+				NAME = frog_accumulated_leads_var
+				AMOUNT = 1
+			}
+			post_notification = frog_gained_a_lead
+		}
+	}
 }
 
 frog_finding_clues_weekly_pulse = {

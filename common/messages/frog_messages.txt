@@ -28,3 +28,11 @@ frog_character_received_level_3_trait_notification = {
 	notification_type = feed
 	days = 28
 }
+
+frog_gained_a_lead = {
+	type = country
+	texture = gfx/interface/icons/notification_icons/frog.dds
+	color = good
+	notification_type = toast
+	days = 28
+}

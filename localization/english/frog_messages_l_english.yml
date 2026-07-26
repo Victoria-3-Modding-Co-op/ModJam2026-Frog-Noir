@@ -11,3 +11,7 @@
  notification_frog_character_received_level_3_trait_notification_name: "[SCOPE.GetRootScope.GetCharacter.GetFullName] becomes $frog_private_investigator_3_trait$"
  notification_frog_character_received_level_3_trait_notification_desc: "[SCOPE.GetRootScope.GetCharacter.GetFullName] has gained enough Experience to earn the #b $frog_private_investigator_3_trait$#! [concept_character_trait]."
  notification_frog_character_received_level_3_trait_notification_tooltip: "#header $notification_frog_character_received_level_3_trait_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_frog_character_received_level_3_trait_notification_desc$"
+
+ notification_frog_gained_a_lead_name: "Gained a Lead!"
+ notification_frog_gained_a_lead_desc: "Our [concept_frog_official_investigator] has informed us that they have generated a new lead towards the [concept_frog_conspiracy]."
+ notification_frog_gained_a_lead_tooltip: "$notification_frog_gained_a_lead_name$$com_ttdl$$notification_frog_gained_a_lead_desc$"

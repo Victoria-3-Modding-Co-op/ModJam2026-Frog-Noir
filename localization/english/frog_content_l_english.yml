@@ -2,7 +2,7 @@
  je_group_frog_noir: "Frog Noir"
 
  je_frog_noir_main: "Frog Noir - $frog_the_conspiracy$"
- je_frog_noir_main_reason: "$frog_toads_concept$ are trying to take over the world! Can you stop them by using your [concept_frog_frog] $frog_private_investigators$?\n\nTo stop the Toad menace you have to use your Private Investigator to collect [concept_frog_clues] which will allow you to $frog_follow_leads_concept$. And if you want to protect your nation from the evil Toads, you can even use your Investigators to $frog_keep_watch_concept$\n\n[GetPlayer.GetNameNoFlag] currently has #v [ROOT.GetCountry.MakeScope.Var('frog_accumulated_leads_var').GetValue]#! leads."
+ je_frog_noir_main_reason: "$frog_toads_concept$ are trying to take over the world! Can you stop them by using your [concept_frog_frog] $frog_private_investigators$?\n\nTo stop the Toad menace you have to use your Private Investigator to collect [concept_frog_clues] which will allow you to $frog_follow_leads_concept$. And if you want to protect your nation from the evil Toads, you can even use your Investigators to $frog_keep_watch_concept$\n\n[GetPlayer.GetNameNoFlag] currently has #v [GetPlayer.MakeScope.Var('frog_accumulated_clues_var').GetValue]#! [concept_frog_clues] and #v [GetPlayer.MakeScope.Var('frog_accumulated_leads_var').GetValue]#! [concept_frog_leads]."
  frog_switch_focus_to_finding_clues_button: "Focus on Finding [concept_frog_clues]"
  frog_switch_focus_to_investigating_leads_button: "Investigate [concept_frog_leads]"
  je_frog_noir_main_complete: "[GetPlayer.GetNameNoFlag] has solved $frog_the_conspiracy$."
@@ -10,12 +10,12 @@
  frog_recruit_new_investigator_button: "Recruit new [concept_frog_private_investigator]"
  frog_recruit_new_investigator_button_desc: "Recruit a new [concept_frog_private_investigator] to help you uncover the $frog_the_conspiracy$."
  frog_create_new_investigator_for_pool_tt: "Gain a new [concept_frog_private_investigator] for your nations [Concept('concept_character', '$NATIONAL_CAST$')]."
- frog_has_less_than_3_pis_tt: "[ROOT.GetCountry.GetName] has #V less than 3#! $frog_private_investigators$"
+ frog_has_less_than_3_pis_tt: "[GetPlayer.GetName] has #V less than 3#! $frog_private_investigators$"
 
  je_frog_noir_investigating_leads: "Investigating Leads"
  je_frog_noir_investigating_leads_reason: "#todo je_frog_noir_investigating_leads_reason#!"
- je_frog_noir_investigating_leads_complete: "[ROOT.GetCountry.GetNameNoFlag] has accumulated #v 8 or greater#! $frog_progress$"
- je_frog_noir_investigating_leads_fail: "[ROOT.GetCountry.GetNameNoFlag] has accumulated #v 5 or greater#! $frog_peril$"
+ je_frog_noir_investigating_leads_complete: "[GetPlayer.GetNameNoFlag] has accumulated #v 8 or greater#! $frog_progress$"
+ je_frog_noir_investigating_leads_fail: "[GetPlayer.GetNameNoFlag] has accumulated #v 5 or greater#! $frog_peril$"
  je_frog_noir_investigating_leads_status: "#v Progress: #green [GetPlayer.MakeScope.Var('frog_investigation_progress_var').GetValue|0]#!/8#!\n#v Progress: #red [GetPlayer.MakeScope.Var('frog_investigation_peril_var').GetValue|0]#!/5#!"
 
  frog_progress: "#o #tooltip:[GetRawTextTooltipTag('frog_progress_desc')] [concept_frog_evidence]#!#!"

@@ -64,7 +64,12 @@ frog_local_firm_monthly_pulse = {
 }
 
 frog_monthly_events_pulse = {
-	random_events = {  }
+	random_events = {
+		chance_of_no_event = 75
+		5 = frog_frogged_by_toads_events.1
+		5 = frog_frogged_by_toads_events.2
+		5 = frog_frogged_by_toads_events.3
+	}
 }
 
 

@@ -57,8 +57,12 @@ frog_recruit_new_investigator_button = {
 	}
 
 	possible = {
-		any_character_is_private_investigator = {
-			count < 3
+		custom_tooltip = {
+			text = frog_has_less_than_3_pis_tt
+
+			any_character_is_private_investigator = {
+				count < 3
+			}
 		}
 	}
 	effect = {

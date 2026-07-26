@@ -9,6 +9,7 @@
  frog_recruit_new_investigator_button: "Recruit new [concept_frog_private_investigator]"
  frog_recruit_new_investigator_button_desc: "Recruit a new [concept_frog_private_investigator] to help you uncover the $frog_the_conspiracy$."
  frog_create_new_investigator_for_pool_tt: "Gain a new [concept_frog_private_investigator] for your nations [Concept('concept_character', '$NATIONAL_CAST$')]."
+ frog_has_less_than_3_pis_tt: "[ROOT.GetCountry.GetName] has #V less than 3#! $frog_private_investigators$"
 
  je_frog_noir_investigating_leads: "Investigating Leads"
  je_frog_noir_investigating_leads_reason: "#todo je_frog_noir_investigating_leads_reason#!"

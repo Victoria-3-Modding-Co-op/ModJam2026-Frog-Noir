@@ -1,4 +1,4 @@
-﻿####---------- Country Monthly Pulses ----------####
+﻿####---------- Game Started after Lobby ----------####
 
 on_game_started_after_lobby = {
 	on_actions = {
@@ -19,6 +19,27 @@ frog_on_game_started_after_lobby = {
 		}
 	}
 }
+
+####---------- Country Yearly Pulses ----------####
+
+on_yearly_pulse_country = {
+	on_actions = {
+		frog_on_yearly_pulse_country
+	}
+}
+
+frog_on_yearly_pulse_country = {
+	effect = {
+		every_scope_character = {
+			limit = {
+				has_role = character_role_frog_private_investigator
+			}
+			frog_character_investigator_experience_gain_effect = { AMOUNT = frog_yearly_experience_gain_value }
+		}
+	}
+}
+
+####---------- Country Monthly Pulses ----------####
 
 on_monthly_pulse_country = {
 	on_actions = {

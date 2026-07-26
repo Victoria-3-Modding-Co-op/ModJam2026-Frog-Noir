@@ -1,6 +1,6 @@
 ﻿l_english:
 
  frog_intro_events.1.t: "Frog Noir"
- frog_intro_events.1.d: "You did not expect a frogman to appear in your office, but [SCOPE.sCharacter('frog_investigator_scope').GetFullName] seems friendly and [SCOPE.sCharacter('frog_investigator_scope').GetSheHe] brings news of a worldwide conspiracy..."
+ frog_intro_events.1.d: "You did not expect a $frog_frogman_concept$ to appear in your office, but [SCOPE.sCharacter('frog_investigator_scope').GetFullName] seems friendly and [SCOPE.sCharacter('frog_investigator_scope').GetSheHe] brings news of a worldwide [concept_frog_conspiracy]..."
  frog_intro_events.1.f: "\"Ah! You are finally here. We have a lot of work to do!\"\n\n[SCOPE.sCharacter('frog_investigator_scope').GetSheHe|U] took a long breath from his cigarette and delightedly blew out a cloud of smoke.\n\n\"Forget about wars and the economy. Today we face a far greater menace: The Toads. They are trying to infiltrate your governments, your police, your industry... And we are the only once who are able to stop them.\""
  frog_intro_events.1.g: "Human sized Frogs?! What is this..."

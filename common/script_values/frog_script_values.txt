@@ -18,3 +18,28 @@ frog_clue_generation_value = {
 		add = modifier:character_clue_creation_add
 	}
 }
+
+#############################################################
+
+### Experience ###
+frog_yearly_experience_gain_value = {
+	value = { 2 5 }
+	if = {
+		limit = {
+			has_trait = meticulous
+		}
+		add = 1
+	}
+	if = {
+		limit = {
+			has_trait = persistent
+		}
+		add = 1
+	}
+	if = {
+		limit = {
+			has_trait = innovative
+		}
+		add = 1
+	}
+}

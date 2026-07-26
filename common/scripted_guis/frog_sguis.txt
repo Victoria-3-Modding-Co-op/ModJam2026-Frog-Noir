@@ -23,6 +23,10 @@ frog_start_sleuthing_for_clues_sgui = {
 		else = {
 			add_modifier = modifier_frog_sleuthing_for_clues
 		}
+		set_variable = {
+			name = frog_action_var
+			value = flag:modifier_frog_sleuthing_for_clues
+		}
 	}
 }
 
@@ -56,6 +60,10 @@ frog_start_keeping_watch_sgui = {
 		}
 		else = {
 			add_modifier = modifier_frog_keeping_watch
+		}
+		set_variable = {
+			name = frog_action_var
+			value = flag:modifier_frog_keeping_watch
 		}
 	}
 }

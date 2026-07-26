@@ -31,6 +31,17 @@ frog_narrative_events.1 = {
 			save_scope_as = frog_investigator_scope
 			frog_character_investigator_experience_gain_effect = { AMOUNT = 100 }
 		}
+		every_scope_character = {
+			limit = {
+				has_role = character_role_frog_private_investigator
+			}
+			root = {
+				add_to_variable_list = {
+					name = frog_investigators_list
+					target = prev
+				}
+			}
+		}
 	}
 	
 	option = {
@@ -56,20 +67,70 @@ frog_narrative_events.2 = {
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	
 	trigger = {
+		# triggered by je_frog_noir_investigating_leads via frog_complete_investigation_effect
 	}
 	
 	immediate = {
+		frog_save_john_toad_scope = yes
+		frog_save_lead_investigator_effect = yes
 	}
 	
 	option = {
 		name = frog_narrative_events.2.a
 		default_option = yes
 	}
+}
+
+frog_narrative_events.3 = {
+	type = country_event
+	placement = root
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	duration = 3
 	
-	option = {
-		name = frog_narrative_events.2.b
+	title = frog_narrative_events.3.t
+	desc = frog_narrative_events.3.d
+	flavor = frog_narrative_events.3.f
+	
+	event_image = {
+		video = "ep1_clandestine_meeting"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	
+	trigger = {
 	}
 	
-	after = {
+	immediate = {
+	}
+	
+	option = {
+		name = frog_narrative_events.3.a
+		default_option = yes
+	}
+}
+
+frog_narrative_events.4 = {
+	type = country_event
+	placement = root
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	duration = 3
+	
+	title = frog_narrative_events.4.t
+	desc = frog_narrative_events.4.d
+	flavor = frog_narrative_events.4.f
+	
+	event_image = {
+		video = "ep1_clandestine_meeting"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	
+	trigger = {
+	}
+	
+	immediate = {
+	}
+	
+	option = {
+		name = frog_narrative_events.4.a
+		default_option = yes
 	}
 }

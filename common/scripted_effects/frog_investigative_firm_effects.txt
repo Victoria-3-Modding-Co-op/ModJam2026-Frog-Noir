@@ -15,7 +15,6 @@ frog_initialize_local_firm_effect = {
 		name = frog_accumulated_leads_var
 		value = 0
 	}
-	trigger_event = frog_narrative_events.1
 }
 
 frog_initialize_investigation_variables_effect = {
@@ -193,5 +192,27 @@ frog_add_saved_watchman_experience_effect = {
 		frog_character_investigator_experience_gain_effect = {
 			AMOUNT = $value$
 		}
+	}
+}
+
+frog_save_john_toad_effect = {
+	random_character_in_void = {
+		limit = {
+			culture = cu:toad
+			has_variable = frog_is_john_toad
+		}
+		save_scope_as = frog_john_toad
+	}
+}
+
+frog_save_random_toad_effect = {
+	random_character_in_void = {
+		limit = {
+			culture = cu:toad
+			NOT = {
+				has_variable = frog_is_john_toad
+			}
+		}
+		save_scope_as = team_rocket_grunt
 	}
 }

@@ -37,7 +37,7 @@ frog_switch_focus_to_investigating_leads_button = {
 		frog_country_is_focused_on_following_leads_trigger = yes
 	}
 	possible = {
-		NOR = {
+		NOT = {
 			has_journal_entry = je_frog_noir_investigating_leads
 		}
 		custom_tooltip = {

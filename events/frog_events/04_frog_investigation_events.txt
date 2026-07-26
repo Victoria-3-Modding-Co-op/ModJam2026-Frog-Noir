@@ -667,7 +667,7 @@ frog_investigation_events.15 = {
 	cooldown = {
 		years = 5
 	}
-	``
+	
 	immediate = {
 		frog_save_lead_investigator_effect = yes
 	}

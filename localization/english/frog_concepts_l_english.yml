@@ -54,6 +54,9 @@
 
  concept_frog_leads: "Leads"
  concept_frog_leads_desc: "#todo concept_frog_leads#!"
-
- concept_red_herrings: "Red Herrings"
- concept_red_herrings_desc: "#todo concept_red_herrings#!"
+ 
+ concept_frog_evidence: "Evidence"
+ concept_frog_evidence_desc: "#todo concept_frog_evidence_desc#!"
+ 
+ concept_frog_red_herrings: "Red Herrings"
+ concept_frog_red_herrings_desc: "#todo concept_frog_red_herrings#!"

@@ -338,3 +338,228 @@ frog_investigation_events.5 = {
 		}
 	}
 }
+
+####---------- FOLLOWING LEADS JOURNAL EVENTS ----------####
+
+# An Unconspicious Tavern
+frog_investigation_events.10 = {
+	type = country_event
+	placement = root
+	icon = "gfx/interface/icons/event_icons/event_hardboiled.dds"
+	duration = 3
+	
+	title = frog_investigation_events.10.t
+	desc = frog_investigation_events.10.d
+	flavor = frog_investigation_events.10.f
+	
+	event_image = {
+		video = "ep1_clandestine_meeting"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	
+	trigger = {
+	}
+	
+	cancellation_trigger = {
+		NOT = {
+			has_journal_entry = je_frog_noir_investigating_leads
+		}
+	}
+	
+	cooldown = {
+		years = 2
+	}
+	
+	immediate = {
+		frog_save_lead_investigator_effect = yes
+	}
+	
+	option = { # Take Notes
+		name = frog_investigation_events.10.a
+		default_option = yes
+	}
+	
+	option = { # Engage Directly
+		name = frog_investigation_events.10.b
+	}
+}
+
+# A Local Informant
+frog_investigation_events.11 = {
+	type = country_event
+	placement = root
+	icon = "gfx/interface/icons/event_icons/event_hardboiled.dds"
+	duration = 3
+	
+	title = frog_investigation_events.11.t
+	desc = frog_investigation_events.11.d
+	flavor = frog_investigation_events.11.f
+	
+	event_image = {
+		video = "votp_conspiring"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	
+	trigger = {
+	}
+	
+	cancellation_trigger = {
+		NOT = {
+			has_journal_entry = je_frog_noir_investigating_leads
+		}
+	}
+	
+	cooldown = {
+		years = 2
+	}
+	
+	immediate = {
+		frog_save_lead_investigator_effect = yes
+	}
+	
+	option = { # Thank him for the tip
+		name = frog_investigation_events.11.a
+		default_option = yes
+	}
+	
+	option = { # Threaten him for more info
+		name = frog_investigation_events.11.b
+	}
+	
+	option = { # F it just bribe the guy
+		name = frog_investigation_events.11.b
+	}
+}
+
+# Slime Marks at the Bank
+frog_investigation_events.12 = {
+	type = country_event
+	placement = root
+	icon = "gfx/interface/icons/event_icons/event_hardboiled.dds"
+	duration = 3
+	
+	title = frog_investigation_events.12.t
+	desc = frog_investigation_events.12.d
+	flavor = frog_investigation_events.12.f
+	
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	
+	trigger = {
+	}
+	
+	cancellation_trigger = {
+		NOT = {
+			has_journal_entry = je_frog_noir_investigating_leads
+		}
+	}
+	
+	cooldown = {
+		years = 2
+	}
+	
+	immediate = {
+		frog_save_lead_investigator_effect = yes
+	}
+	
+	option = { # Discretely Note the Finding
+		name = frog_investigation_events.12.a
+		default_option = yes
+	}
+	
+	option = { # Investigate in Detail
+		name = frog_investigation_events.12.b
+	}
+}
+
+# Long Night at the Tavern
+frog_investigation_events.13 = {
+	type = country_event
+	placement = root
+	icon = "gfx/interface/icons/event_icons/event_hardboiled.dds"
+	duration = 3
+	
+	title = frog_investigation_events.13.t
+	desc = frog_investigation_events.13.d
+	flavor = frog_investigation_events.13.f
+	
+	event_image = {
+		video = "votp_conspiring"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	
+	trigger = {
+	}
+	
+	cancellation_trigger = {
+		NOT = {
+			has_journal_entry = je_frog_noir_investigating_leads
+		}
+	}
+	
+	cooldown = {
+		years = 2
+	}
+	
+	immediate = {
+		frog_save_lead_investigator_effect = yes
+	}
+	
+	option = { # Just wait out the hangover
+		name = frog_investigation_events.13.a
+		default_option = yes
+	}
+	
+	option = { # Hydration is for losers anyway
+		name = frog_investigation_events.13.b
+	}
+}
+
+# An Unwanted Confrontation
+frog_investigation_events.14 = {
+	type = country_event
+	placement = root
+	icon = "gfx/interface/icons/event_icons/event_hardboiled.dds"
+	duration = 3
+	
+	title = frog_investigation_events.14.t
+	desc = frog_investigation_events.14.d
+	flavor = frog_investigation_events.14.f
+	
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	
+	trigger = {
+	}
+	
+	cancellation_trigger = {
+		NOT = {
+			has_journal_entry = je_frog_noir_investigating_leads
+		}
+	}
+	
+	cooldown = {
+		years = 2
+	}
+	
+	immediate = {
+		frog_save_lead_investigator_effect = yes
+	}
+	
+	option = { # Stay coy about why you're here
+		name = frog_investigation_events.14.a
+		default_option = yes
+	}
+	
+	option = { # Run Away before they suss you out
+		name = frog_investigation_events.14.b
+	}
+	
+	option = { # Be brazen and confront John Toad directly
+		name = frog_investigation_events.14.c
+	}
+}

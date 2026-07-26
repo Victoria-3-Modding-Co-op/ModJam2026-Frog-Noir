@@ -60,3 +60,8 @@ modifier_frog_investigative_disruptions = {
 	building_trade_center_throughput_add = -0.05
 }
 
+modifier_frog_croaking_ships = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_clipper_negative.dds
+	building_group_bg_fishing_throughput_add = -0.025
+}
+

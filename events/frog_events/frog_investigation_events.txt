@@ -195,6 +195,15 @@ frog_investigation_events.3 = {
 	option = { # Why are these boats croaking?
 		name = frog_investigation_events.3.a
 		default_option = yes
+		scope:frog_state_scope = {
+			add_modifier = {
+				name = modifier_frog_croaking_ships
+				months = short_modifier_time
+			}
+		}
+		frog_add_clues_effect = {
+			value = 1
+		}
 	}
 }
 
@@ -239,12 +248,18 @@ frog_investigation_events.4 = {
 	option = { # Rather Noisy for an Alley...
 		name = frog_investigation_events.4.a
 		default_option = yes
+		frog_add_clues_effect = {
+			value = 2
+		}
 	}
 	
 	option = { # Ask the police to keep tabs on them.
 		name = frog_investigation_events.4.b
 		trigger = {
 			has_institution = institution_police
+		}
+		frog_add_clues_effect = {
+			value = 4
 		}
 	}
 }

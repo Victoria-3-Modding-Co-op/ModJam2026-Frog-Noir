@@ -1,36 +1,59 @@
 ﻿l_english:
 
+ concept_frog_conspiracy: "Conspiracy"
+ concept_frog_conspiracy_desc: "A new menace has appeared in the world of the humans. A conspiracy reaching every aspect of human life. The $frog_toads_concept$ have started to infiltrate positions of power. And only the $concept_frog_frogs$ can stop them!\n\nSend out your $frog_private_investigators$ to $frog_investigate_concept$, $frog_follow_leads_concept$ and $frog_keep_watch_concept$ and end the menace once and for all!"
+ concept_frog_the_conspiracy: "The Conspiracy"
+ frog_the_conspiracy: "[Concept('concept_frog_conspiracy', '$concept_frog_the_conspiracy$')]"
+
+ concept_frog_frog: "Frog"
+ concept_frog_frog_desc: "For centuries the Frogs were hidden from the world of the humans. Waiting for the right time to appear.\n\nThey used the time to sharpen their senses, to deduct, investigate and keep track of their mortal enemies, the $frog_toads_concept$. And after all this time the Toads finally came out of hiding to start $frog_the_conspiracy$. The Conspiracy to take over the world of the humans.\n\nIt is Showtime! The Frogs send out their $frog_private_investigators$ to $frog_investigate_concept$, $frog_follow_leads_concept$ and $frog_keep_watch_concept$.\n\nIt's time to croak some crooks!"
+ concept_frog_frogs: "Frogs"
+ frog_frogs_concept: "[Concept('concept_frog_frog', '$concept_frog_frogs$')]"
+ concept_frog_frogman: "Frogman"
+ frog_frogman_concept: "[Concept('concept_frog_frog', '$concept_frog_frogman$')]"
+
+ concept_frog_toad: "Toad"
+ concept_frog_toad_desc: "Toads... Slimy creatures whose sole goal is absolute power. Their attempt to infiltrate every aspect of human life has started $frog_the_conspiracy$ and only their old enemies, the $concept_frog_frogs$ cans stop them."
+ concept_frog_toads: "Toads"
+ frog_toads_concept: "[Concept('concept_frog_toad', '$concept_frog_toads$')]"
+
  concept_frog_private_investigator: "Private Investigator"
  concept_frog_private_investigator_desc: "A Private Investigator is a character which investigates cases."
  concept_frog_private_investigators: "Private Investigators"
  frog_private_investigators: "[Concept('concept_frog_private_investigator', '$concept_frog_private_investigators$')]"
- 
+
  concept_frog_investigative_firm: "Investigative Firm"
  concept_frog_investigative_firm_desc: "#todo concept_frog_investigative_firm_desc#!"
- 
+
  concept_frog_official_investigator: "Official Investigator"
  concept_frog_official_investigator_desc: "#todo concept_frog_official_investigator_desc#!"
- 
+
  concept_frog_investigative_focus: "Investigative Focus"
  concept_frog_investigative_focus_desc: "The #bold Investigative Focus#! is the current overarching mission of a country's [concept_frog_investigative_firm]. These are:$com_nlpb$[concept_frog_sleuthing_for_clues]$com_nlpb$[concept_frog_following_leads]$com_nlpb$[concept_frog_keeping_watch]"
- 
+ concept_frog_investigative_focus_investigate: "investigative"
+ frog_investigate_concept: "[Concept('concept_frog_investigative_focus', '$concept_frog_investigative_focus_investigate$')]"
+
  concept_frog_personal_initiative: "Personal Initiative"
  concept_frog_personal_initiative_desc: "#bold Personal Initiatives#! refer to actions that can be taken by $frog_private_investigators$ independently of the [concept_frog_official_investigator]. These include$com_nlpb$[concept_frog_sleuthing_for_clues]$com_nlpb$[concept_frog_keeping_watch]\n\n#italic By default, extra $frog_private_investigators$ will support the action of the [concept_frog_official_investigator]."
- 
+
  concept_frog_sleuthing_for_clues: "Sleuthing for Clues"
  concept_frog_sleuthing_for_clues_desc: "#todo concept_frog_sleuthing_for_clues_desc#!"
- 
+
  concept_frog_following_leads: "Following Leads"
  concept_frog_following_leads_desc: "#todo concept_frog_following_leads_desc#!"
- 
+ concept_frog_following_leads_follow_leads: "follow Leads"
+ frog_follow_leads_concept: "[Concept('concept_frog_following_leads', '$concept_frog_following_leads_follow_leads$')]"
+
  concept_frog_keeping_watch: "Keeping Watch"
  concept_frog_keeping_watch_desc: "#todo concept_frog_keeping_watch_desc#!"
- 
+ concept_frog_keeping_watch_keep_watch: "keeping Watch"
+ frog_keep_watch_concept: "[Concept('concept_frog_keeping_watch', '$concept_frog_keeping_watch_keep_watch$')]"
+
  concept_frog_clues: "Clues"
  concept_frog_clues_desc: "#todo concept_frog_clues_desc#!"
- 
+
  concept_frog_leads: "Leads"
  concept_frog_leads_desc: "#todo concept_frog_leads#!"
- 
+
  concept_red_herrings: "Red Herrings"
  concept_red_herrings_desc: "#todo concept_red_herrings#!"

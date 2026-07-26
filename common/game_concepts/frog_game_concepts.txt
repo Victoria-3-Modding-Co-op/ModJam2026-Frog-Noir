@@ -1,5 +1,25 @@
 ﻿###FROG###
 
+concept_frog_conspiracy = {
+	texture = "gfx/interface/icons/character_role_icons/frog_private_investigator_role_icon.dds"
+	is_loading_tip = yes
+}
+
+concept_frog_frog = {
+	texture = "gfx/interface/icons/character_role_icons/frog_private_investigator_role_icon.dds"
+	is_loading_tip = yes
+}
+
+concept_frog_toad = {
+	texture = "gfx/interface/icons/character_role_icons/frog_private_investigator_role_icon.dds"
+	is_loading_tip = yes
+}
+
+concept_frog_frog = {
+	texture = "gfx/interface/icons/character_role_icons/frog_private_investigator_role_icon.dds"
+	is_loading_tip = yes
+}
+
 concept_frog_private_investigator = {
 	texture = "gfx/interface/icons/character_role_icons/frog_private_investigator_role_icon.dds"
 	is_loading_tip = yes
@@ -7,22 +27,18 @@ concept_frog_private_investigator = {
 
 concept_frog_investigative_firm = {
 	texture = "gfx/interface/icons/character_role_icons/frog_private_investigator_role_icon.dds"
-	is_loading_tip = yes
 }
 
 concept_frog_official_investigator = {
 	texture = "gfx/interface/icons/character_role_icons/frog_private_investigator_role_icon.dds"
-	is_loading_tip = yes
 }
 
 concept_frog_investigative_focus = {
 	texture = "gfx/interface/icons/character_role_icons/frog_private_investigator_role_icon.dds"
-	is_loading_tip = yes
 }
 
 concept_frog_personal_initiative = {
 	texture = "gfx/interface/icons/character_role_icons/frog_private_investigator_role_icon.dds"
-	is_loading_tip = yes
 }
 
 concept_frog_sleuthing_for_clues = {

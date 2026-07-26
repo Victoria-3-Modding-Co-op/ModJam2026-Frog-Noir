@@ -2,7 +2,7 @@
 
 pdxmesh = {
 	name = "frog_male_eyes_1_yellow_mesh"
-	file = "male_eyes.mesh"
+	file = "frog_male_eyes.mesh"
 
 	meshsettings = {
 		name = "male_eyesShape"
@@ -30,7 +30,7 @@ entity = {
 
 pdxmesh = {
 	name = "frog_male_eyes_1_red_mesh"
-	file = "male_eyes.mesh"
+	file = "frog_male_eyes.mesh"
 
 	meshsettings = {
 		name = "male_eyesShape"
@@ -58,7 +58,7 @@ entity = {
 
 pdxmesh = {
 	name = "frog_male_eyes_1_green_mesh"
-	file = "male_eyes.mesh"
+	file = "frog_male_eyes.mesh"
 
 	meshsettings = {
 		name = "male_eyesShape"
@@ -86,7 +86,7 @@ entity = {
 
 pdxmesh = {
 	name = "frog_male_eyes_2_mesh"
-	file = "male_eyes.mesh"
+	file = "frog_male_eyes.mesh"
 
 	meshsettings = {
 		name = "male_eyesShape"
@@ -114,7 +114,7 @@ entity = {
 
 pdxmesh = {
 	name = "frog_male_eyes_3_yellow_mesh"
-	file = "male_eyes.mesh"
+	file = "frog_male_eyes.mesh"
 
 	meshsettings = {
 		name = "male_eyesShape"
@@ -142,7 +142,7 @@ entity = {
 
 pdxmesh = {
 	name = "frog_male_eyes_3_red_mesh"
-	file = "male_eyes.mesh"
+	file = "frog_male_eyes.mesh"
 
 	meshsettings = {
 		name = "male_eyesShape"
@@ -172,7 +172,7 @@ entity = {
 
 pdxmesh = {
 	name = "frog_male_eyes_toad_1_yellow_mesh"
-	file = "male_eyes.mesh"
+	file = "frog_male_eyes.mesh"
 
 	meshsettings = {
 		name = "male_eyesShape"
@@ -200,7 +200,7 @@ entity = {
 
 pdxmesh = {
 	name = "frog_male_eyes_toad_1_yellow_sprinkles_red_mesh"
-	file = "male_eyes.mesh"
+	file = "frog_male_eyes.mesh"
 
 	meshsettings = {
 		name = "male_eyesShape"
@@ -228,7 +228,7 @@ entity = {
 
 pdxmesh = {
 	name = "frog_male_eyes_toad_1_light_green_mesh"
-	file = "male_eyes.mesh"
+	file = "frog_male_eyes.mesh"
 
 	meshsettings = {
 		name = "male_eyesShape"
@@ -256,7 +256,7 @@ entity = {
 
 pdxmesh = {
 	name = "frog_male_eyes_toad_1_brown_mesh"
-	file = "male_eyes.mesh"
+	file = "frog_male_eyes.mesh"
 
 	meshsettings = {
 		name = "male_eyesShape"
@@ -284,7 +284,7 @@ entity = {
 
 pdxmesh = {
 	name = "frog_male_eyes_toad_2_yellow_mesh"
-	file = "male_eyes.mesh"
+	file = "frog_male_eyes.mesh"
 
 	meshsettings = {
 		name = "male_eyesShape"
@@ -312,7 +312,7 @@ entity = {
 
 pdxmesh = {
 	name = "frog_male_eyes_toad_2_light_green_mesh"
-	file = "male_eyes.mesh"
+	file = "frog_male_eyes.mesh"
 
 	meshsettings = {
 		name = "male_eyesShape"
@@ -340,7 +340,7 @@ entity = {
 
 pdxmesh = {
 	name = "frog_male_eyes_toad_2_brown_mesh"
-	file = "male_eyes.mesh"
+	file = "frog_male_eyes.mesh"
 
 	meshsettings = {
 		name = "male_eyesShape"

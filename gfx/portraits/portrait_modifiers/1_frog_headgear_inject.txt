@@ -1,0 +1,65 @@
+﻿INJECT:headgear = {
+
+    ### Fallback Headgear ###
+
+    frog_toad_headgear = {
+        dna_modifiers = {
+
+            #Actual Outfit
+            accessory = {
+                mode = add
+                gene = headgear
+                template = european_common_headgear
+                range = { 0 1 }
+            }
+        }
+
+        weight = {
+            base = 0
+            modifier = { #Fallback
+                add = 100
+
+                OR = {
+                    scope:character ?= {
+                        has_culture = cu:toad
+                        is_female = no
+                    }
+                    scope:pop ?= {
+                        has_pop_culture = toad
+                    }
+                }
+            }
+        }
+    }
+
+    ### Frog Headgear ###
+
+    frog_toad_headgear = {
+        dna_modifiers = {
+
+            #Actual Outfit
+            accessory = {
+                mode = add
+                gene = frog_headgear
+                template = frog_fedora
+                range = { 0 1 }
+            }
+        }
+
+        weight = {
+            base = 0
+            modifier = { #Fallback
+                add = 10000
+
+                OR = {
+                    scope:character ?= {
+                        has_culture = cu:frog
+                    }
+                    scope:pop ?= {
+                        has_pop_culture = frog
+                    }
+                }
+            }
+        }
+    }
+}

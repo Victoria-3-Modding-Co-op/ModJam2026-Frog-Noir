@@ -84,6 +84,23 @@ frog_monthly_events_pulse = {
 		5 = frog_frogged_by_toads_events.4
 		5 = frog_frogged_by_toads_events.5
 	}
+	effect = {
+		if = {
+			limit = {
+				is_player = yes
+				OR = {
+					NOT = { has_variable = frog_investigator_var }
+					NOT = { var:frog_investigator_var ?= exists }
+				}
+			}
+			frog_create_random_investigator_for_character_creation_effect = yes
+			frog_country_set_new_investigator_as_official_investigator_effect = yes
+			var:frog_investigator_var ?= {
+				save_scope_as = frog_investigator_scope
+				frog_character_investigator_experience_gain_effect = { AMOUNT = 50 }
+			}
+		}
+	}
 }
 
 

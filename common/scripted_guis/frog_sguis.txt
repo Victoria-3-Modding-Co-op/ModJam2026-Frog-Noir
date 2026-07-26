@@ -77,4 +77,9 @@ frog_supporting_lead_investigator_sgui = {
 			has_modifier = modifier_frog_keeping_watch
 		}
 	}
+	is_valid = {
+		NOT = {
+			has_modifier = frog_character_is_official_investigator_modifier
+		}
+	}
 }

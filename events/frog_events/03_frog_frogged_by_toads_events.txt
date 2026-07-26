@@ -23,12 +23,6 @@ frog_frogged_by_toads_events.1 = {
 		}
 	}
 	
-	cancellation_trigger = {
-		NOT = {
-			has_global_variable = je_frog_noir_main
-		}
-	}
-	
 	cooldown = {
 		years = 3
 	}
@@ -97,12 +91,6 @@ frog_frogged_by_toads_events.2 = {
 				has_trait = pious
 				has_trait = honorable
 			}
-		}
-	}
-	
-	cancellation_trigger = {
-		NOT = {
-			has_global_variable = je_frog_noir_main
 		}
 	}
 	
@@ -228,12 +216,6 @@ frog_frogged_by_toads_events.3 = {
 		}
 	}
 	
-	cancellation_trigger = {
-		NOT = {
-			has_global_variable = je_frog_noir_main
-		}
-	}
-	
 	cooldown = {
 		years = 3
 	}
@@ -311,12 +293,6 @@ frog_frogged_by_toads_events.4 = {
 	trigger = {
 		any_company = {
 			prosperity >= 50
-		}
-	}
-	
-	cancellation_trigger = {
-		NOT = {
-			has_global_variable = je_frog_noir_main
 		}
 	}
 	
@@ -421,12 +397,6 @@ frog_frogged_by_toads_events.5 = {
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	
 	trigger = {
-	}
-	
-	cancellation_trigger = {
-		NOT = {
-			has_global_variable = je_frog_noir_main
-		}
 	}
 	
 	cooldown = {

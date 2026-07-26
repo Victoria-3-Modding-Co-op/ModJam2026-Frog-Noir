@@ -109,3 +109,12 @@ frog_save_sleuth_effect = {
 		}
 	}
 }
+
+frog_save_lead_investigator_effect = {
+	random_scope_character = {
+		limit = {
+			has_modifier = frog_character_is_official_investigator_modifier
+		}
+		save_scope_as = frog_investigator_scope
+	}
+}

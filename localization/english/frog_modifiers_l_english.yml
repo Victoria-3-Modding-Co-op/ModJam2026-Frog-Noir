@@ -3,6 +3,24 @@
  modifier_frog_sleuthing_for_clues: "Sleuthing for Clues"
  modifier_frog_following_leads: "Following Leads"
  modifier_frog_keeping_watch: "Keeping Watch" #TODO make this sound better
+ 
+ modifier_frog_midnight_croaking: "Midnight Croaking"
+ modifier_frog_dating_a_toad: "\"Wide-Mouthed\" Mistress"
+ modifier_frog_nearly_dated_a_toad: "Saved from Dating a Toad"
+ modifier_frog_exposed_toad_kink: "Exposed Member's Mistress"
+ modifier_frog_lobbied_by_toads_character: "Amphibious Lobbyists"
+ modifier_frog_lobbied_by_toads_ig: "Amphibious Lobbyists"
+ modifier_frog_refused_toad_lobbyists: "Refused Amphibious Lobbyists"
+ modifier_frog_exposed_taking_bribes_character: "Exposed for Taking Bribes"
+ modifier_frog_exposed_taking_bribes_ig: "Exposed for Taking Bribes"
+ modifier_frog_subjected_to_questioning: "Subjected to Questioning"
+ modifier_frog_taken_downtown: "Locked Up"
+ modifier_frog_executive_arrested: "Executive Arrested"
+ modifier_frog_investigative_disruptions: "Investigative Disruptions"
+ modifier_frog_croaking_ships: "Croaking Ships"
+ modifier_frog_finger_pointed_at: "Accused of Being Toad-Friendly"
+ modifier_frog_bribed_informant: "Bribed Informant"
+ modifier_frog_violently_hungover: "Had Too Much Frog-Punch"
 
 # Modifier Types
  character_clue_generation_progress_add: "Clue Generation Progress"

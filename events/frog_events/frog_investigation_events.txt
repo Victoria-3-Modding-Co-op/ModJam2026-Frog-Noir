@@ -48,7 +48,7 @@ frog_investigation_events.1 = {
 		frog_add_clues_effect = {
 			value = 2
 		}
-		frog_saved_character_experience_effect = {
+		frog_add_saved_investigator_experience_effect = {
 			value = 5
 		}
 	}
@@ -72,7 +72,7 @@ frog_investigation_events.1 = {
 				days = short_modifier_time
 			}
 		}
-		frog_saved_character_experience_effect = {
+		frog_add_saved_investigator_experience_effect = {
 			value = 5
 		}
 	}
@@ -386,7 +386,7 @@ frog_investigation_events.10 = {
 		frog_add_progress_effect = {
 			value = 1
 		}
-		frog_saved_character_experience_effect = {
+		frog_add_saved_investigator_experience_effect = {
 			value = 5
 		}
 	}
@@ -399,7 +399,7 @@ frog_investigation_events.10 = {
 		frog_add_peril_effect = {
 			value = 1
 		}
-		frog_saved_character_experience_effect = {
+		frog_add_saved_investigator_experience_effect = {
 			value = 20
 		}
 	}

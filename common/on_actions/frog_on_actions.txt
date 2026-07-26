@@ -128,3 +128,38 @@ frog_finding_clues_weekly_pulse = {
 		}
 	}
 }
+
+####---------- On Character Death ----------####
+
+## Root = Character
+# To reduce performance demand, we use this on action to remove variables connected to the characters
+on_character_death = {
+	on_actions = {
+		frog_on_character_death
+	}
+}
+
+# This effect is necessary to prevent ghost characters.
+# As the characters are saved as variables they become empty when a character dies a regular death.
+# In that case the variable would just be empty and create a ghost character.
+frog_on_character_death = {
+	effect = {
+		if = {
+			limit = { exists = owner }
+			if = {
+				limit = {
+					owner.var:frog_investigator_var ?= root
+				}
+
+				owner = {
+					frog_create_random_investigator_for_character_creation_effect = yes
+					frog_country_set_new_investigator_as_official_investigator_effect = yes
+					var:frog_investigator_var ?= {
+						save_scope_as = frog_investigator_scope
+						frog_character_investigator_experience_gain_effect = { AMOUNT = 50 }
+					}
+				}
+			}
+		}
+	}
+}

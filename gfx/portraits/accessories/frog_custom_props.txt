@@ -1,0 +1,9 @@
+﻿
+md_colt_new_army = {
+	entity = { required_tags = ""					node = "bn_r_prop"		entity = "md_colt_new_army_entity" }
+}
+
+md_colt_new_army_female = {
+	entity = { required_tags = ""					node = "bn_r_prop"		entity = "md_colt_new_army_female_entity" }
+}
+

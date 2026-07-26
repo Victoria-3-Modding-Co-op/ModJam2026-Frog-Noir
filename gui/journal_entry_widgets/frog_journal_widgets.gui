@@ -27,13 +27,13 @@ flowcontainer = {
 				}
 			}
 			
-			kog_pi_firm_panel = {}
+			frog_pi_firm_panel = {}
 		}
 	}
 }
 
 types frog_journal_widget_types {
-	type kog_pi_firm_panel = flowcontainer {
+	type frog_pi_firm_panel = flowcontainer {
 		parentanchor = top|hcenter
 		direction = vertical
 		
@@ -41,11 +41,11 @@ types frog_journal_widget_types {
 		datamodel = "[GetPlayer.MakeScope.GetList('frog_investigators_list')]"
 		
 		item = {
-			kog_private_investigator_item = { }
+			frog_private_investigator_item = { }
 		}
 	}
 	
-	type kog_private_investigator_item = flowcontainer {
+	type frog_private_investigator_item = flowcontainer {
 		minimumsize = { 500 120 }
 		direction = horizontal
 		spacing = 10
@@ -191,14 +191,6 @@ types frog_journal_widget_types {
 		size = { 40 40 }
 		
 		#	enabled = "[IsValid( ScriptedButton.ExecuteEffect )]" # TODO make this the lead PI check
-		
-		icon = {
-			parentanchor = center
-			size = { 30 30 }
-			block "button_texture" {
-				texture = "gfx/interface/icons/generic_icons/maybe_icon.dds"
-			}
-		}
 		
 		icon = {
 			block "button_glow_visiblity" {

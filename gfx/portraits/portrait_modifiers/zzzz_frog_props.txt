@@ -1,0 +1,15 @@
+﻿frog_animations_props = {
+  usage = none
+
+  md_colt_new_army_attachment = {
+    dna_modifiers = {
+      accessory = {
+          mode = add
+          gene = frog_props
+          template = frog_revolver
+          range = { 0 1 }
+      }
+    }
+  }
+
+}

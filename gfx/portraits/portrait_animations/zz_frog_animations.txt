@@ -1,0 +1,83 @@
+﻿###################################
+# Default Personality Animations  #
+###################################
+
+TRY_INJECT:idle = {
+	male = {
+
+		### MODDED
+
+		frog_revolver_pose_01_idle = {
+			animation = { head = "idle_entry" torso = "idle_body_walkingcane" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 50
+					scope:character ?= {
+						always = no
+					}
+				}
+			}
+			portrait_modifier = { frog_animations_props = md_colt_new_army_attachment }
+		}
+
+		frog_revolver_pose_02_idle = {
+			animation = { head = "idle_head_general_vs_right_saber" torso = "idle_body_revolver" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 50
+					scope:character ?= {
+						always = no
+					}
+				}
+			}
+			portrait_modifier = { frog_animations_props = md_colt_new_army_attachment }
+		}
+
+
+    }
+
+	female = {
+
+		### MODDED
+
+		frog_revolver_pose_01_idle = {
+			animation = { head = "idle_head_pop_calipers" torso = "idle_body_walkingcane" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 50
+					scope:character ?= {
+						always = no
+					}
+				}
+			}
+			portrait_modifier = { frog_animations_props = md_colt_new_army_attachment }
+		}
+
+		frog_revolver_pose_02_idle = {
+			animation = { head = "idle_head_general_vs_right_saber" torso = "idle_body_revolver" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 50
+					scope:character ?= {
+						always = no
+					}
+				}
+			}
+			portrait_modifier = { frog_animations_props = md_colt_new_army_attachment }
+		}
+
+
+    }
+}

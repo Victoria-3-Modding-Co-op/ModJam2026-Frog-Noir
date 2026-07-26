@@ -23,10 +23,10 @@
  frog_private_investigators: "[Concept('concept_frog_private_investigator', '$concept_frog_private_investigators$')]"
 
  concept_frog_investigative_firm: "Investigative Firm"
- concept_frog_investigative_firm_desc: "#todo concept_frog_investigative_firm_desc#!"
+ concept_frog_investigative_firm_desc: "A country with a [concept_frog_official_investigator] automatically has a Investigation Firm. The Firm includes all $frog_private_investigators$ of your country."
 
  concept_frog_official_investigator: "Official Investigator"
- concept_frog_official_investigator_desc: "#todo concept_frog_official_investigator_desc#!"
+ concept_frog_official_investigator_desc: "One of your $frog_private_investigators$ is the Lead or Official Investigator of your [concept_frog_investigative_firm]. This Investigar is the most versatile Investigator of your Nation."
 
  concept_frog_investigative_focus: "Investigative Focus"
  concept_frog_investigative_focus_desc: "The #bold Investigative Focus#! is the current overarching mission of a country's [concept_frog_investigative_firm]. These are:$com_nlpb$[concept_frog_sleuthing_for_clues]$com_nlpb$[concept_frog_following_leads]$com_nlpb$[concept_frog_keeping_watch]"
@@ -38,6 +38,8 @@
 
  concept_frog_sleuthing_for_clues: "Sleuthing for Clues"
  concept_frog_sleuthing_for_clues_desc: "#todo concept_frog_sleuthing_for_clues_desc#!"
+ concept_frog_sleuthing_for_clues_sleuth_for_clues: "Sleuth for Clues"
+ frog_investigate_concept: "[Concept('concept_frog_sleuthing_for_clues', '$concept_frog_sleuthing_for_clues_sleuth_for_clues$')]"
 
  concept_frog_following_leads: "Following Leads"
  concept_frog_following_leads_desc: "#todo concept_frog_following_leads_desc#!"
@@ -50,10 +52,10 @@
  frog_keep_watch_concept: "[Concept('concept_frog_keeping_watch', '$concept_frog_keeping_watch_keep_watch$')]"
 
  concept_frog_clues: "Clues"
- concept_frog_clues_desc: "#todo concept_frog_clues_desc#!"
+ concept_frog_clues_desc: "You can find Clues in Events or let your $frog_private_investigators$ $frog_investigate_concept$.\n\nClues are necessary to find [concept_frog_leads]. Whenever you have 10 Clues, they will be converted into 1 Lead."
 
  concept_frog_leads: "Leads"
- concept_frog_leads_desc: "#todo concept_frog_leads#!"
+ concept_frog_leads_desc: "Leads allow you to investigate the $frog_toads_concept$ and their evil plans.\n\nLeads can be gathered by collecting 10 [concept_frog_clues]. Once you have a Lead, you can order your [concept_frog_official_investigator] to [frog_follow_leads_concept] to uncover [frog_the_conspiracy]"
 
  concept_red_herrings: "Red Herrings"
  concept_red_herrings_desc: "#todo concept_red_herrings#!"

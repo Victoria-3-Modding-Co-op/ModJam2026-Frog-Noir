@@ -56,7 +56,7 @@ frog_narrative_events.2 = {
 	}
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	
-	gui_window = event_window_2char_adventure
+	gui_window = event_window_2char_discussion
 	left_icon = scope:frog_investigator_scope
 	right_icon = scope:frog_john_toad
 	
@@ -95,7 +95,7 @@ frog_narrative_events.3 = {
 	}
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	
-	gui_window = event_window_2char_adventure
+	gui_window = event_window_2char_discussion
 	left_icon = scope:frog_investigator_scope
 	right_icon = scope:frog_john_toad
 	

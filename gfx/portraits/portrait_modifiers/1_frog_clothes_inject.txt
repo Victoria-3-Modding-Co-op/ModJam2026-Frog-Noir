@@ -10,7 +10,7 @@
                 mode = add
                 gene = waistcoats
                 template = black_waistcoat
-                range = { 0 1 } # Omitting male_waistcoat_european_03
+                range = { 0 1 } # For the randomness to work correctly
             }
             accessory = {
                 mode = add
@@ -37,6 +37,49 @@
                     }
                     scope:pop ?= {
                         has_pop_culture = toad
+                    }
+                }
+            }
+        }
+    }
+
+    ### Frog Outfits ###
+
+    frog_toad_outfit = {
+        dna_modifiers = {
+
+            #Actual Outfit
+            accessory = {
+                mode = add
+                gene = waistcoats
+                template = black_waistcoat
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = civilian_coats
+                template = european_civilian_coats
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = legwear
+                template = european_legwear
+                range = { 0 1 } # For the randomness to work correctly
+            }
+        }
+
+        weight = {
+            base = 0
+            modifier = { #Fallback
+                add = 10000
+
+                OR = {
+                    scope:character ?= {
+                        has_culture = cu:frog
+                    }
+                    scope:pop ?= {
+                        has_pop_culture = frog
                     }
                 }
             }

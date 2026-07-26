@@ -68,7 +68,14 @@
  frog_investigation_events.5.b: "The slime trail is evidence enough. Accuse them!"
 
  frog_investigation_events.10.t: "An Inconspicuous Tavern"
- frog_investigation_events.10.d: "Nighttime. An old tavern in the middle of nowhere. All the clues lead here. And there he is, a toadman, in the corner, playing poker."
+ frog_investigation_events.10.d: "Nighttime. An old tavern in the middle of nowhere. All the clues lead here. And there he is, a toadman, in the corner, playing poker. You wonder what the best approach to this situation is."
  frog_investigation_events.10.f: "\"A dry Martini. Shaken, not stirred.\"\n\n\"What is a \"Martini\"? We don't have those posh drinks here!\"\n\n\"In that case a beer.\""
  frog_investigation_events.10.a: "Take Notes."
  frog_investigation_events.10.b: "Get the Toad!"
+
+ frog_investigation_events.11.t: "A Local Informant"
+ frog_investigation_events.11.d: "Nighttime. A dark alley. The informant is standing there, smoking a cigarette. You wonder what the best approach to this situation is."
+ frog_investigation_events.11.f: "\"I heard you have some information for me?\"\n\n\"Maybe. Maybe not. Depends on the circumstances...\""
+ frog_investigation_events.11.a: "Thank him for his work."
+ frog_investigation_events.11.b: "Threaten him for more info"
+ frog_investigation_events.11.c: "Maybe a bribe can losen his lips?"

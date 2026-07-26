@@ -9,6 +9,6 @@
  FROG_CHARACTER_INVESTIGATOR_EXPERIENCE_GAIN_GLOBAL: "[concept_character] [SelectLocalization(GreaterThan_CFixedPoint('(CFixedPoint)$VALUE$','(CFixedPoint)0'),'FROG_GAINS','FROG_LOSES')] $VALUE|+0$ Experience (current Experience: [CHARACTER.MakeScope.GetVariable('frog_investigator_experience_var').GetValue|0|V])"
  FROG_CHARACTER_INVESTIGATOR_EXPERIENCE_GAIN_THIRD: "[CHARACTER.GetFullName] [SelectLocalization(GreaterThan_CFixedPoint('(CFixedPoint)$VALUE$','(CFixedPoint)0'),'FROG_GAINS','FROG_LOSES')] $VALUE|+0$ Experience (current Experience: [CHARACTER.MakeScope.GetVariable('frog_investigator_experience_var').GetValue|0|V])"
  
- frog_add_clues_effect: "[ROOT.GetCountry.GetNameNoFlag] gains #v [TopScope.GetLocalVariable('frog_add_clues_value').GetValue|+=] [concept_frog_clues]"
- frog_add_red_herrings_effect: "[ROOT.GetCountry.GetNameNoFlag] gains #v [TopScope.GetLocalVariable('frog_add_red_herrings_value').GetValue|-=] [concept_red_herrings]"
- frog_add_leads_effect: "[ROOT.GetCountry.GetNameNoFlag] gains #v [TopScope.GetLocalVariable('frog_add_leads_value').GetValue|+=] [concept_red_herrings]"
+ frog_add_clues_effect: "[ROOT.GetCountry.GetNameNoFlag] gains #v [TopScope.GetLocalVariable('frog_add_clues_value').GetValue|+=0] [concept_frog_clues]"
+ frog_add_red_herrings_effect: "[ROOT.GetCountry.GetNameNoFlag] gains #v [TopScope.GetLocalVariable('frog_add_red_herrings_value').GetValue|-=0] [concept_red_herrings]"
+ frog_add_leads_effect: "[ROOT.GetCountry.GetNameNoFlag] gains #v [TopScope.GetLocalVariable('frog_add_leads_value').GetValue|+=0] [concept_red_herrings]"

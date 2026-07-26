@@ -121,6 +121,7 @@ frog_frogged_by_toads_events.2 = {
 					has_trait = honorable
 				}
 			}
+			save_scope_as = frog_character_scope
 			
 		}
 		random_scope_character = {

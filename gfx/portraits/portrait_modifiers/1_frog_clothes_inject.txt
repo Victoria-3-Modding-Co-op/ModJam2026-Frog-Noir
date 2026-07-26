@@ -58,7 +58,7 @@
             accessory = {
                 mode = add
                 gene = civilian_coats
-                template = european_civilian_coats
+                template = greatcoat
                 range = { 0 1 } # For the randomness to work correctly
             }
             accessory = {

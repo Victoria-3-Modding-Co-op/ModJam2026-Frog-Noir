@@ -1,1 +1,1 @@
-﻿
+﻿namespace = frog_frogged_by_toads_events

@@ -1,1 +1,1 @@
-﻿
+﻿namespace = frog_disappearance_events

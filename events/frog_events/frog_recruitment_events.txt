@@ -1,1 +1,1 @@
-﻿
+﻿namespace = frog_recruitment_events

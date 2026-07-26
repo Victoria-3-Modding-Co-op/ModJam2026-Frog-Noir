@@ -138,9 +138,57 @@ frog_frogged_by_toads_events.2 = {
 	
 	option = { # Break up the deal
 		name = frog_frogged_by_toads_events.2.b
+		trigger = {
+			exists = scope:frog_watchman_scope
+		}
+		
 	}
 	
 	option = { # Break the news to the press
 		name = frog_frogged_by_toads_events.2.c
+		trigger = {
+			exists = scope:frog_watchman_scope
+		}
+	}
+}
+
+#
+frog_frogged_by_toads_events.3 = {
+	type = country_event
+	placement = root
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	duration = 3
+	
+	title = frog_frogged_by_toads_events.3.t
+	desc = frog_frogged_by_toads_events.3.d
+	flavor = frog_frogged_by_toads_events.3.f
+	
+	event_image = {
+		video = "media_alias"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	
+	trigger = {
+	}
+	
+	cancellation_trigger = {
+	}
+	
+	cooldown = {
+	}
+	
+	immediate = {
+	}
+	
+	option = {
+		name = frog_frogged_by_toads_events.3.a
+		default_option = yes
+	}
+	
+	option = {
+		name = frog_frogged_by_toads_events.3.b
+	}
+	
+	after = {
 	}
 }

@@ -1,3 +1,81 @@
 ﻿namespace = frog_investigation_events
 
-vic3_ev
+# Slime Markings Spotted
+frog_investigation_events.1 = {
+	type = country_event
+	placement = root
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+	duration = 3
+	
+	title = frog_investigation_events.1.t
+	desc = frog_investigation_events.1.d
+	flavor = frog_investigation_events.1.f
+	
+	event_image = {
+		video = "unspecific_gears_pistons"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	
+	trigger = {
+		any_scope_state = {
+			has_building = building_trade_center
+		}
+		any_scope_character = {
+			has_modifier = modifier_frog_sleuthing_for_clues
+		}
+	}
+	
+	cancellation_trigger = {
+		NOT = {
+			has_global_variable = je_frog_noir_main
+		}
+	}
+	
+	cooldown = {
+		years = 2
+	}
+	
+	immediate = {
+		random_scope_state = {
+			limit = {
+				has_building = building_trade_center
+			}
+			save_scope_as = frog_state_scope
+		}
+		random_scope_character = {
+			limit = {
+				has_modifier = modifier_frog_sleuthing_for_clues
+			}
+			save_scope_as = frog_investigator_scope
+		}
+	}
+	
+	option = { # Perform a cursory search
+		name = frog_investigation_events.1.a
+		default_option = yes
+		frog_add_clues_effect = {
+			value = 2
+		}
+	}
+	
+	option = { # Shut down operations and take detailed noted
+		name = frog_investigation_events.1.b
+		trigger = {
+			NOT = {
+				has_law_or_variant = law_type:law_laissez_faire
+			}
+		}
+		show_as_unavailable = {
+			always = yes
+		}
+		frog_add_clues_effect = {
+			value = 5
+		}
+		scope:frog_state_scope = {
+			add_modifier = {
+				name = modifier_frog_investigative_disruptions
+				months = short_modifier_time
+			}
+		}
+	}
+}

@@ -61,6 +61,10 @@ concept_frog_leads = {
 	texture = "gfx/interface/icons/character_role_icons/frog_private_investigator_role_icon.dds"
 }
 
-concept_red_herrings = {
+concept_frog_evidence = {
+	texture = "gfx/interface/icons/character_role_icons/frog_private_investigator_role_icon.dds"
+}
+
+concept_frog_red_herrings = {
 	texture = "gfx/interface/icons/character_role_icons/frog_private_investigator_role_icon.dds"
 }

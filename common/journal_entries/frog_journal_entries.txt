@@ -20,8 +20,6 @@
 		container = "custom_widget_container_5"
 	}
 	
-	#scripted_progress_bar =
-	
 	scripted_button = frog_switch_focus_to_finding_clues_button
 	scripted_button = frog_switch_focus_to_investigating_leads_button
 	
@@ -59,13 +57,6 @@
 		remove_global_variable = je_frog_noir_main
 	}
 	
-	fail = {
-	}
-	
-	on_fail = {
-		remove_global_variable = je_frog_noir_main
-	}
-	
 	on_weekly_pulse = {
 		effect = {
 			scope:journal_entry = {
@@ -92,12 +83,6 @@
 			}
 		}
 	}
-	
-	on_yearly_pulse = {
-	}
-	
-	status_desc = {
-	}
 }
 
 je_frog_noir_investigating_leads = {
@@ -110,9 +95,8 @@ je_frog_noir_investigating_leads = {
 	transferable = no
 	can_deactivate = no
 	
-	scripted_progress_bar = frog_investigation_completion_progress_bar
-	
-	#scripted_button =
+	scripted_progress_bar = frog_investigating_leads_progress_bar
+	scripted_progress_bar = frog_investigating_leads_peril_bar
 	
 	immediate = {
 		set_variable = {

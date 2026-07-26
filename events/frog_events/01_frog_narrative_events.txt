@@ -71,7 +71,7 @@ frog_narrative_events.2 = {
 	}
 	
 	immediate = {
-		frog_save_john_toad_scope = yes
+		frog_save_john_toad_effect = yes
 		frog_save_lead_investigator_effect = yes
 	}
 	
@@ -97,6 +97,8 @@ frog_narrative_events.3 = {
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	
 	trigger = {
+		frog_save_john_toad_effect = yes
+		frog_save_lead_investigator_effect = yes
 	}
 	
 	immediate = {
@@ -124,6 +126,8 @@ frog_narrative_events.4 = {
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	
 	trigger = {
+		frog_save_john_toad_effect = yes
+		frog_save_lead_investigator_effect = yes
 	}
 	
 	immediate = {

@@ -118,3 +118,11 @@ frog_save_lead_investigator_effect = {
 		save_scope_as = frog_investigator_scope
 	}
 }
+
+frog_saved_character_experience_effect = {
+	scope:frog_investigator_scope = {
+		frog_character_investigator_experience_gain_effect = {
+			AMOUNT = $value$
+		}
+	}
+}

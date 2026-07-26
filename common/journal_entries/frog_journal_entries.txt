@@ -156,6 +156,13 @@ je_frog_noir_investigating_leads = {
 		events = {
 		}
 		random_events = {
+			chance_of_no_event = 50
+			5 = frog_investigation_events.10
+			5 = frog_investigation_events.11
+			5 = frog_investigation_events.12
+			5 = frog_investigation_events.13
+			5 = frog_investigation_events.14
+			5 = frog_investigation_events.15
 		}
 		effect = {
 			frog_change_variable_effect = {

@@ -48,9 +48,12 @@ frog_investigation_events.1 = {
 		frog_add_clues_effect = {
 			value = 2
 		}
+		frog_saved_character_experience_effect = {
+			value = 5
+		}
 	}
 	
-	option = { # Shut down operations and take detailed noted
+	option = { # Shut down operations and take detailed notes
 		name = frog_investigation_events.1.b
 		trigger = {
 			NOT = {
@@ -68,6 +71,9 @@ frog_investigation_events.1 = {
 				name = modifier_frog_investigative_disruptions
 				days = short_modifier_time
 			}
+		}
+		frog_saved_character_experience_effect = {
+			value = 5
 		}
 	}
 }
@@ -341,7 +347,7 @@ frog_investigation_events.5 = {
 
 ####---------- FOLLOWING LEADS JOURNAL EVENTS ----------####
 
-# An Unconspicious Tavern
+# An Inconspicuous Tavern
 frog_investigation_events.10 = {
 	type = country_event
 	placement = root
@@ -377,10 +383,25 @@ frog_investigation_events.10 = {
 	option = { # Take Notes
 		name = frog_investigation_events.10.a
 		default_option = yes
+		frog_add_progress_effect = {
+			value = 1
+		}
+		frog_saved_character_experience_effect = {
+			value = 5
+		}
 	}
 	
 	option = { # Engage Directly
 		name = frog_investigation_events.10.b
+		frog_add_progress_effect = {
+			value = 2
+		}
+		frog_add_peril_effect = {
+			value = 1
+		}
+		frog_saved_character_experience_effect = {
+			value = 20
+		}
 	}
 }
 

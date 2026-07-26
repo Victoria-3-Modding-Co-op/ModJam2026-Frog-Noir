@@ -42,7 +42,7 @@
  frog_investigation_events.1.d: "Slimy criminals must have been at work in a store in [SCOPE.sState('frog_state_scope').GetCityHubName]. The slimy traces and trails were clear evidence. But what human leaves a slimy trail? Or..."
  frog_investigation_events.1.f: "\"Ew! What is this!?\"\n\nSlime dripped from the investigators shoe. Green. Slimy. Sticky.\n\n\"Where does this slime come from? Do we have criminal snails and slugs now?!\""
  frog_investigation_events.1.a: "Perform a cursory search."
- frog_investigation_events.1.b: "Shut down operations and take detailed noted!"
+ frog_investigation_events.1.b: "Shut down operations and take detailed notes!"
 
  frog_investigation_events.2.t: "Vargrants Report Toadmen"
  frog_investigation_events.2.d: "Vagrants in [SCOPE.sState('frog_state_scope').GetName] are telling wild stories about Toadmen lurking in the shadows. Is there any truth to these stories?"

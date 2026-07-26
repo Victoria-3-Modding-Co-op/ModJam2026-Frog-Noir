@@ -37,3 +37,12 @@ frog_character_has_personal_initative_trigger = {
 		}
 	}
 }
+
+frog_any_character_is_keeping_watch_trigger = {
+	custom_tooltip = {
+		text = frog_any_character_is_keeping_watch_trigger
+		any_scope_character = {
+			has_modifier = modifier_frog_keeping_watch
+		}
+	}
+}

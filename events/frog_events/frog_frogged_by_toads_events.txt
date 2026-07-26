@@ -40,12 +40,7 @@ frog_frogged_by_toads_events.1 = {
 			}
 			save_scope_as = frog_state_scope
 		}
-		random_scope_character = {
-			limit = {
-				has_modifier = modifier_frog_keeping_watch
-			}
-			save_scope_as = frog_watchman_scope
-		}
+		frog_save_watchman_effect = yes
 	}
 	
 	option = { # Leave the Villagers to be Spooked
@@ -134,12 +129,7 @@ frog_frogged_by_toads_events.2 = {
 			save_scope_as = frog_character_scope
 			
 		}
-		random_scope_character = {
-			limit = {
-				has_modifier = modifier_frog_keeping_watch
-			}
-			save_scope_as = frog_watchman_scope
-		}
+		frog_save_watchman_effect = yes
 	}
 	
 	option = { # Mmm, I love corruption
@@ -275,9 +265,7 @@ frog_frogged_by_toads_events.3 = {
 	option = { # Umm, sir, you're literally hitting on a toadgirl ( ͡° ͜ʖ ͡°)
 		name = frog_frogged_by_toads_events.3.b
 		trigger = {
-			any_scope_character = {
-				has_modifier = modifier_frog_keeping_watch
-			}
+			frog_any_character_is_keeping_watch_trigger = yes
 		}
 		show_as_unavailable = {
 			always = yes
@@ -346,12 +334,7 @@ frog_frogged_by_toads_events.4 = {
 				save_scope_as = frog_executive_scope
 			}
 		}
-		random_scope_character = {
-			limit = {
-				has_modifier = modifier_frog_keeping_watch
-			}
-			save_scope_as = frog_watchman_scope
-		}
+		frog_save_watchman_effect = yes
 	}
 	
 	option = { # Take Notes
@@ -365,9 +348,7 @@ frog_frogged_by_toads_events.4 = {
 	option = { # Question the Executive
 		name = frog_frogged_by_toads_events.4.b
 		trigger = {
-			any_scope_character = {
-				has_modifier = modifier_frog_keeping_watch
-			}
+			frog_any_character_is_keeping_watch_trigger = yes
 		}
 		show_as_unavailable = {
 			always = yes
@@ -390,9 +371,7 @@ frog_frogged_by_toads_events.4 = {
 	option = { # Arrest the Executive
 		name = frog_frogged_by_toads_events.4.c
 		trigger = {
-			any_scope_character = {
-				has_modifier = modifier_frog_keeping_watch
-			}
+			frog_any_character_is_keeping_watch_trigger = yes
 		}
 		show_as_unavailable = {
 			always = yes
@@ -477,9 +456,7 @@ frog_frogged_by_toads_events.5 = {
 	option = { # No doubt the toadmen are behind this
 		name = frog_frogged_by_toads_events.5.b
 		trigger = {
-			any_scope_character = {
-				has_modifier = modifier_frog_keeping_watch
-			}
+			frog_any_character_is_keeping_watch_trigger = yes
 		}
 		show_as_unavailable = {
 			always = yes

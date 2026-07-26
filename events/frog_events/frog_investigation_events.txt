@@ -726,3 +726,101 @@ frog_investigation_events.15 = {
 		}
 	}
 }
+
+# Gentlemen, It Is With Great Pleasure To Inform You
+frog_investigation_events.16 = {
+	type = country_event
+	placement = root
+	icon = "gfx/interface/icons/event_icons/event_hardboiled.dds"
+	duration = 3
+	
+	title = frog_investigation_events.16.t
+	desc = frog_investigation_events.16.d
+	flavor = frog_investigation_events.16.f
+	
+	event_image = {
+		video = "ep1_clandestine_meeting"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	
+	trigger = {
+		var:frog_investigation_progress_var >= 3
+	}
+	
+	cancellation_trigger = {
+		NOT = {
+			has_journal_entry = je_frog_noir_investigating_leads
+		}
+	}
+	
+	cooldown = {
+		years = 5
+	}
+	
+	immediate = {
+		frog_save_lead_investigator_effect = yes
+	}
+	
+	option = { # Watch from Afar
+		name = frog_investigation_events.16.a
+		default_option = yes
+		frog_add_progress_effect = {
+			value = 2
+		}
+		frog_add_peril_effect = {
+			value = 1
+		}
+		capital = {
+			add_modifier = {
+				name = modifier_frog_entrenched_toad_racket
+				days = long_modifier_time
+			}
+		}
+	}
+	
+	option = { # Stage a Raid
+		name = frog_investigation_events.16.b
+		trigger = {
+			frog_any_character_is_keeping_watch_trigger = yes
+		}
+		show_as_unavailable = {
+			always = yes
+		}
+		highlighted_option = yes
+		capital = {
+			add_modifier = {
+				name = modifier_frog_busted_toad_racket
+				days = long_modifier_time
+			}
+		}
+		frog_add_progress_effect = {
+			value = 5
+		}
+		frog_add_peril_effect = {
+			value = 3
+		}
+	}
+	
+	option = { # Warn the Police!
+		name = frog_investigation_events.16.c
+		trigger = {
+			has_institution = institution_police
+		}
+		show_as_unavailable = {
+			always = yes
+		}
+		highlighted_option = yes
+		capital = {
+			add_modifier = {
+				name = modifier_frog_arrested_toad_racket
+				days = long_modifier_time
+			}
+		}
+		frog_add_progress_effect = {
+			value = 2
+		}
+		frog_add_peril_effect = {
+			value = 1
+		}
+	}
+}

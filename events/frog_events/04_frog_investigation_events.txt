@@ -366,12 +366,6 @@ frog_investigation_events.10 = {
 	trigger = {
 	}
 	
-	cancellation_trigger = {
-		NOT = {
-			has_journal_entry = je_frog_noir_investigating_leads
-		}
-	}
-	
 	cooldown = {
 		years = 2
 	}
@@ -422,12 +416,6 @@ frog_investigation_events.11 = {
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	
 	trigger = {
-	}
-	
-	cancellation_trigger = {
-		NOT = {
-			has_journal_entry = je_frog_noir_investigating_leads
-		}
 	}
 	
 	cooldown = {
@@ -504,12 +492,6 @@ frog_investigation_events.12 = {
 	trigger = {
 	}
 	
-	cancellation_trigger = {
-		NOT = {
-			has_journal_entry = je_frog_noir_investigating_leads
-		}
-	}
-	
 	cooldown = {
 		years = 2
 	}
@@ -560,12 +542,6 @@ frog_investigation_events.13 = {
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	
 	trigger = {
-	}
-	
-	cancellation_trigger = {
-		NOT = {
-			has_journal_entry = je_frog_noir_investigating_leads
-		}
 	}
 	
 	cooldown = {
@@ -620,12 +596,6 @@ frog_investigation_events.14 = {
 	trigger = {
 		var:frog_investigation_progress_var >= 4
 		var:frog_investigation_peril_var >= 2
-	}
-	
-	cancellation_trigger = {
-		NOT = {
-			has_journal_entry = je_frog_noir_investigating_leads
-		}
 	}
 	
 	cooldown = {
@@ -691,12 +661,6 @@ frog_investigation_events.15 = {
 		var:frog_investigation_peril_var >= 3
 	}
 	
-	cancellation_trigger = {
-		NOT = {
-			has_journal_entry = je_frog_noir_investigating_leads
-		}
-	}
-	
 	cooldown = {
 		years = 5
 	}
@@ -745,12 +709,6 @@ frog_investigation_events.16 = {
 	
 	trigger = {
 		var:frog_investigation_progress_var >= 3
-	}
-	
-	cancellation_trigger = {
-		NOT = {
-			has_journal_entry = je_frog_noir_investigating_leads
-		}
 	}
 	
 	cooldown = {

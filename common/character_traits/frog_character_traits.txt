@@ -10,6 +10,9 @@ frog_private_investigator_1_trait = {
 
 	character_modifier = {
 		character_popularity_add = 5
+		character_prominence_add = 5
+		character_clue_generation_progress_add = 2
+		character_clue_creation_add = 1
 	}
 
 	possible = {
@@ -25,6 +28,9 @@ frog_private_investigator_2_trait = {
 
 	character_modifier = {
 		character_popularity_add = 10
+		character_prominence_add = 10
+		character_clue_generation_progress_add = 4
+		character_clue_creation_add = 1
 	}
 
 	possible = {
@@ -39,7 +45,10 @@ frog_private_investigator_3_trait = {
 	texture = "gfx/interface/icons/character_trait_icons/frog_private_investigator_3_trait_icon.dds"
 
 	character_modifier = {
-		character_popularity_add = 15
+		character_popularity_add = 25
+		character_prominence_add = 15
+		character_clue_generation_progress_add = 8
+		character_clue_creation_add = 1
 	}
 
 	possible = {

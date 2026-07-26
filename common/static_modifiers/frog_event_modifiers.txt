@@ -1,14 +1,32 @@
-﻿modifier_frog_midnight_croaking = {
+﻿# RANDOM FROG EVENTS
+modifier_frog_midnight_croaking = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds
 	state_turmoil_effects_mult = 0.05
 	state_radicals_from_political_movements_mult = 0.05
 }
 
+modifier_frog_dating_a_toad = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_prominence_negative.dds
+	character_prominence_add = 15
+	character_loyalty_add = -50
+	character_popularity_add = -25
+}
 
+modifier_frog_nearly_dated_a_toad = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_prominence_negative.dds
+	character_loyalty_add = 50
+	character_prominence_add = -10
+	character_popularity_add = -25
+}
 
+modifier_frog_exposed_toad_kink = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_activism_negative.dds
+	interest_group_approval_add = -3
+}
 
-
+# INVESTIGATION EVENTS
 modifier_frog_investigative_disruptions = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_trade_negative.dds
 	building_trade_center_throughput_add = -0.05
 }
+

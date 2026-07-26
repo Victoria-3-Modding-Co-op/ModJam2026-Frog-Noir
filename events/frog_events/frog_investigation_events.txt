@@ -198,3 +198,53 @@ frog_investigation_events.3 = {
 	}
 }
 
+# The Croaking Alleyway
+frog_investigation_events.4 = {
+	type = country_event
+	placement = scope:frog_state_scope
+	icon = "gfx/interface/icons/event_icons/event_hardboiled.dds"
+	duration = 3
+	
+	title = frog_investigation_events.4.t
+	desc = frog_investigation_events.4.d
+	flavor = frog_investigation_events.4.f
+	
+	event_image = {
+		video = "votp_conspiring"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	
+	trigger = {
+	}
+	
+	cancellation_trigger = {
+		NOT = {
+			has_global_variable = je_frog_noir_main
+		}
+	}
+	
+	cooldown = {
+		years = 2
+	}
+	
+	immediate = {
+		random_scope_state = {
+			limit = {
+				is_incorporated = yes
+			}
+			save_scope_as = frog_state_scope
+		}
+	}
+	
+	option = { # Rather Noisy for an Alley...
+		name = frog_investigation_events.4.a
+		default_option = yes
+	}
+	
+	option = { # Ask the police to keep tabs on them.
+		name = frog_investigation_events.4.b
+		trigger = {
+			has_institution = institution_police
+		}
+	}
+}

@@ -109,21 +109,7 @@ frog_local_firm_monthly_pulse = {
 			}
 		}
 		clear_variable_list = frog_investigators_list
-		every_scope_character = {
-			limit = {
-				has_role = character_role_frog_private_investigator
-			}
-			root = {
-				add_to_variable_list = {
-					name = frog_investigators_list
-					target = prev
-				}
-			}
-		}
-		sort_variable_list = {
-			name = frog_investigators_list
-			order = var:frog_investigator_experience_var
-		}
+		frog_update_investigator_list_effect = yes
 	}
 }
 

@@ -68,10 +68,11 @@ frog_recruit_new_investigator_button = {
 	effect = {
 		add_treasury = -1000000
 		custom_tooltip = {
-			text =frog_create_new_investigator_for_pool_tt
-
+			text = frog_create_new_investigator_for_pool_tt
+			
 			frog_create_random_investigator_for_character_creation_effect = yes
 			frog_remove_new_investigator_effect = yes
 		}
+		frog_update_investigator_list_effect = yes
 	}
 }

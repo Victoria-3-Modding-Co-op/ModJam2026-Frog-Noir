@@ -2,7 +2,7 @@
  je_group_frog_noir: "Frog Noir"
 
  je_frog_noir_main: "Frog Noir - $frog_the_conspiracy$"
- je_frog_noir_main_reason: "$frog_toads_concept$ are trying to take over the world! Can you stop them by using your [concept_frog_frog] $frog_private_investigators$?\n\nTo stop the Toad menace you have to use your Private Investigator to collect [concept_frog_clues] which will allow you to $frog_follow_leads_concept$. And if you want to protect your nation from the evil Toads, you can even use your Investigators to $frog_keep_watch_concept$"
+ je_frog_noir_main_reason: "$frog_toads_concept$ are trying to take over the world! Can you stop them by using your [concept_frog_frog] $frog_private_investigators$?\n\nTo stop the Toad menace you have to use your Private Investigator to collect [concept_frog_clues] which will allow you to $frog_follow_leads_concept$. And if you want to protect your nation from the evil Toads, you can even use your Investigators to $frog_keep_watch_concept$\n\n[ROOT.GetCountry.GetNameNoFlag] currently has #v [ROOT.GetCountry.MakeScope.Var('frog_accumulated_leads_var').GetValue]#! leads."
  frog_switch_focus_to_finding_clues_button: "Focus on Finding [concept_frog_clues]"
  frog_switch_focus_to_investigating_leads_button: "Investigate [concept_frog_leads]"
 
@@ -25,3 +25,7 @@
  frog_nothing_happens: "#italic Nothing Happens..."
  frog_no_immediate_effects: "#italic No Immediate Effects..."
  frog_option_will_be_disabled: "#italic #red #bold This option will be unavailable in the future...#!#!#!"
+ 
+ frog_action_clues: "Start [concept_frog_sleuthing_for_clues]"
+ frog_action_watch: "Starting [concept_frog_keeping_watch]"
+ frog_action_idle: "Support [concept_frog_official_investigator]"

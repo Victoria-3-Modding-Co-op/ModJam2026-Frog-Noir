@@ -204,3 +204,21 @@ frog_save_random_toad_effect = {
 		save_scope_as = team_rocket_grunt
 	}
 }
+
+frog_update_investigator_list_effect = {
+	every_scope_character = {
+		limit = {
+			has_role = character_role_frog_private_investigator
+		}
+		root = {
+			add_to_variable_list = {
+				name = frog_investigators_list
+				target = prev
+			}
+		}
+	}
+	sort_variable_list = {
+		name = frog_investigators_list
+		order = var:frog_investigator_experience_var
+	}
+}

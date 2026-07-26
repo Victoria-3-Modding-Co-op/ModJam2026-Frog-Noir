@@ -73,9 +73,9 @@ types frog_journal_widget_types {
 		flowcontainer = {
 			parentanchor = center
 			direction = vertical
+			ignoreinvisible = yes
 			minimumsize = { 220 100 }
-			spacing = 2
-			margin = { 10 0 }
+			spacing = 5
 			
 			background = {
 				using = dark_area
@@ -99,8 +99,9 @@ types frog_journal_widget_types {
 			widget = {
 				parentanchor = hcenter
 				size = { 220 25 }
+				visible = "[Character.MakeScope.Var('frog_action_var').IsSet]"
+				
 				textbox = {
-					visible = "[Character.MakeScope.Var('frog_action_var').IsSet]"
 					raw_text = "#bold Action: #blue [Character.MakeScope.Var('frog_action_var').GetFlagName]#!#!"
 					parentanchor = right|vcenter
 					position = { 0 0 }
@@ -128,7 +129,7 @@ types frog_journal_widget_types {
 					}
 					enabled = "[GetScriptedGui('frog_start_sleuthing_for_clues_sgui').IsValid( GuiScope.SetRoot(Character.MakeScope).End )]"
 					onclick = "[GetScriptedGui('frog_start_sleuthing_for_clues_sgui').Execute( GuiScope.SetRoot(Character.MakeScope).End )]"
-					tooltip = "frog_placeholder_text"
+					tooltip = "frog_action_clues"
 				}
 				frog_personal_initiative_button = {
 					blockoverride "button_texture" {
@@ -136,7 +137,7 @@ types frog_journal_widget_types {
 					}
 					enabled = "[GetScriptedGui('frog_start_keeping_watch_sgui').IsValid( GuiScope.SetRoot(Character.MakeScope).End )]"
 					onclick = "[GetScriptedGui('frog_start_keeping_watch_sgui').Execute( GuiScope.SetRoot(Character.MakeScope).End )]"
-					tooltip = "frog_placeholder_text"
+					tooltip = "frog_action_watch"
 				}
 				frog_personal_initiative_button = {
 					blockoverride "button_texture" {
@@ -144,7 +145,7 @@ types frog_journal_widget_types {
 					}
 					enabled = "[GetScriptedGui('frog_supporting_lead_investigator_sgui').IsValid( GuiScope.SetRoot(Character.MakeScope).End )]"
 					onclick = "[GetScriptedGui('frog_supporting_lead_investigator_sgui').Execute( GuiScope.SetRoot(Character.MakeScope).End )]"
-					tooltip = "frog_placeholder_text"
+					tooltip = "frog_action_idle"
 				}
 			}
 		}
@@ -181,7 +182,11 @@ types frog_journal_widget_types {
 	type frog_personal_initiative_button = button_icon_round {
 		size = { 40 40 }
 		
-		#	enabled = "[IsValid( ScriptedButton.ExecuteEffect )]" # TODO make this the lead PI check
+		icon = {
+			parentanchor = center
+			size = { 30 30 }
+			block "button_texture" {}
+		}
 		
 		icon = {
 			block "button_glow_visiblity" {

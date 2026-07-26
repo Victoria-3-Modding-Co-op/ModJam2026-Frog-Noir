@@ -31,17 +31,7 @@ frog_narrative_events.1 = {
 			save_scope_as = frog_investigator_scope
 			frog_character_investigator_experience_gain_effect = { AMOUNT = 100 }
 		}
-		every_scope_character = {
-			limit = {
-				has_role = character_role_frog_private_investigator
-			}
-			root = {
-				add_to_variable_list = {
-					name = frog_investigators_list
-					target = prev
-				}
-			}
-		}
+		frog_update_investigator_list_effect = yes
 	}
 	
 	option = {

@@ -47,7 +47,7 @@
  frog_follow_leads_concept: "[Concept('concept_frog_following_leads', '$concept_frog_following_leads_follow_leads$')]"
 
  concept_frog_keeping_watch: "Keeping Watch"
- concept_frog_keeping_watch_desc: "#todo concept_frog_keeping_watch_desc#!"
+ concept_frog_keeping_watch_desc: "A [concept_frog_private_investigator] can keep watch to discover slimy traces of [frog_the_conspiracy]. This will allow you to get better outcomes from events and to withstand the corruption attempts of the $frog_toads_concept$ better."
  concept_frog_keeping_watch_keep_watch: "keeping Watch"
  frog_keep_watch_concept: "[Concept('concept_frog_keeping_watch', '$concept_frog_keeping_watch_keep_watch$')]"
 
@@ -60,8 +60,8 @@
  frog_lead_concept: "[Concept('concept_frog_leads', '$concept_frog_lead$')]"
 
  concept_frog_evidence: "Evidence"
- concept_frog_evidence_desc: "#todo concept_frog_evidence_desc#!"
+ concept_frog_evidence_desc: "While your [concept_frog_private_investigator] is [concept_frog_following_leads] you will gain Evidence. Once you collected enough Evidence your Investigator will be succesful in finding a lead to [frog_the_conspiracy]"
 
  concept_frog_red_herrings: "Red Herrings"
- concept_frog_red_herrings_desc: "#todo concept_frog_red_herrings#!"
+ concept_frog_red_herrings_desc: "While your [concept_frog_private_investigator] is [concept_frog_following_leads] you you might get Red Herrings. If the Investigator falls for too many Red Herrings, the lead will be lost."
 

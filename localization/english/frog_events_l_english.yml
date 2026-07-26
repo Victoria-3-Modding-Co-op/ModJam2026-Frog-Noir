@@ -66,3 +66,9 @@
  frog_investigation_events.5.f: "\"You are a Toad!\"\n\"No, you are a Toad!\"\n\"No, YOU are a Toad!\"\n\"No, YOU are a Toad!\"\n\"I am quite obviously a Frog and not a Toad...\""
  frog_investigation_events.5.a: "They are slimy, but we have no evidence."
  frog_investigation_events.5.b: "The slime trail is evidence enough. Accuse them!"
+
+ frog_investigation_events.10.t: "An Inconspicuous Tavern"
+ frog_investigation_events.10.d: "Nighttime. An old tavern in the middle of nowhere. All the clues lead here. And there he is, a toadman, in the corner, playing poker."
+ frog_investigation_events.10.f: "\"A dry Martini. Shaken, not stirred.\"\n\n\"What is a \"Martini\"? We don't have those posh drinks here!\"\n\n\"In that case a beer.\""
+ frog_investigation_events.10.a: "Take Notes."
+ frog_investigation_events.10.b: "Get the Toad!"

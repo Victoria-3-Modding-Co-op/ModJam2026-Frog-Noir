@@ -157,7 +157,7 @@ frog_character_investigator_experience_gain_effect = { #adds Investigator XP to 
 			var:frog_investigator_experience_var < 300
 			NOR = {
 				has_trait = frog_private_investigator_2_trait
-				has_trait = verrier_astronomer_famous
+				has_trait = frog_private_investigator_3_trait
 			}
 		}
 		post_notification = frog_character_received_level_2_trait_notification
@@ -170,7 +170,7 @@ frog_character_investigator_experience_gain_effect = { #adds Investigator XP to 
 		limit = {
 			var:frog_investigator_experience_var >= 300
 			NOT = {
-				has_trait = verrier_astronomer_famous
+				has_trait = frog_private_investigator_3_trait
 			}
 		}
 		post_notification = frog_character_received_level_3_trait_notification

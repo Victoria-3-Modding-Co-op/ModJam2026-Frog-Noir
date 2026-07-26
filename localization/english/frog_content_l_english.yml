@@ -1,11 +1,10 @@
 ﻿l_english:
  je_group_frog_noir: "#todo je_group_frog_noir#!"
- 
- je_frog_noir_main: "#todo je_frog_noir_main#!"
- je_frog_noir_main_reason: "#todo je_frog_noir_main_reason#!"
+
+ je_frog_noir_main: "Frog Noir - $frog_the_conspiracy$"
+ je_frog_noir_main_reason: "$frog_toads_concept$ are trying to take over the world! Can you stop them by using your [concept_frog_frog] $frog_private_investigators$?"
  frog_switch_focus_to_finding_clues_button: "Focus on Finding [concept_frog_clues]"
- frog_switch_focus_to_investigating_leads_button: "Investigate [concept_frog_leads"
- 
+ frog_switch_focus_to_investigating_leads_button: "Investigate [concept_frog_leads]"
+
  je_frog_noir_investigating_leads: "#todo je_frog_noir_investigating_leads#!"
  je_frog_noir_investigating_leads_reason: "#todo je_frog_noir_investigating_leads_reason#!"
- 

@@ -87,3 +87,25 @@ frog_update_progress_bars_effect = {
 		}
 	}
 }
+
+frog_save_sleuth_effect = {
+	if = {
+		limit = {
+			frog_country_is_focused_on_finding_clues_trigger = yes
+		}
+		random_scope_character = {
+			limit = {
+				has_modifier = frog_character_is_official_investigator_modifier
+			}
+			save_scope_as = frog_investigator_scope
+		}
+	}
+	else = {
+		random_scope_character = {
+			limit = {
+				has_modifier = modifier_frog_sleuthing_for_clues
+			}
+			save_scope_as = frog_investigator_scope
+		}
+	}
+}

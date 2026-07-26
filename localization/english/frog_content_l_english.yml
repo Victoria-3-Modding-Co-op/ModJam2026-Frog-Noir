@@ -16,3 +16,6 @@
  frog_progress_desc: ""
  frog_peril: "#o #tooltip:[GetRawTextTooltipTag('frog_peril_desc')] [concept_frog_red_herrings]#!#!"
  frog_peril_desc: ""
+ 
+ frog_nothing_happens: "#italic Nothing Happens..."
+ frog_no_immediate_effects: "#italic No Immediate Effects..."

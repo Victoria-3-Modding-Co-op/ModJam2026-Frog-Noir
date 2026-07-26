@@ -39,12 +39,7 @@ frog_investigation_events.1 = {
 			}
 			save_scope_as = frog_state_scope
 		}
-		random_scope_character = {
-			limit = {
-				has_modifier = modifier_frog_sleuthing_for_clues
-			}
-			save_scope_as = frog_investigator_scope
-		}
+		frog_save_sleuth_effect = yes
 	}
 	
 	option = { # Perform a cursory search
@@ -118,6 +113,7 @@ frog_investigation_events.2 = {
 			}
 			save_scope_as = frog_state_scope
 		}
+		frog_save_sleuth_effect = yes
 	}
 	
 	option = { # Hmm, take notes
@@ -190,6 +186,7 @@ frog_investigation_events.3 = {
 			}
 			save_scope_as = frog_state_scope
 		}
+		frog_save_sleuth_effect = yes
 	}
 	
 	option = { # Why are these boats croaking?
@@ -243,6 +240,7 @@ frog_investigation_events.4 = {
 			}
 			save_scope_as = frog_state_scope
 		}
+		frog_save_sleuth_effect = yes
 	}
 	
 	option = { # Rather Noisy for an Alley...
@@ -260,6 +258,83 @@ frog_investigation_events.4 = {
 		}
 		frog_add_clues_effect = {
 			value = 4
+		}
+	}
+}
+
+# Pointing Fingers
+frog_investigation_events.5 = {
+	type = country_event
+	placement = root
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	duration = 3
+	
+	title = frog_investigation_events.5.t
+	desc = frog_investigation_events.5.d
+	flavor = frog_investigation_events.5.f
+	
+	event_image = {
+		video = "ep1_clandestine_meeting"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	
+	trigger = {
+		any_scope_character = {
+			has_modifier = modifier_frog_sleuthing_for_clues
+		}
+		any_interest_group = {
+			is_marginal = no
+			ig_approval < 0
+			NOT = {
+				has_modifier = modifier_frog_finger_pointed_at
+			}
+		}
+	}
+	
+	cancellation_trigger = {
+		NOT = {
+			has_global_variable = je_frog_noir_main
+		}
+	}
+	
+	cooldown = {
+		years = 4
+	}
+	
+	immediate = {
+		random_interest_group = {
+			limit = {
+				is_marginal = no
+				ig_approval < 0
+				NOT = {
+					has_modifier = modifier_frog_finger_pointed_at
+				}
+			}
+			save_scope_as = frog_interest_group
+		}
+		frog_save_sleuth_effect = yes
+	}
+	
+	option = {
+		name = frog_investigation_events.5.a
+		default_option = yes
+		custom_tooltip = frog_nothing_happens
+	}
+	
+	option = {
+		name = frog_investigation_events.5.b
+		scope:frog_interest_group = {
+			add_modifier = {
+				name = modifier_frog_finger_pointed_at
+				days = normal_modifier_time
+			}
+		}
+		add_radicals = {
+			interest_group = scope:frog_interest_group
+			value = medium_radicals
+		}
+		frog_add_clues_effect = {
+			value = 3
 		}
 	}
 }

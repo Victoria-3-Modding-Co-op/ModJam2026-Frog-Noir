@@ -50,6 +50,14 @@ on_monthly_pulse_country = {
 
 frog_local_firm_monthly_pulse = {
 	effect = {
+		if = {
+			limit = {
+				frog_country_has_official_investigator_trigger = yes
+			}
+			frog_country_investigator_experience_gain_effect = {
+				AMOUNT = 2
+			}
+		}
 		clear_variable_list = frog_investigators_list
 		every_scope_character = {
 			limit = {
@@ -59,6 +67,10 @@ frog_local_firm_monthly_pulse = {
 				name = frog_investigators_list
 				target = this
 			}
+		}
+		sort_variable_list = {
+			name = frog_investigators_list
+			order = var:frog_investigator_experience_var
 		}
 	}
 }

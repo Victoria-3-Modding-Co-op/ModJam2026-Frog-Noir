@@ -71,12 +71,21 @@ frog_narrative_events.2 = {
 			name = frog_story_var
 			value = 2
 		}
+		every_scope_character = {
+			remove_modifier = modifier_frog_following_leads
+		}
+		scope:frog_investigator_scope = {
+			set_variable = frog_revolver_1_var
+		}
 	}
 	
 	option = {
 		name = frog_narrative_events.2.a
 		default_option = yes
 		custom_tooltip = frog_john_toad_identified
+		scope:frog_investigator_scope = {
+			remove_variable = frog_revolver_1_var
+		}
 	}
 }
 
@@ -110,6 +119,12 @@ frog_narrative_events.3 = {
 			name = frog_story_var
 			value = 3
 		}
+		every_scope_character = {
+			remove_modifier = modifier_frog_following_leads
+		}
+		scope:frog_investigator_scope = {
+			set_variable = frog_revolver_2_var
+		}
 	}
 	
 	option = {
@@ -125,6 +140,9 @@ frog_narrative_events.3 = {
 		trigger_event = {
 			id = frog_narrative_events.4
 			days = 30
+		}
+		scope:frog_investigator_scope = {
+			remove_variable = frog_revolver_2_var
 		}
 	}
 }

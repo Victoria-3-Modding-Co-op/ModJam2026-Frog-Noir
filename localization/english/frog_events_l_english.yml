@@ -100,9 +100,9 @@
  frog_investigation_events.12.b: "Follow the slimy trail."
 
  frog_investigation_events.13.t: "A really long night at the Tavern"
- frog_investigation_events.13.d: "5 'o'clock in the morning. A wasted [SCOPE.sCharacter('frog_character_scope').GetFullName] is sitting at the bar wondering how he's pay the Tavern's bill. Just sitting there like there's nothing else that's matters"
+ frog_investigation_events.13.d: "5 'o'clock in the morning. A wasted [SCOPE.sCharacter('frog_investigator_scope').GetFullName] is sitting at the bar wondering how he's pay the Tavern's bill. Just sitting there like there's nothing else that's matters"
  frog_investigation_events.13.f: "\"I promised my boss that I stayed clean off the good stuff for while; looks like now im in the gutter\""
- frog_investigation_events.13.a: "Let [SCOPE.sCharacter('frog_character_scope').GetFullName] get some sleep first"
+ frog_investigation_events.13.a: "Let [SCOPE.sCharacter('frog_investigator_scope').GetFullName] get some sleep first"
  frog_investigation_events.13.b: "Maybe ONE more drink will help"
 
  frog_investigation_events.14.t: "An Unwanted Confrontation"

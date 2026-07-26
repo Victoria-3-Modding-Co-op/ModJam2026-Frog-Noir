@@ -39,9 +39,6 @@ frog_switch_focus_to_investigating_leads_button = {
 	possible = {
 		NOR = {
 			has_journal_entry = je_frog_noir_investigating_leads
-			hidden_trigger = {
-				has_variable = frog_abandoned_investigation_var
-			}
 		}
 		custom_tooltip = {
 			text = frog_has_one_or_more_leads

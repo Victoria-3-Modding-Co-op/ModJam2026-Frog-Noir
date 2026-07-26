@@ -16,7 +16,7 @@ TRY_INJECT:idle = {
 				modifier = {
 					add = 50
 					scope:character ?= {
-						always = no
+						has_variable = frog_revolver_1_var
 					}
 				}
 			}
@@ -32,7 +32,7 @@ TRY_INJECT:idle = {
 				modifier = {
 					add = 50
 					scope:character ?= {
-						always = no
+						has_variable = frog_revolver_1_var
 					}
 				}
 			}
@@ -55,7 +55,7 @@ TRY_INJECT:idle = {
 				modifier = {
 					add = 50
 					scope:character ?= {
-						always = no
+						has_variable = frog_revolver_2_var
 					}
 				}
 			}
@@ -71,7 +71,7 @@ TRY_INJECT:idle = {
 				modifier = {
 					add = 50
 					scope:character ?= {
-						always = no
+						has_variable = frog_revolver_2_var
 					}
 				}
 			}

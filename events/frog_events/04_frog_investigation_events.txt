@@ -558,6 +558,9 @@ frog_investigation_events.13 = {
 		frog_add_progress_effect = {
 			value = -2
 		}
+		frog_add_peril_effect = {
+			value = -3
+		}
 	}
 	
 	option = { # Hydration is for losers anyway
@@ -664,7 +667,7 @@ frog_investigation_events.15 = {
 	cooldown = {
 		years = 5
 	}
-	
+	``
 	immediate = {
 		frog_save_lead_investigator_effect = yes
 	}

@@ -20,9 +20,6 @@ frog_investigation_events.1 = {
 		any_scope_state = {
 			has_building = building_trade_center
 		}
-		any_scope_character = {
-			has_modifier = modifier_frog_sleuthing_for_clues
-		}
 	}
 	
 	cancellation_trigger = {
@@ -75,6 +72,80 @@ frog_investigation_events.1 = {
 			add_modifier = {
 				name = modifier_frog_investigative_disruptions
 				months = short_modifier_time
+			}
+		}
+	}
+}
+
+# Vargrants Report Toadmen
+frog_investigation_events.2 = {
+	type = country_event
+	placement = root
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+	duration = 3
+	
+	title = frog_investigation_events.2.t
+	desc = frog_investigation_events.2.d
+	flavor = frog_investigation_events.2.f
+	
+	event_image = {
+		video = "europenorthamerica_rich_and_poor"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	
+	trigger = {
+		any_scope_state = {
+			has_building = building_urban_center
+			state_unemployment_rate >= 0.02 # Gotta have some level of unemployment for there to be bums lying around
+		}
+	}
+	
+	cancellation_trigger = {
+		NOT = {
+			has_global_variable = je_frog_noir_main
+		}
+	}
+	
+	cooldown = {
+		years = 2
+	}
+	
+	immediate = {
+		random_scope_state = {
+			limit = {
+				has_building = building_urban_center
+				state_unemployment_rate >= 0.02 # Gotta have some level of unemployment for there to be bums lying around
+			}
+			save_scope_as = frog_state_scope
+		}
+	}
+	
+	option = { # Hmm, take notes
+		name = frog_investigation_events.2.a
+		default_option = yes
+		frog_add_clues_effect = {
+			value = 1
+		}
+	}
+	
+	option = { # Have the police "extract" more information
+		name = frog_investigation_events.2.b
+		trigger = {
+			institution_investment_level = {
+				institution = institution_police
+				value >= 3
+			}
+		}
+		show_as_unavailable = {
+			always = yes
+		}
+		frog_add_clues_effect = {
+			value = 3
+		}
+		scope:frog_state_scope = {
+			add_radicals_in_state = {
+				strata = lower
+				value = small_radicals
 			}
 		}
 	}

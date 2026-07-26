@@ -1,0 +1,14 @@
+﻿modifier_frog_midnight_croaking = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds
+	state_turmoil_effects_mult = 0.05
+	state_radicals_from_political_movements_mult = 0.05
+}
+
+
+
+
+
+modifier_frog_investigative_disruptions = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_trade_negative.dds
+	building_trade_center_throughput_add = -0.05
+}

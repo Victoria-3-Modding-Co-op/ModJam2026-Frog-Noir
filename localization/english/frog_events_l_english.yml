@@ -60,3 +60,9 @@
  frog_investigation_events.4.f: "\"Yes, I know how this sounds! But the Croaking! There is a worldwide conspiracy by Toadmen to replace us all! I swear! my wife disappeared in this alley a few days back and when she finally returned home her voice was lower and she was... slimy...\""
  frog_investigation_events.4.a: "Rather Noisy for an Alley..."
  frog_investigation_events.4.b: "Ask the police to keep tabs on the croaking."
+
+ frog_investigation_events.5.t: "Pointing Fingers"
+ frog_investigation_events.5.d: "It was quite evident that the [SCOPE.gsInterestGroup('disgruntled_ig').GetName] was infiltrated by Toads. Slime and corruption everywhere. But no evidence. Now the question is: Is accusing them publicly worth it?"
+ frog_investigation_events.5.f: "\"You are a Toad!\"\n\"No, you are a Toad!\"\n\"No, YOU are a Toad!\"\n\"No, YOU are a Toad!\"\n\"I am quite obviously a Frog and not a Toad...\""
+ frog_investigation_events.5.a: "They are slimy, but we have no evidence."
+ frog_investigation_events.5.b: "The slime trail is evidence enough. Accuse them!"

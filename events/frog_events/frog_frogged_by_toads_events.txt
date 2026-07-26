@@ -153,7 +153,7 @@ frog_frogged_by_toads_events.2 = {
 	}
 }
 
-#
+# Doppelganger at the Ball
 frog_frogged_by_toads_events.3 = {
 	type = country_event
 	placement = root
@@ -165,31 +165,70 @@ frog_frogged_by_toads_events.3 = {
 	flavor = frog_frogged_by_toads_events.3.f
 	
 	event_image = {
-		video = "media_alias"
+		video = "europenorthamerica_art_gallery"
 	}
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	
 	trigger = {
+		any_scope_state = {
+			state_has_building_type_levels = { # Can't have a high life if there's no where to have it
+				target = bt:building_urban_center
+				value >= 5
+			}
+		}
+		any_scope_character = {
+			is_interest_group_leader = yes
+			prominence >= define:NCharacters|PROMINENCE_SIGNIFICANT_THRESHOLD
+		}
 	}
 	
 	cancellation_trigger = {
+		NOT = {
+			has_global_variable = je_frog_noir_main
+		}
 	}
 	
 	cooldown = {
+		years = 3
 	}
 	
 	immediate = {
+		random_scope_character = {
+			limit = {
+				is_interest_group_leader = yes
+				prominence >= define:NCharacters|PROMINENCE_SIGNIFICANT_THRESHOLD
+			}
+			save_scope_as = frog_character_scope
+		}
 	}
 	
-	option = {
+	option = { # Take notes
 		name = frog_frogged_by_toads_events.3.a
 		default_option = yes
+		frog_add_clues_effect = {
+			value = 1
+		}
+		scope:frog_character_scope = {
+			add_modifier = modifier_frog_dating_a_toad
+		}
 	}
 	
-	option = {
+	option = { # Umm, sir, you're literally hitting on a toadgirl ( ͡° ͜ʖ ͡°)
 		name = frog_frogged_by_toads_events.3.b
-	}
-	
-	after = {
+		frog_add_clues_effect = {
+			value = 2
+		}
+		scope:frog_character_scope = {
+			add_modifier = {
+				name = modifier_frog_nearly_dated_a_toad
+				months = long_modifier_time
+			}
+			interest_group = {
+				add_modifier = {
+					name = modifier_frog_exposed_toad_kink
+					months = long_modifier_time
+				}
+			}
+		}
 	}
 }

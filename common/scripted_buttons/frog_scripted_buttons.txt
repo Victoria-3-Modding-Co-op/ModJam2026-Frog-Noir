@@ -12,6 +12,13 @@
 		frog_country_is_focused_on_finding_clues_trigger = no
 	}
 	effect = {
+		var:frog_investigator_var = {
+			add_modifier = modifier_frog_sleuthing_for_clues
+			hidden_effect = {
+				remove_modifier = modifier_frog_following_leads
+				remove_modifier = modifier_frog_keeping_watch
+			}
+		}
 		set_variable = {
 			name = frog_abandoned_investigation_var
 			months = 3
@@ -42,6 +49,13 @@ frog_switch_focus_to_investigating_leads_button = {
 		}
 	}
 	effect = {
+		var:frog_investigator_var = {
+			add_modifier = modifier_frog_following_leads
+			hidden_effect = {
+				remove_modifier = modifier_frog_sleuthing_for_clues
+				remove_modifier = modifier_frog_keeping_watch
+			}
+		}
 		add_journal_entry = {
 			type = je_frog_noir_investigating_leads
 		}

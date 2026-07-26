@@ -70,6 +70,7 @@ frog_monthly_events_pulse = {
 		5 = frog_frogged_by_toads_events.2
 		5 = frog_frogged_by_toads_events.3
 		5 = frog_frogged_by_toads_events.4
+		5 = frog_frogged_by_toads_events.5
 	}
 }
 

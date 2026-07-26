@@ -17,3 +17,9 @@
  frog_frogged_by_toads_events.2.a: "Mmm, I love corruption"
  frog_frogged_by_toads_events.2.b: "Break up the deal"
  frog_frogged_by_toads_events.2.c: "Break the news to the press"
+
+ frog_frogged_by_toads_events.3.t: "The Lady with the wide smile"
+ frog_frogged_by_toads_events.3.d: "A beautiful lady approached [SCOPE.sCharacter('frog_character_scope').GetFullName] at the ball today. Her olive-colored skin and her wide smile immediately captivated [SCOPE.sCharacter('frog_character_scope').GetHerHim]. But would [SCOPE.sCharacter('frog_character_scope').GetSheHe] notice the slimy tracks left by the lady?"
+ frog_frogged_by_toads_events.3.f: "\"Oh, what a beautiful face! May I ask you for a dance?\""
+ frog_frogged_by_toads_events.3.a: "With a beautiful woman like you? Always."
+ frog_frogged_by_toads_events.3.b: "[SCOPE.sCharacter('frog_character_scope').GetCustom('getSirMadam')], that slimey woman is a fraud."

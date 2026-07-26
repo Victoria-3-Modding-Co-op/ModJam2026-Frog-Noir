@@ -160,9 +160,7 @@ frog_character_investigator_experience_gain_effect = { #adds Investigator XP to 
 				has_trait = verrier_astronomer_famous
 			}
 		}
-		else = {
-			post_notification = frog_character_received_level_2_trait_notification
-		}
+		post_notification = frog_character_received_level_2_trait_notification
 		hidden_effect = {
 			remove_trait = frog_private_investigator_1_trait
 			add_trait = frog_private_investigator_2_trait
@@ -175,9 +173,7 @@ frog_character_investigator_experience_gain_effect = { #adds Investigator XP to 
 				has_trait = verrier_astronomer_famous
 			}
 		}
-		else = {
-			post_notification = frog_character_received_level_3_trait_notification
-		}
+		post_notification = frog_character_received_level_3_trait_notification
 		hidden_effect = {
 			if = {
 				limit = { has_trait = frog_private_investigator_1_trait }

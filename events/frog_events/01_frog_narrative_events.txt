@@ -1,0 +1,75 @@
+﻿namespace = frog_narrative_events
+
+frog_narrative_events.1 = {
+	type = country_event
+	placement = root
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	duration = 3
+	dlc = dlc_frog_noir
+	
+	title = frog_narrative_events.1.t
+	desc = frog_narrative_events.1.d
+	flavor = frog_narrative_events.1.f
+	
+	event_image = {
+		texture = "gfx/event_pictures/frog_office.dds"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
+	
+	gui_window = event_window_1char_adventure
+	left_icon = scope:frog_investigator_scope
+	
+	trigger = {
+		# triggered by je_frog_noir_main via frog_initialize_local_firm_effect
+	}
+	
+	immediate = {
+		frog_create_random_investigator_for_character_creation_effect = yes
+		frog_country_set_new_investigator_as_official_investigator_effect = yes
+		var:frog_investigator_var ?= {
+			save_scope_as = frog_investigator_scope
+			frog_character_investigator_experience_gain_effect = { AMOUNT = 100 }
+		}
+	}
+	
+	option = {
+		name = frog_narrative_events.1.g
+		default_option = yes
+		custom_tooltip = frog_no_immediate_effects
+	}
+}
+
+frog_narrative_events.2 = {
+	type = country_event
+	placement = root
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	duration = 3
+	
+	title = frog_narrative_events.2.t
+	desc = frog_narrative_events.2.d
+	flavor = frog_narrative_events.2.f
+	
+	event_image = {
+		video = "ep1_clandestine_meeting"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	
+	trigger = {
+	}
+	
+	immediate = {
+	}
+	
+	option = {
+		name = frog_narrative_events.2.a
+		default_option = yes
+	}
+	
+	option = {
+		name = frog_narrative_events.2.b
+	}
+	
+	after = {
+	}
+}

@@ -44,11 +44,11 @@
 	}
 
 	immediate_all_involved = {
-		frog_initialize_local_firm_variables_effect = yes
+		frog_initialize_local_firm_effect = yes
 	}
 
 	on_become_involved_after_activation = {
-		frog_initialize_local_firm_variables_effect = yes
+		frog_initialize_local_firm_effect = yes
 	}
 
 	complete = {

@@ -13,7 +13,7 @@ frog_on_game_started_after_lobby = {
 				is_player = yes
 			}
 			trigger_event = {
-				id = frog_intro_events.1
+				id = frog_narrative_events.1
 				popup = yes
 			}
 		}

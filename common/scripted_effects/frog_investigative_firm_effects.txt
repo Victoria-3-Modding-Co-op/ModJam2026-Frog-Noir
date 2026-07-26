@@ -2,7 +2,7 @@
 
 # These effects are used to manage progress/peril in field investigations
 
-frog_initialize_local_firm_variables_effect = {
+frog_initialize_local_firm_effect = {
 	set_variable = {
 		name = frog_clue_generation_progress_var
 		value = 0
@@ -15,6 +15,7 @@ frog_initialize_local_firm_variables_effect = {
 		name = frog_accumulated_leads_var
 		value = 0
 	}
+	trigger_event = frog_narrative_events.1
 }
 
 frog_add_clues_effect = {

@@ -563,3 +563,46 @@ frog_investigation_events.14 = {
 		name = frog_investigation_events.14.c
 	}
 }
+
+# Visiting the Safe House
+frog_investigation_events.15 = {
+	type = country_event
+	placement = root
+	icon = "gfx/interface/icons/event_icons/event_hardboiled.dds"
+	duration = 3
+	
+	title = frog_investigation_events.15.t
+	desc = frog_investigation_events.15.d
+	flavor = frog_investigation_events.15.f
+	
+	event_image = {
+		video = "europenorthamerica_rich_and_poor"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	
+	trigger = {
+	}
+	
+	cancellation_trigger = {
+		NOT = {
+			has_journal_entry = je_frog_noir_investigating_leads
+		}
+	}
+	
+	cooldown = {
+		years = 2
+	}
+	
+	immediate = {
+		frog_save_lead_investigator_effect = yes
+	}
+	
+	option = { # Take a short break for the day
+		name = frog_investigation_events.15.a
+		default_option = yes
+	}
+	
+	option = { # Take a few days off to rest
+		name = frog_investigation_events.15.b
+	}
+}

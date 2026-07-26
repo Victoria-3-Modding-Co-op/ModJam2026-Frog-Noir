@@ -41,6 +41,10 @@
 			name = je_frog_noir_main
 			value = scope:je_frog_noir_main
 		}
+		set_global_variable = {
+			name = frog_story_var
+			value = 1
+		}
 	}
 
 	immediate_all_involved = {
@@ -52,6 +56,10 @@
 	}
 
 	complete = {
+		custom_tooltip = {
+			text = je_frog_noir_main_complete
+			has_global_variable = frog_iced_john_toad_var
+		}
 	}
 
 	on_complete = {
@@ -100,18 +108,7 @@ je_frog_noir_investigating_leads = {
 	scripted_progress_bar = frog_investigating_leads_peril_bar
 
 	immediate = {
-		set_variable = {
-			name = frog_investigation_progress_var
-			value = 0
-		}
-		set_variable = {
-			name = frog_investigation_peril_var
-			value = 0
-		}
-		set_variable = {
-			name = frog_investigation_timer_var
-			value = 0
-		}
+		frog_initialize_investigation_variables_effect = yes
 	}
 
 	complete = {
@@ -122,9 +119,8 @@ je_frog_noir_investigating_leads = {
 	}
 
 	on_complete = {
-		remove_variable = frog_investigation_progress_var
-		remove_variable = frog_investigation_peril_var
-		remove_variable = frog_investigation_timer_var
+		frog_complete_investigation_effect = yes
+		frog_clear_investigation_variables_effect = yes
 	}
 
 	fail = {
@@ -135,9 +131,7 @@ je_frog_noir_investigating_leads = {
 	}
 
 	on_fail = {
-		remove_variable = frog_investigation_progress_var
-		remove_variable = frog_investigation_peril_var
-		remove_variable = frog_investigation_timer_var
+		frog_clear_investigation_variables_effect = yes
 	}
 
 	invalid = {
@@ -148,9 +142,7 @@ je_frog_noir_investigating_leads = {
 	}
 
 	on_invalid = {
-		remove_variable = frog_investigation_progress_var
-		remove_variable = frog_investigation_peril_var
-		remove_variable = frog_investigation_timer_var
+		frog_clear_investigation_variables_effect = yes
 	}
 
 	on_weekly_pulse = {

@@ -1,7 +1,15 @@
-﻿frog_investigation_completion_progress_bar = {
-	name = frog_placeholder_text
-	desc = frog_placeholder_text
+﻿frog_investigating_leads_progress_bar = {
+	name = frog_progress
+	desc = frog_progress
 	
-	max_value = 10
+	max_value = 8
+	min_value = 0
+}
+
+frog_investigating_leads_peril_bar = {
+	name = frog_peril
+	desc = frog_peril
+	
+	max_value = 5
 	min_value = 0
 }

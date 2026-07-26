@@ -97,20 +97,11 @@ types frog_journal_widget_types {
 				}
 			}
 			widget = {
-				parentanchor = left|vcenter
+				parentanchor = hcenter
 				size = { 220 25 }
-				
 				textbox = {
-					raw_text = "#bold Rank: #blue foo#!#!"
-					parentanchor = left|vcenter
-					position = { 0 0 }
-					autoresize = yes
-					max_width = 250
-					elide = right
-					using = fontsize_medium
-				}
-				textbox = {
-					raw_text = "#bold Action: #blue foo#!#!"
+					visible = "[Character.MakeScope.Var('frog_action_var').IsSet]"
+					raw_text = "#bold Action: #blue [Character.MakeScope.Var('frog_action_var').GetFlagName]#!#!"
 					parentanchor = right|vcenter
 					position = { 0 0 }
 					autoresize = yes
@@ -131,7 +122,7 @@ types frog_journal_widget_types {
 					margin_bottom  = -5
 				}
 				
-				kog_personal_initiative_button = {
+				frog_personal_initiative_button = {
 					blockoverride "button_texture" {
 						texture = "gfx/interface/icons/generic_icons/rotate_zoom.dds"
 					}
@@ -139,7 +130,7 @@ types frog_journal_widget_types {
 					onclick = "[GetScriptedGui('frog_start_sleuthing_for_clues_sgui').Execute( GuiScope.SetRoot(Character.MakeScope).End )]"
 					tooltip = "frog_placeholder_text"
 				}
-				kog_personal_initiative_button = {
+				frog_personal_initiative_button = {
 					blockoverride "button_texture" {
 						texture = "gfx/interface/icons/generic_icons/character_busy.dds"
 					}
@@ -147,7 +138,7 @@ types frog_journal_widget_types {
 					onclick = "[GetScriptedGui('frog_start_keeping_watch_sgui').Execute( GuiScope.SetRoot(Character.MakeScope).End )]"
 					tooltip = "frog_placeholder_text"
 				}
-				kog_personal_initiative_button = {
+				frog_personal_initiative_button = {
 					blockoverride "button_texture" {
 						texture = "gfx/interface/icons/generic_icons/most_senior_front_commander.dds"
 					}
@@ -187,7 +178,7 @@ types frog_journal_widget_types {
 		}
 	}
 	
-	type kog_personal_initiative_button = button_icon_round {
+	type frog_personal_initiative_button = button_icon_round {
 		size = { 40 40 }
 		
 		#	enabled = "[IsValid( ScriptedButton.ExecuteEffect )]" # TODO make this the lead PI check

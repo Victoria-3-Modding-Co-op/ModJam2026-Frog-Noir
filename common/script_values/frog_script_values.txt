@@ -22,6 +22,36 @@ frog_clue_generation_value = {
 #############################################################
 
 ### Experience ###
+
+#Experience set up
+frog_experience_set_up_value = {
+	value = { 1 10 }
+	add = {
+		value = age
+		subtract = 25
+		multiply = 2
+	}
+	if = {
+		limit = {
+			has_trait = meticulous
+		}
+		add = 5
+	}
+	if = {
+		limit = {
+			has_trait = persistent
+		}
+		add = 5
+	}
+	if = {
+		limit = {
+			has_trait = innovative
+		}
+		add = 5
+	}
+}
+
+#Yearly experience gain
 frog_yearly_experience_gain_value = {
 	value = { 2 5 }
 	if = {

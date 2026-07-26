@@ -82,10 +82,9 @@ frog_remove_new_investigator_effect = {
 # Used to set up the Experience of a character
 frog_character_investigator_experience_set_up_effect = {
 	#Adds astronomer experience (see effect for further information)
-	#TODO: Add a script value to set up the experience properly
 	frog_change_variable_with_additional_script_math_parameter_effect = {
 		NAME = frog_investigator_experience_var
-		AMOUNT = "{ value = { 0 10 } }"
+		AMOUNT = frog_experience_set_up_value
 		ADDITIONAL_SCRIPT_MATH = "min = 0 max = 300"
 	}
 

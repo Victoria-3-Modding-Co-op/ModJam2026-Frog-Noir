@@ -43,6 +43,10 @@ frog_country_set_new_investigator_as_official_investigator_effect = {
 
 		frog_country_remove_official_investigator_effect = yes
 
+		var:frog_new_investigator_var = {
+			save_scope_as = frog_new_investigator_scope
+		}
+
 		set_variable = {
 			name = frog_investigator_var
 			value = scope:frog_new_investigator_scope

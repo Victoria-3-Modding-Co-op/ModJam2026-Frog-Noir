@@ -16,7 +16,7 @@ frog_intro_events.1 = {
 	gui_window = event_window_1char_adventure
 
 	event_image = {
-		texture = "gfx/event_pictures/andersson_pictures/andersson_piltdown.dds"
+		texture = "gfx/event_pictures/frog_office.dds"
 	}
 
 	left_icon = scope:frog_investigator_scope

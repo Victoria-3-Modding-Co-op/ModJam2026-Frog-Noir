@@ -109,6 +109,9 @@ je_frog_noir_investigating_leads = {
 
 	immediate = {
 		frog_initialize_investigation_variables_effect = yes
+		scope:journal_entry = {
+			set_variable = com_hide_journal_reason
+		}
 	}
 
 	complete = {

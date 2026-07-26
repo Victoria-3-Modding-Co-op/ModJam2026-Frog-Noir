@@ -150,3 +150,51 @@ frog_investigation_events.2 = {
 		}
 	}
 }
+
+# Suspicious Boats Near Port
+frog_investigation_events.3 = {
+	type = country_event
+	placement = scope:frog_state_scope
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+	duration = 3
+	
+	title = frog_investigation_events.3.t
+	desc = frog_investigation_events.3.d
+	flavor = frog_investigation_events.3.f
+	
+	event_image = {
+		video = "votp_gunboat_diplomacy"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	
+	trigger = {
+		any_scope_state = {
+			is_coastal = yes
+		}
+	}
+	
+	cancellation_trigger = {
+		NOT = {
+			has_global_variable = je_frog_noir_main
+		}
+	}
+	
+	cooldown = {
+		years = 2
+	}
+	
+	immediate = {
+		random_scope_state = {
+			limit = {
+				is_coastal = yes
+			}
+			save_scope_as = frog_state_scope
+		}
+	}
+	
+	option = { # Why are these boats croaking?
+		name = frog_investigation_events.3.a
+		default_option = yes
+	}
+}
+

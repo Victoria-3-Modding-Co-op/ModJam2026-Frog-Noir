@@ -71,7 +71,7 @@ frog_investigation_events.1 = {
 		scope:frog_state_scope = {
 			add_modifier = {
 				name = modifier_frog_investigative_disruptions
-				months = short_modifier_time
+				days = short_modifier_time
 			}
 		}
 	}

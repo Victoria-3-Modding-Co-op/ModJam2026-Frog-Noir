@@ -24,6 +24,36 @@ modifier_frog_exposed_toad_kink = {
 	interest_group_approval_add = -3
 }
 
+modifier_frog_lobbied_by_toads_character = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_prominence_negative.dds
+	character_prominence_add = 10
+	character_loyalty_add = -50
+}
+
+modifier_frog_lobbied_by_toads_ig = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_activism_negative.dds
+	interest_group_approval_add = -3
+	interest_group_amenability_add = -25
+}
+
+modifier_frog_refused_toad_lobbyists = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_prominence_positive.dds
+	character_prominence_add = 10
+}
+
+modifier_frog_exposed_taking_bribes_character = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_prominence_negative.dds
+	character_loyalty_add = -25
+	character_prominence_add = -15
+}
+
+modifier_frog_exposed_taking_bribes_ig = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_activism_negative.dds
+	interest_group_approval_add = -3
+	interest_group_amenability_add = -50
+	interest_group_pop_attraction_mult = -0.25
+}
+
 # INVESTIGATION EVENTS
 modifier_frog_investigative_disruptions = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_trade_negative.dds

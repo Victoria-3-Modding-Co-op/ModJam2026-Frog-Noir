@@ -117,3 +117,10 @@
  frog_investigation_events.15.f: "\"I'm getting too old for this...\""
  frog_investigation_events.15.a: "A short nap would be great!"
  frog_investigation_events.15.b: "Time to relax. A bath in the pond and a few days of break."
+
+ frog_investigation_events.16.t: "Gentlemen, It Is With Great Pleasure To Inform You"
+ frog_investigation_events.16.d: "Night Time. A basement. Full of Toads. One of them holding a speech"
+ frog_investigation_events.16.f: "\"Gentlemen, it is with great pleasure to inform you of our infiltration of another nations leadership! This marks the fifth government we infiltrated. And no one can stop us!\""
+ frog_investigation_events.16.a: "Watch them from afar."
+ frog_investigation_events.16.b: "Stage a raid."
+ frog_investigation_events.16.c: "Warn the police."

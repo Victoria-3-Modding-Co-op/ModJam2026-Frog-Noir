@@ -31,6 +31,13 @@
  frog_frogged_by_toads_events.4.b: "Question the Executive."
  frog_frogged_by_toads_events.4.c: "Arrest the Executive! The man is a traitor!"
 
+ frog_frogged_by_toads_events.5.t: "Disappearances in [SCOPE.sState('frog_state_scope').GetName]"
+ frog_frogged_by_toads_events.5.d: "Despair is spreading in [SCOPE.sState('frog_state_scope').GetName]. More and more people disappear without leaving a trace... Well... actually they leave traces... Slimy Traces..."
+ frog_frogged_by_toads_events.5.f: "\"Did you find her? Did you find my husband? He just wanted to buy a pack of cigarettes... He never came back... Now my 11 children will have to grow up without their father! What should I do!?\""
+ frog_frogged_by_toads_events.5.a: "We're too late; document evidence."
+ frog_frogged_by_toads_events.5.b: "No doubt the toadmen are behind this."
+ frog_frogged_by_toads_events.5.c: "I know this mark... it's John Toad."
+
  frog_investigation_events.1.t: "A Slimy Trace"
  frog_investigation_events.1.d: "Slimy criminals must have been at work in a store in [SCOPE.sState('frog_state_scope').GetCityHubName]. The slimy traces and trails were clear evidence. But what human leaves a slimy trail? Or..."
  frog_investigation_events.1.f: "\"Ew! What is this!?\"\n\nSlime dripped from the investigators shoe. Green. Slimy. Sticky.\n\n\"Where does this slime come from? Do we have criminal snails and slugs now?!\""

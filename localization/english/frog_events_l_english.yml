@@ -24,6 +24,13 @@
  frog_frogged_by_toads_events.3.a: "With a beautiful woman like you? Always."
  frog_frogged_by_toads_events.3.b: "[SCOPE.sCharacter('frog_character_scope').GetCustom('getSirMadam')], that slimey woman is a fraud."
 
+ frog_frogged_by_toads_events.4.t: "Suspicious Company Branding"
+ frog_frogged_by_toads_events.4.d: "[SCOPE.sCompany('relevant_company').GetName] changed their branding fundamentally lately. Greenish and brownish colors, toads everywhere. [SCOPE.sCharacter('frog_executive_scope').GetFullName] - the executive - said that he just likes toads, but this seems rather suspicious..."
+ frog_frogged_by_toads_events.4.f: "\"By our new toad-themed engines! Cooled with slime, lasting forever!\""
+ frog_frogged_by_toads_events.4.a: "Take notes."
+ frog_frogged_by_toads_events.4.b: "Question the Executive."
+ frog_frogged_by_toads_events.4.c: "Arrest the Executive! The man is a traitor!"
+
  frog_investigation_events.1.t: "A Slimy Trace"
  frog_investigation_events.1.d: "Slimy criminals must have been at work in a store in [SCOPE.sState('frog_state_scope').GetCityHubName]. The slimy traces and trails were clear evidence. But what human leaves a slimy trail? Or..."
  frog_investigation_events.1.f: "\"Ew! What is this!?\"\n\nSlime dripped from the investigators shoe. Green. Slimy. Sticky.\n\n\"Where does this slime come from? Do we have criminal snails and slugs now?!\""
@@ -34,9 +41,15 @@
  frog_investigation_events.2.d: "Vagrants in [SCOPE.sState('frog_state_scope').GetName] are telling wild stories about Toadmen lurking in the shadows. Is there any truth to these stories?"
  frog_investigation_events.2.f: "\"I tell you *hic* they were toads! *hic* And they wanted to rob the bank! *hic*\"\n\nThe whiskey bottle slipped from his hand and clattered to the floor.\n\n\"Sir, are you drunk?\"\n\n\"Me?! *hic* Drunk?! *hic* I barely had 3 bottles of beer *hic* and 2 bottles of Whisky... *hic*\""
  frog_investigation_events.2.a: "Hm. Take notes."
- frog_investigation_events.2.b: "\"Extract\" some more information."
+ frog_investigation_events.2.b: "Let the Police \"Extract\" more information."
 
  frog_investigation_events.3.t: "Suspicious Boats Near Port"
  frog_investigation_events.3.d: "Reports from [SCOPE.sState('frog_state_scope').GetName] describe strange boats at our coasts. The suspicions didn't stem from the slime that was all over them - that was fairly normal in these parts of the world - but by the croaking coming from them."
  frog_investigation_events.3.f: "\"Did... Did that boat just croak? It's not a French boat, so why would they transport frogs? And all the slime... Is this some attempt by the French to infiltrate our cuisine?!\""
  frog_investigation_events.3.a: "Why are these boats croaking?"
+
+ frog_investigation_events.4.t: "The Croaking Alleyway"
+ frog_investigation_events.4.d: "New reports from [SCOPE.sState('frog_state_scope').GetCityHubName] have arrived and they are... Interesting? Apparently people are disappearing in an alleyway and witnesses recount hearing a lot of croaking..."
+ frog_investigation_events.4.f: "\"Yes, I know how this sounds! But the Croaking! There is a worldwide conspiracy by Toadmen to replace us all! I swear! my wife disappeared in this alley a few days back and when she finally returned home her voice was lower and she was... slimy...\""
+ frog_investigation_events.4.a: "Rather Noisy for an Alley..."
+ frog_investigation_events.4.b: "Ask the police to keep tabs on the croaking."
